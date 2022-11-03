@@ -1,0 +1,16 @@
+.main {
+    border-radius: 23px;
+    height: 100%;
+
+    .main__body {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        justify-content: space-between;
+        height: 100%;
+        .main__col {
+            padding: 0 4px;
+            height: 100%;
+        }
+    }
+}

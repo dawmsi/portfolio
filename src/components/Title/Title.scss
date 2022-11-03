@@ -1,0 +1,16 @@
+.title__col {
+    .title__container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .title__row {
+            background: rgba(0, 0, 0, 0.2);
+            outline: 6px solid rgba(0, 0, 0, 0.08);
+            outline-style: solid;
+            border-radius: 23px;
+            justify-content: center;
+            align-items: center;
+            width: 301px;
+        }
+    }
+}

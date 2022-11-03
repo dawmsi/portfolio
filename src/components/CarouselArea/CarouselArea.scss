@@ -1,0 +1,44 @@
+.carousel {
+    position: relative;
+    padding: 0;
+    height: 100%;
+
+    .carousel-inner {
+        position: absolute;
+        top: 0;
+        left: 0;
+        justify-content: center;
+        height: calc(100% - 44.8px);
+
+        .carousel-item {
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.11);
+            border-radius: 23px;
+        }
+
+        .carousel-item-next,
+        .carousel-item-prev {
+            transform: scale(0.98);
+            transition: transform 0.08s cubic-bezier(0.77, 0, 0.18, 1);
+        }
+    }
+
+    .carousel-indicators {
+        display: flex;
+        justify-self: center;
+        background: rgba(0, 0, 0, 0.1);
+        border-radius: 23px;
+        width: fit-content;
+        padding: 0 7px;
+        margin: auto;
+        .active {
+            opacity: 0.6;
+        }
+        Button {
+            height: 0.8rem;
+            width: 0.8rem;
+            border-radius: 50%;
+            opacity: 0.09;
+        }
+    }
+}

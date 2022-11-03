@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react'
+import './App.scss'
+import 'bootstrap/dist/css/bootstrap.min.css'
+import { NavBar } from './containers/Nav/Nav'
+import { Main } from './containers/Main/Main'
+import { Container, Row } from 'react-bootstrap'
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    const [isLight, setIsLight] = useState(true)
+    const changeTheme = () => setIsLight(!isLight)
+
+    return (
+        <div className="app">
+            <Container>
+                <Row className="app__row">
+                    <NavBar isLight={isLight} changeTheme={changeTheme} />
+                    <Main />
+                </Row>
+            </Container>
+        </div>
+    )
 }
 
-export default App;
+export default App
