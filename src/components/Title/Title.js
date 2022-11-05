@@ -6,9 +6,7 @@ export const Title = () => {
         <>
             <Col className="title__col">
                 <Container className="title__container">
-                    <Row sm={1} className="title__row">
-                        Title
-                    </Row>
+                    <Row className="title__row">Title</Row>
                 </Container>
             </Col>
         </>
