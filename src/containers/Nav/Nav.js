@@ -6,7 +6,7 @@ import './Nav.scss'
 export const NavBar = ({ isLight, changeTheme }) => {
     return (
         <>
-            <Navbar expand="sm" variant="dark" bg="light" className="mb-2">
+            <Navbar expand="sm" variant="dark" bg="light">
                 <Container>
                     <Nav>
                         <Item></Item>
