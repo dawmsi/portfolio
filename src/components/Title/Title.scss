@@ -9,18 +9,12 @@
             outline: 6px solid rgba(0, 0, 0, 0.1);
             margin: 6px;
             border-radius: 23px;
+            -webkit-border-radius: 23px;
+            -moz-border-radius: 23px;
+            -khtml-border-radius: 23px;
             justify-content: center;
             align-items: center;
             width: 301px;
-            &::before {
-                content: '';
-                position: absolute;
-                top: -7px; // border: 6px + offset: 1px
-                right: -7px; // border: 6px + offset: 1px
-                bottom: -7px; // border: 6px + offset: 1px
-                left: -7px; // border: 6px + offset: 1px
-                border-radius: 24px; // border—radius: 23px + offset: 1px
-            }
         }
     }
 }
