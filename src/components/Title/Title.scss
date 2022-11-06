@@ -7,8 +7,9 @@
             position: relative;
             background: rgba(0, 0, 0, 0.2);
             border: 6px solid rgba(0, 0, 0, 0.1);
-            outline: 6px solid rgba(0, 0, 0, 0.1);
-            margin: 6px;
+            background-clip: padding-box;
+            /* -webkit-background-clip: padding-box; */
+            padding: 0 6px;
             border-radius: 23px;
             -webkit-border-radius: 23px;
             -moz-border-radius: 23px;
