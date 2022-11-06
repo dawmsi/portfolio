@@ -5,7 +5,7 @@
         align-items: center;
         .title__row {
             position: relative;
-            background: rgba(0, 0, 0, 0.2);
+            background-color: rgba(0, 0, 0, 0.2);
             border: 6px solid rgba(0, 0, 0, 0.1);
             background-clip: padding-box;
             /* -webkit-background-clip: padding-box; */
@@ -16,7 +16,7 @@
             -khtml-border-radius: 23px;
             justify-content: center;
             align-items: center;
-            width: 301px;
+            width: 100%;
         }
     }
 }

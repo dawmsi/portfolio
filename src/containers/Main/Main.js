@@ -1,8 +1,8 @@
 import React from 'react'
 import { Col, Row, Card } from 'react-bootstrap'
 import './Main.scss'
-import { Title } from '../../components/Title/Title'
-import { CarouselArea } from '../../components/CarouselArea/CarouselArea'
+import { Title } from '../../components/Title'
+import { MainRoutes } from './routes/MainRoutes'
 export const Main = () => {
     return (
         <>
@@ -11,11 +11,9 @@ export const Main = () => {
                     <Row>
                         <Title />
                     </Row>
-
-                        <Col className="main__col">
-                            <CarouselArea />
-                        </Col>
-
+                    <Col className="main__col">
+                        <MainRoutes></MainRoutes>
+                    </Col>
                 </Card.Body>
             </Card>
         </>
