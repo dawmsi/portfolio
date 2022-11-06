@@ -14,13 +14,13 @@ export const NavBar = ({ isLight, changeTheme }) => {
                         <Nav.Link as={Link} to={'/'}>
                             <Button variant="light">About</Button>
                         </Nav.Link>
-                        <Nav.Link as={Link} to={'/portfolio/skills'}>
+                        <Nav.Link as={Link} to={'/skills'}>
                             <Button variant="light">Skills</Button>
                         </Nav.Link>
-                        <Nav.Link as={Link} to={'/portfolio/projects'}>
+                        <Nav.Link as={Link} to={'/projects'}>
                             <Button variant="light">Projects</Button>
                         </Nav.Link>
-                        <Nav.Link as={Link} to={'/portfolio/statistic'}>
+                        <Nav.Link as={Link} to={'/statistic'}>
                             <Button variant="light">Statistic</Button>
                         </Nav.Link>
                         <Nav.Item className="px-8">

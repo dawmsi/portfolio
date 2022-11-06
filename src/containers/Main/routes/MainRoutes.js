@@ -9,9 +9,9 @@ export const MainRoutes = () => {
     return (
         <Routes>
             <Route index element={<About />} />
-            <Route path="/portfolio/skills" element={<Skills />} />
-            <Route path="/portfolio/projects" element={<Projects />} />
-            <Route path="/portfolio/statistic" element={<Statistic />} />
+            <Route path="/skills" element={<Skills />} />
+            <Route path="/projects" element={<Projects />} />
+            <Route path="/statistic" element={<Statistic />} />
         </Routes>
     )
 }
