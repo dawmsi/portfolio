@@ -11,7 +11,7 @@ export const NavBar = ({ isLight, changeTheme }) => {
             <Navbar expand="sm" variant="dark" bg="light">
                 <Container>
                     <Nav fill navbarScroll={true} variant="pills">
-                        <Nav.Link as={Link} to={'/portfolio/'}>
+                        <Nav.Link as={Link} to={'/'}>
                             <Button variant="light">About</Button>
                         </Nav.Link>
                         <Nav.Link as={Link} to={'/portfolio/skills'}>
