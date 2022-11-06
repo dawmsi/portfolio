@@ -12,14 +12,13 @@
             justify-content: center;
             align-items: center;
             width: 301px;
-            &:focus::before {
+            &::before {
                 content: '';
                 position: absolute;
                 top: -7px; // border: 6px + offset: 1px
                 right: -7px; // border: 6px + offset: 1px
                 bottom: -7px; // border: 6px + offset: 1px
                 left: -7px; // border: 6px + offset: 1px
-                border: 6px solid rgba(0, 0, 0, 0.1);
                 border-radius: 24px; // border—radius: 23px + offset: 1px
             }
         }
