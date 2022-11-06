@@ -8,10 +8,12 @@ import { Statistic } from '../../../scenes/Statistic'
 export const MainRoutes = () => {
     return (
         <Routes>
-            <Route path="/" element={<About />} />
-            <Route path="skills" element={<Skills />} />
-            <Route path="projects" element={<Projects />} />
-            <Route path="statistic" element={<Statistic />} />
+            <Route index element={<About />} />
+            <Route path="/portfolio/">
+                <Route path="skills" element={<Skills />} />
+                <Route path="projects" element={<Projects />} />
+                <Route path="statistic" element={<Statistic />} />
+            </Route>
         </Routes>
     )
 }

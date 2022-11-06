@@ -11,16 +11,16 @@ export const NavBar = ({ isLight, changeTheme }) => {
             <Navbar expand="sm" variant="dark" bg="light">
                 <Container>
                     <Nav fill navbarScroll={true} variant="pills">
-                        <Nav.Link as={Link} to={''}>
+                        <Nav.Link as={Link} to={'/portfolio/'}>
                             <Button variant="light">About</Button>
                         </Nav.Link>
-                        <Nav.Link as={Link} to={'skills'}>
+                        <Nav.Link as={Link} to={'/portfolio/skills'}>
                             <Button variant="light">Skills</Button>
                         </Nav.Link>
-                        <Nav.Link as={Link} to={'projects'}>
+                        <Nav.Link as={Link} to={'/portfolio/projects'}>
                             <Button variant="light">Projects</Button>
                         </Nav.Link>
-                        <Nav.Link as={Link} to={'statistic'}>
+                        <Nav.Link as={Link} to={'/portfolio/statistic'}>
                             <Button variant="light">Statistic</Button>
                         </Nav.Link>
                         <Nav.Item className="px-8">
