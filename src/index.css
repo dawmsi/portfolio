@@ -11,4 +11,5 @@ body,
     padding: 8px;
     background-color: darkgray;
     position: fixed;
+    overflow: hidden;
 }
