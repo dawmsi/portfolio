@@ -13,22 +13,22 @@ export const NavBar = ({ isLight, changeTheme }) => {
                     <Nav navbar fill navbarScroll={true}>
                         <Nav.Link as={Link} href="/">
                             <Button variant={isLight ? 'light' : 'dark'}>
-                                <div className="text__area">About</div>
+                                About
                             </Button>
                         </Nav.Link>
                         <Nav.Link as={Link} to={'/skills'}>
                             <Button variant={isLight ? 'light' : 'dark'}>
-                                <div className="text__area">Skills</div>
+                                Skills
                             </Button>
                         </Nav.Link>
                         <Nav.Link as={Link} to={'/projects'}>
                             <Button variant={isLight ? 'light' : 'dark'}>
-                                <div className="text__area">Projects</div>
+                                Projects
                             </Button>
                         </Nav.Link>
                         <Nav.Link as={Link} to={'/statistic'}>
                             <Button variant={isLight ? 'light' : 'dark'}>
-                                <div className="text__area">Statistic</div>
+                                Statistic
                             </Button>
                         </Nav.Link>
                     </Nav>

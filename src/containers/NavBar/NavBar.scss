@@ -27,16 +27,13 @@
         justify-content: center;
         align-items: flex-start;
         border: 0;
-        .text__area {
-            margin-top: -1px;
-        }
+
         &.btn-dark {
             --bs-btn-hover-color: #fff;
             --bs-btn-active-color: #fff;
         }
 
         svg {
-            height: 100%;
             margin: 4px;
         }
         .nav-link {
