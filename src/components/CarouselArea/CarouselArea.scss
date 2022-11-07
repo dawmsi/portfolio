@@ -8,7 +8,7 @@
         top: 0;
         left: 0;
         justify-content: center;
-        height: calc(100% - 42.8px);
+        height: calc(100% - 38.8px);
 
         .carousel-item {
             position: relative;
@@ -25,7 +25,7 @@
         .carousel-item-start,
         .carousel-item-end {
             position: fixed;
-            height: calc(100% - 178.8px);
+            height: calc(100% - 174.8px);
             z-index: 100;
             width: 100%;
         }
