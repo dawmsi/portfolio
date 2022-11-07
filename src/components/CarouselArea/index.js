@@ -5,7 +5,7 @@ export const CarouselArea = ({ isLight }) => {
     return (
         <>
             <Carousel
-                color={isLight ? 'dark' : 'light'}
+                variant={isLight ? 'dark' : 'light'}
                 controls={false}
                 touch={true}
             >
