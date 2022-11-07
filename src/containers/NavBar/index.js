@@ -1,10 +1,16 @@
 import React from 'react'
-import { Container, Navbar, Nav, Button } from 'react-bootstrap'
+import { Container, Navbar, Nav, Button, Row, Col } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 import './NavBar.scss'
 
-import { Moon, Sun } from 'react-bootstrap-icons'
-
+import {
+    Moon,
+    Person,
+    Sun,
+    Diagram2,
+    Grid,
+    Bezier2
+} from 'react-bootstrap-icons'
 export const NavBar = ({ isLight, changeTheme }) => {
     return (
         <>
@@ -13,12 +19,12 @@ export const NavBar = ({ isLight, changeTheme }) => {
                     <Nav fill navbarScroll={true} variant="pills">
                         <Nav.Link eventKey="/about" as={Link} to={'/'}>
                             <Button variant={isLight ? 'light' : 'dark'}>
-                                About
+                                <Person />
                             </Button>
                         </Nav.Link>
                         <Nav.Link eventKey="/skills" as={Link} to={'/skills'}>
                             <Button variant={isLight ? 'light' : 'dark'}>
-                                Skills
+                                <Diagram2 />
                             </Button>
                         </Nav.Link>
                         <Nav.Link
@@ -27,7 +33,7 @@ export const NavBar = ({ isLight, changeTheme }) => {
                             to={'/projects'}
                         >
                             <Button variant={isLight ? 'light' : 'dark'}>
-                                Projects
+                                <Grid />
                             </Button>
                         </Nav.Link>
                         <Nav.Link
@@ -36,17 +42,19 @@ export const NavBar = ({ isLight, changeTheme }) => {
                             to={'/statistic'}
                         >
                             <Button variant={isLight ? 'light' : 'dark'}>
-                                Statistic
+                                <Bezier2 />
                             </Button>
                         </Nav.Link>
                     </Nav>
-                    <Button
-                        className="mode__button px-8"
-                        variant={isLight ? 'light' : 'dark'}
-                        onClick={changeTheme}
-                    >
-                        {isLight ? <Moon /> : <Sun />}
-                    </Button>
+
+                        <Button
+                            className="mode__button px-8"
+                            variant={isLight ? 'light' : 'dark'}
+                            onClick={changeTheme}
+                        >
+                            {isLight ? <Moon /> : <Sun />}
+                        </Button>
+
                 </Container>
             </Navbar>
         </>

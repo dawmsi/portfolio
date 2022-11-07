@@ -5,6 +5,9 @@
     transition: 0.3s;
     padding: 6px 0;
     border-radius: 23px;
+    .flex-nowrap {
+        padding-left: 5px;
+    }
     .navbar-nav {
         margin-right: 28px;
         transition: all 0.5s;
@@ -20,6 +23,7 @@
     }
     .mode__button {
         position: absolute;
+        top: 0;
         right: 0;
         background-color: transparent;
         border: 0;
