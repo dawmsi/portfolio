@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container, Navbar, Nav, Button, Row, Col } from 'react-bootstrap'
+import { Container, Navbar, Nav, Button } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 import './NavBar.scss'
 
@@ -47,14 +47,13 @@ export const NavBar = ({ isLight, changeTheme }) => {
                         </Nav.Link>
                     </Nav>
 
-                        <Button
-                            className="mode__button px-8"
-                            variant={isLight ? 'light' : 'dark'}
-                            onClick={changeTheme}
-                        >
-                            {isLight ? <Moon /> : <Sun />}
-                        </Button>
-
+                    <Button
+                        className="mode__button px-8"
+                        variant={isLight ? 'light' : 'dark'}
+                        onClick={changeTheme}
+                    >
+                        {isLight ? <Moon /> : <Sun />}
+                    </Button>
                 </Container>
             </Navbar>
         </>
