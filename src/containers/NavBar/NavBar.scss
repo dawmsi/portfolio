@@ -7,6 +7,16 @@
     border-radius: 23px;
     .navbar-nav {
         margin-right: 28px;
+        transition: all 0.5s;
+        .nav-pills {
+            --bs-nav-pills-border-radius: 23px;
+            --bs-nav-pills-link-active-bg: rgba(0, 0, 0, 0.17);
+        }
+        .nav-link.active {
+            border-radius: 23px;
+            background-color: transparent;
+            transition: all 0.3s;
+        }
     }
     .mode__button {
         position: absolute;
@@ -14,8 +24,6 @@
         background-color: transparent;
         border: 0;
         border-radius: 50%;
-        padding: 0;
-        margin: 0 9px;
     }
     .nav-link {
         padding: 0;
@@ -58,6 +66,9 @@
             height: 100%;
             overflow-y: scroll;
             border-radius: 23px;
+            .nav-link.active {
+                padding: 0;
+            }
             &::-webkit-scrollbar {
                 display: none;
                 -ms-overflow-style: none; /* IE and Edge */
@@ -70,5 +81,8 @@
 @media (min-width: 576px) {
     .navbar {
         margin-bottom: 6px;
+        .nav-link.active {
+            padding: 0 8px;
+        }
     }
 }

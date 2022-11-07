@@ -10,23 +10,31 @@ export const NavBar = ({ isLight, changeTheme }) => {
         <>
             <Navbar expand="sm" bg={isLight ? 'light' : 'dark'}>
                 <Container className="flex-nowrap">
-                    <Nav navbar fill navbarScroll={true}>
-                        <Nav.Link as={Link} href="/">
+                    <Nav fill navbarScroll={true} variant="pills">
+                        <Nav.Link eventKey="/about" as={Link} to={'/'}>
                             <Button variant={isLight ? 'light' : 'dark'}>
                                 About
                             </Button>
                         </Nav.Link>
-                        <Nav.Link as={Link} to={'/skills'}>
+                        <Nav.Link eventKey="/skills" as={Link} to={'/skills'}>
                             <Button variant={isLight ? 'light' : 'dark'}>
                                 Skills
                             </Button>
                         </Nav.Link>
-                        <Nav.Link as={Link} to={'/projects'}>
+                        <Nav.Link
+                            eventKey="/projects"
+                            as={Link}
+                            to={'/projects'}
+                        >
                             <Button variant={isLight ? 'light' : 'dark'}>
                                 Projects
                             </Button>
                         </Nav.Link>
-                        <Nav.Link as={Link} to={'/statistic'}>
+                        <Nav.Link
+                            eventKey="/statistic"
+                            as={Link}
+                            to={'/statistic'}
+                        >
                             <Button variant={isLight ? 'light' : 'dark'}>
                                 Statistic
                             </Button>
