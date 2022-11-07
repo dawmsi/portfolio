@@ -8,7 +8,7 @@ body,
 }
 
 .app {
-    padding: 8px;
+    padding: 6px;
     background-color: darkgray;
     position: fixed;
     overflow: hidden;
