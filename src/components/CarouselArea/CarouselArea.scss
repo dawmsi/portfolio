@@ -4,20 +4,32 @@
     width: 100%;
 
     .carousel-inner {
+        position: relative;
         top: 0;
         left: 0;
         justify-content: center;
         height: calc(100% - 42.8px);
 
         .carousel-item {
+            position: relative;
             height: 100%;
             background-color: rgba(0, 0, 0, 0.11);
             border-radius: 23px;
         }
+        .carousel-item-start,
+        .carousel-item-end {
+            position: fixed;
+            z-index: 100;
+            left: 0;
+            right: 0;
+            height: 73.2%;
+            width: 100%;
+        }
 
         .carousel-item-next,
         .carousel-item-prev {
-            transform: scale(0.98);
+            overflow: visible;
+            transform: scale(0.99);
             transition: transform 0.08s cubic-bezier(0.77, 0, 0.18, 1);
         }
     }
