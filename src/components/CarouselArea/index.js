@@ -9,12 +9,24 @@ export const CarouselArea = ({ isLight }) => {
                 controls={false}
                 touch={true}
             >
-                <Carousel.Item>item1</Carousel.Item>
-                <Carousel.Item>item2</Carousel.Item>
-                <Carousel.Item>item3</Carousel.Item>
-                <Carousel.Item>item4</Carousel.Item>
-                <Carousel.Item>item5</Carousel.Item>
-                <Carousel.Item>item6</Carousel.Item>
+                <Carousel.Item>
+                    <div className="inside__item">Item1</div>
+                </Carousel.Item>
+                <Carousel.Item>
+                    <div className="inside__item">Item2</div>
+                </Carousel.Item>
+                <Carousel.Item>
+                    <div className="inside__item">Item3</div>
+                </Carousel.Item>
+                <Carousel.Item>
+                    <div className="inside__item">Item4</div>
+                </Carousel.Item>
+                <Carousel.Item>
+                    <div className="inside__item">Item5</div>
+                </Carousel.Item>
+                <Carousel.Item>
+                    <div className="inside__item">Item6</div>
+                </Carousel.Item>
             </Carousel>
         </>
     )
