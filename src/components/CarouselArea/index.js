@@ -1,10 +1,14 @@
 import React from 'react'
 import { Carousel } from 'react-bootstrap'
 import './CarouselArea.scss'
-export const CarouselArea = () => {
+export const CarouselArea = ({ isLight }) => {
     return (
         <>
-            <Carousel variant="dark" controls={false} touch={true}>
+            <Carousel
+                color={isLight ? 'dark' : 'light'}
+                controls={false}
+                touch={true}
+            >
                 <Carousel.Item>item1</Carousel.Item>
                 <Carousel.Item>item2</Carousel.Item>
                 <Carousel.Item>item3</Carousel.Item>

@@ -1,10 +1,10 @@
 import React from 'react'
 import { CarouselArea } from '../../components/CarouselArea'
 
-export const Skills = () => {
+export const Skills = ({ isLight }) => {
     return (
         <>
-            <CarouselArea />
+            <CarouselArea isLight={isLight} />
         </>
     )
 }

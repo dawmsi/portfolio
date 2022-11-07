@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
-import './App.scss'
 import 'bootstrap/dist/css/bootstrap.min.css'
+import './App.scss'
 import { NavBar } from './containers/NavBar'
-import { Main } from './containers/Main/Main'
+import { Main } from './containers/Main'
 import { Container, Row } from 'react-bootstrap'
 
 function App() {
@@ -11,12 +11,12 @@ function App() {
 
     return (
         <div className="app">
-                <Container>
-                    <Row className="app__row">
-                        <NavBar isLight={isLight} changeTheme={changeTheme} />
-                        <Main />
-                    </Row>
-                </Container>
+            <Container>
+                <Row className="app__row">
+                    <NavBar isLight={isLight} changeTheme={changeTheme} />
+                    <Main isLight={isLight} />
+                </Row>
+            </Container>
         </div>
     )
 }
