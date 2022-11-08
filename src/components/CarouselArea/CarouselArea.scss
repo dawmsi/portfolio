@@ -8,12 +8,13 @@
         top: 0;
         left: 0;
         justify-content: center;
+        overflow: visible;
         height: calc(100% - 28.8px);
 
         .carousel-item {
-            position: relative;
             height: 100%;
-            background-color: rgba(0, 0, 0, 0.11);
+            background-color: white;
+            box-shadow: 0px 0px 8px 8px rgba(0, 0, 0, 0.25);
             border-radius: 23px;
             width: 100%;
             .inside__item {
@@ -22,20 +23,6 @@
                 align-items: center;
                 height: 100%;
             }
-        }
-        .carousel-item-start,
-        .carousel-item-end {
-            position: fixed;
-            height: calc(100% - 164.8px);
-            left: 0;
-            right: 0;
-        }
-
-        .carousel-item-next,
-        .carousel-item-prev {
-            overflow: visible;
-            transform: scale(0.99);
-            transition: transform 0.08s cubic-bezier(0.77, 0, 0.18, 1);
         }
     }
 
@@ -61,6 +48,16 @@
             border-radius: 5.5px;
         }
     }
+}
+
+.carousel-item-next:not(.carousel-item-start),
+.active.carousel-item-end {
+    transform: scale(0.9) translateX(120%);
+}
+
+.carousel-item-prev:not(.carousel-item-end),
+.active.carousel-item-start {
+    transform: scale(0.9) translateX(-120%);
 }
 
 .carousel-dark .carousel-indicators {
