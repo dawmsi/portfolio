@@ -21,6 +21,10 @@
             .breadcrumb {
                 justify-content: center;
                 margin: 0;
+                .breadcrumb-item.text-dark a,
+                .breadcrumb-item.text-light a {
+                    color: inherit;
+                }
             }
         }
     }
