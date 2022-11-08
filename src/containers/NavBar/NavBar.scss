@@ -44,7 +44,9 @@
         &:focus,
         &:focus-within {
             transform: rotate(260deg);
-            -webkit-transition: rotate(260deg);
+            -webkit-transform: rotate(260deg);
+            -ms-transform: rotate(260deg);
+            -moz-transform: rotate(260deg);
         }
     }
 
