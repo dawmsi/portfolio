@@ -41,10 +41,12 @@
         padding: 0;
         margin: 6px;
         transition: all 0.8s;
-        &:focus,
-        &::active {
-            rotate: 260deg;
-            transition: all 0.8s;
+        &:hover,
+        &:active {
+            transform: rotate(260deg);
+            -webkit-transform: rotate(260deg);
+            -ms-transform: rotate(260deg);
+            -moz-transform: rotate(260deg);
         }
     }
 
