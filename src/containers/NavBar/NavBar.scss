@@ -40,6 +40,10 @@
         border-radius: 50%;
         padding: 0;
         margin: 6px;
+        transition: all 0.8s;
+        &:focus-within {
+            transform: rotate(260deg);
+        }
     }
 
     .btn {
