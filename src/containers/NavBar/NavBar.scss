@@ -47,6 +47,8 @@
             -webkit-transform: rotate(260deg);
             -ms-transform: rotate(260deg);
             -moz-transform: rotate(260deg);
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
         }
     }
 
