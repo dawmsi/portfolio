@@ -17,18 +17,18 @@ export const NavBar = ({ isLight, changeTheme }) => {
             <Navbar expand="sm" bg={isLight ? 'light' : 'dark'}>
                 <Container className="flex-nowrap">
                     <Nav fill navbarScroll={true} variant="pills">
-                        <Nav.Link eventKey="/about" as={Link} to={'/'}>
+                        <Nav.Link eventKey="about" as={Link} to={'/'}>
                             <Button variant={isLight ? 'light' : 'dark'}>
                                 <Person />
                             </Button>
                         </Nav.Link>
-                        <Nav.Link eventKey="/skills" as={Link} to={'/skills'}>
+                        <Nav.Link eventKey="skills" as={Link} to={'/skills'}>
                             <Button variant={isLight ? 'light' : 'dark'}>
                                 <Diagram2 />
                             </Button>
                         </Nav.Link>
                         <Nav.Link
-                            eventKey="/projects"
+                            eventKey="projects"
                             as={Link}
                             to={'/projects'}
                         >
@@ -37,7 +37,7 @@ export const NavBar = ({ isLight, changeTheme }) => {
                             </Button>
                         </Nav.Link>
                         <Nav.Link
-                            eventKey="/statistic"
+                            eventKey="statistic"
                             as={Link}
                             to={'/statistic'}
                         >
