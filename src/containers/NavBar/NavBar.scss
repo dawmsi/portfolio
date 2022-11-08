@@ -40,16 +40,9 @@
         border-radius: 50%;
         padding: 0;
         margin: 6px;
-        -webkit-backface-visibility: hidden;
-        backface-visibility: hidden;
         transition: all 0.8s;
         &:focus {
-            transform: rotate(260deg);
-            -webkit-transform: rotate(260deg);
-            -ms-transform: rotate(260deg);
-            -moz-transform: rotate(260deg);
-            -webkit-backface-visibility: hidden;
-            backface-visibility: hidden;
+            rotate: 260deg;
             transition: all 0.8s;
         }
     }
