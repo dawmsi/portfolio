@@ -41,7 +41,8 @@
         padding: 0;
         margin: 6px;
         transition: all 0.8s;
-        &:focus {
+        &:focus,
+        &::active {
             rotate: 260deg;
             transition: all 0.8s;
         }
