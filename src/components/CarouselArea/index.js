@@ -1,7 +1,7 @@
 import React from 'react'
 import { Carousel } from 'react-bootstrap'
 import './CarouselArea.scss'
-export const CarouselArea = ({ isLight }) => {
+export const CarouselArea = ({ CurrentItem, pause, isLight }) => {
     return (
         <>
             <Carousel
@@ -9,48 +9,16 @@ export const CarouselArea = ({ isLight }) => {
                 variant={isLight ? 'dark' : 'light'}
                 controls={false}
                 touch={true}
+                pause={pause}
             >
                 <Carousel.Item
                     className={
                         isLight ? 'bg-light text-dark' : 'bg-dark text-light'
                     }
                 >
-                    <div className="inside__item">Item1</div>
-                </Carousel.Item>
-                <Carousel.Item
-                    className={
-                        isLight ? 'bg-light text-dark' : 'bg-dark text-light'
-                    }
-                >
-                    <div className="inside__item">Item2</div>
-                </Carousel.Item>
-                <Carousel.Item
-                    className={
-                        isLight ? 'bg-light text-dark' : 'bg-dark text-light'
-                    }
-                >
-                    <div className="inside__item">Item3</div>
-                </Carousel.Item>
-                <Carousel.Item
-                    className={
-                        isLight ? 'bg-light text-dark' : 'bg-dark text-light'
-                    }
-                >
-                    <div className="inside__item">Item4</div>
-                </Carousel.Item>
-                <Carousel.Item
-                    className={
-                        isLight ? 'bg-light text-dark' : 'bg-dark text-light'
-                    }
-                >
-                    <div className="inside__item">Item5</div>
-                </Carousel.Item>
-                <Carousel.Item
-                    className={
-                        isLight ? 'bg-light text-dark' : 'bg-dark text-light'
-                    }
-                >
-                    <div className="inside__item">Item6</div>
+                    <div className="inside__item">
+                        {CurrentItem ? <CurrentItem /> : ''}
+                    </div>
                 </Carousel.Item>
             </Carousel>
         </>

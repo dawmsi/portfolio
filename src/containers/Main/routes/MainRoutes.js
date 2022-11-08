@@ -11,7 +11,7 @@ export const MainRoutes = ({ isLight }) => {
             <Route path="/">
                 <Route index element={<About />} />
                 <Route path="skills" element={<Skills isLight={isLight} />} />
-                <Route path="projects" element={<Projects />} />
+                <Route path="projects" element={<Projects isLight={isLight} />} />
                 <Route path="statistic" element={<Statistic />} />
             </Route>
         </Routes>

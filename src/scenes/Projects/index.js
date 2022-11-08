@@ -1,8 +1,14 @@
 import React from 'react'
-export const Projects = () => {
+import { CarouselArea } from '../../components/CarouselArea'
+import { Projectitem } from '../../components/ProjectItem'
+export const Projects = ({ isLight }) => {
     return (
         <>
-            <p>My projects</p>
+            <CarouselArea
+                CurrentItem={Projectitem}
+                pause="hover"
+                isLight={isLight}
+            />
         </>
     )
 }
