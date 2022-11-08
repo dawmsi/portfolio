@@ -6,10 +6,16 @@ import { MainRoutes } from './routes/MainRoutes'
 export const Main = ({ isLight }) => {
     return (
         <>
-            <Card className="main" bg={isLight ? 'light' : 'dark'}>
+            <Card
+                className={
+                    isLight
+                        ? 'main text-dark'
+                        : ' main text-light'
+                }
+            >
                 <Card.Body className="main__body">
                     <Row>
-                        <Title />
+                        <Title isLight={isLight} />
                     </Row>
                     <Col className="main__col">
                         <MainRoutes isLight={isLight}></MainRoutes>

@@ -7,11 +7,9 @@
         align-items: center;
         .title__row {
             position: relative;
-            background-color: rgba(0, 0, 0, 0.2);
-            border: 6px solid rgba(0, 0, 0, 0.1);
-            background-clip: padding-box;
+            padding: 6px;
             /* -webkit-background-clip: padding-box; */
-            padding: 0 6px;
+            box-shadow: 0px 0px 8px 4px rgba(0, 0, 0, 0.25);
             border-radius: 23px;
             -webkit-border-radius: 23px;
             -moz-border-radius: 23px;
@@ -19,6 +17,7 @@
             justify-content: center;
             align-items: center;
             width: 100%;
+            --bs-border-opacity: 0.1;
             .breadcrumb {
                 justify-content: center;
                 margin: 0;

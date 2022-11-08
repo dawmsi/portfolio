@@ -2,6 +2,7 @@
     padding: 0;
     height: 100%;
     width: 100%;
+    background: transparent;
 
     .carousel-inner {
         position: relative;
@@ -9,12 +10,11 @@
         left: 0;
         justify-content: center;
         overflow: visible;
-        height: calc(100% - 28.8px);
+        height: calc(100% - 26.8px);
 
         .carousel-item {
-            height: 100%;
-            background-color: white;
-            box-shadow: 0px 0px 8px 8px rgba(0, 0, 0, 0.25);
+            height: 98%;
+            box-shadow: 0px 0px 8px 4px rgba(0, 0, 0, 0.25);
             border-radius: 23px;
             width: 100%;
             .inside__item {
@@ -29,9 +29,12 @@
     .carousel-indicators {
         display: flex;
         justify-self: center;
+        box-shadow: 0px 0px 8px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 23px;
         width: fit-content;
-        padding: 0 7px;
-        margin: auto;
+        padding: 2px 6px;
+        margin: -4px auto;
+
         .active {
             height: 0.8rem;
             width: 0.8rem;
@@ -48,6 +51,19 @@
             border-radius: 5.5px;
         }
     }
+}
+
+.carousel-light .carousel-indicators {
+    --bs-bg-opacity: 1;
+    background-color: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity)) !important;
+}
+
+.carousel-dark .carousel-indicators {
+    --bs-bg-opacity: 1;
+    background-color: rgba(
+        var(--bs-light-rgb),
+        var(--bs-bg-opacity)
+    ) !important;
 }
 
 .carousel-item-next:not(.carousel-item-start),
