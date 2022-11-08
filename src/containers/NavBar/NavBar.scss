@@ -31,21 +31,35 @@
         border: 0;
         border-radius: 50%;
         padding: 0;
-        margin: 11px;
-
-        &.btn-dark {
-            --bs-btn-hover-color: #fff;
-            --bs-btn-active-color: #fff;
-        }
+        margin: 6px;
     }
 
     .btn {
+        padding: 6px;
         --bs-btn-bg: tranperent;
         border-radius: 23px;
         display: flex;
         justify-content: center;
         align-items: flex-start;
         border: 0;
+        &.btn-dark {
+            --bs-btn-hover-color: white;
+            --bs-btn-active-color: white;
+            &:hover {
+                --bs-btn-hover-color: black;
+                --bs-btn-active-color: black;
+                background-color: rgba(255, 255, 255, 0.9);
+            }
+        }
+        &.btn-light {
+            --bs-btn-hover-color: black;
+            --bs-btn-active-color: black;
+            &:hover {
+                --bs-btn-hover-color: white;
+                --bs-btn-active-color: white;
+                background-color: rgba(0, 0, 0, 0.9);
+            }
+        }
 
         svg {
             margin: 4px;
