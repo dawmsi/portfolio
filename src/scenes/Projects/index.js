@@ -1,14 +1,27 @@
 import React from 'react'
+import { Container, Row } from 'react-bootstrap'
 import { CarouselArea } from '../../components/CarouselArea'
-import { Projectitem } from '../../components/ProjectItem'
-export const Projects = ({ isLight }) => {
+import { CurrentItem } from '../../components/CurrentItem'
+import { ItemsList } from '../../components/ItemsList'
+export const Projects = ({ isCarouseled, isLight }) => {
     return (
         <>
-            <CarouselArea
-                CurrentItem={Projectitem}
-                pause="hover"
-                isLight={isLight}
-            />
+            {isCarouseled ? (
+                <CarouselArea
+                    isLight={isLight}
+                    CurrentItem={CurrentItem}
+                    pause="hover"
+                />
+            ) : (
+                <Container>
+                    <Row md={3}>
+                        <ItemsList
+                            isLight={isLight}
+                            CurrentItem={CurrentItem}
+                        ></ItemsList>
+                    </Row>
+                </Container>
+            )}
         </>
     )
 }

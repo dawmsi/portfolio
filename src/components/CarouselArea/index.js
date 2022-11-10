@@ -1,11 +1,10 @@
 import React from 'react'
-import { Carousel } from 'react-bootstrap'
+import { Carousel, Container } from 'react-bootstrap'
 import './CarouselArea.scss'
 export const CarouselArea = ({ CurrentItem, pause, isLight }) => {
     return (
         <>
             <Carousel
-                bg={'transparent'}
                 variant={isLight ? 'dark' : 'light'}
                 controls={false}
                 touch={true}
@@ -16,9 +15,26 @@ export const CarouselArea = ({ CurrentItem, pause, isLight }) => {
                         isLight ? 'bg-light text-dark' : 'bg-dark text-light'
                     }
                 >
-                    <div className="inside__item">
-                        {CurrentItem ? <CurrentItem /> : ''}
-                    </div>
+                    {CurrentItem ? (
+                        <Container className="inside__item__container">
+                            <CurrentItem isLight={isLight} />
+                        </Container>
+                    ) : (
+                        ''
+                    )}
+                </Carousel.Item>
+                <Carousel.Item
+                    className={
+                        isLight ? 'bg-light text-dark' : 'bg-dark text-light'
+                    }
+                >
+                    {CurrentItem ? (
+                        <Container className="inside__item__container">
+                            <CurrentItem isLight={isLight} />
+                        </Container>
+                    ) : (
+                        ''
+                    )}
                 </Carousel.Item>
             </Carousel>
         </>
