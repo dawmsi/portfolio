@@ -8,7 +8,7 @@ export const CurrentItem = ({ isLight }) => {
                 <Card.Img
                     className="current__img"
                     variant="top"
-                    src="https://www.site-shot.com/cached_image/X2nh7mDuEe2qWAJCrBEAAw"
+                    src="https://www.site-shot.com/cached_image/kjki0mESEe2qWAJCrBEAAw"
                 />
                 <Card.Body className="current__body">
                     <Card.Title className="current__title">

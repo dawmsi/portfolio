@@ -1,18 +1,19 @@
 .current__card {
     width: 100%;
     height: 100%;
-    margin: 12px -12px;
+    margin: 0 -12px;
     border: 0;
     background-color: transparent;
     border-radius: 23px;
+    justify-content: space-between;
+    align-items: center;
     .current__img {
-        width: 100%;
         border-radius: 23px;
+        height: auto;
     }
     .current__body {
         display: flex;
         flex-direction: column;
-        height: 100%;
         justify-content: space-evenly;
 
         .current__title {
@@ -27,7 +28,7 @@
 
             .current__button {
                 padding: 8px 16px;
-                margin: auto;
+                margin: 0 auto;
                 border: 0;
                 border-radius: 23px;
                 a {
