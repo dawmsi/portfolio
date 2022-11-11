@@ -1,3 +1,5 @@
+//default
+
 .title__col {
     flex-wrap: nowrap;
     padding: 0 6px;
@@ -28,4 +30,12 @@
             }
         }
     }
+}
+
+//mobile
+@media (max-width: 576px) {
+}
+
+//desktop
+@media (min-width: 576px) {
 }

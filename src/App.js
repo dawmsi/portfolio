@@ -13,8 +13,8 @@ function App() {
         <div className="app">
             <Container>
                 <Row className="app__row">
-                    <NavBar isLight={isLight} changeTheme={changeTheme} />
                     <Main isLight={isLight} />
+                    <NavBar isLight={isLight} changeTheme={changeTheme} />
                 </Row>
             </Container>
         </div>

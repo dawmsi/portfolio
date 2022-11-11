@@ -1,47 +1,50 @@
+//default
 .navbar {
-    position: relative;
+    position: fixed;
     background-color: white;
     box-shadow: 0px 0px 8px 4px rgba(0, 0, 0, 0.25);
-    transition: 0.3s;
-    padding: 6px 0;
+    transition: 0.2s;
     border-radius: 23px;
-    .flex-nowrap {
-        padding-left: 5px;
-    }
     .navbar-nav {
-        margin-right: 28px;
-        transition: all 0.5s;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        transition: all 0.2s;
+        border-radius: 23px;
+        &::-webkit-scrollbar {
+            display: none;
+            -ms-overflow-style: none; /* IE and Edge */
+            scrollbar-width: none; /* Firefox */
+        }
         .nav-link {
             padding: 0;
             width: fit-content;
-        }
-        .nav-pills {
-            --bs-nav-pills-border-radius: 23px;
-            --bs-nav-pills-link-active-bg: rgba(136, 0, 0, 0.17);
-        }
-        .nav-link.active {
-            border-radius: 23px;
-            background-color: transparent;
-            .btn.btn-light {
-                color: white;
-                background-color: rgba(0, 0, 0, 0.9);
+            &.nav-pills {
+                --bs-nav-pills-border-radius: 23px;
+                --bs-nav-pills-link-active-bg: rgba(136, 0, 0, 0.17);
             }
-            .btn.btn-dark {
-                color: black;
-                background-color: rgba(255, 255, 255, 0.9);
+            &.active {
+                padding: 0;
+                border-radius: 23px;
+                background-color: transparent;
+                .btn.btn-light {
+                    color: white;
+                    background-color: rgba(0, 0, 0, 0.9);
+                }
+                .btn.btn-dark {
+                    color: black;
+                    background-color: rgba(255, 255, 255, 0.9);
+                }
             }
         }
     }
     .mode__button {
         position: absolute;
-        top: 0;
-        right: 0;
         background-color: transparent;
         border: 0;
         border-radius: 50%;
-        padding: 0;
-        margin: 6px;
         transition: all 0.8s;
+        margin: 6px;
         &:hover,
         &:active {
             transform: rotate(260deg);
@@ -50,7 +53,6 @@
             -moz-transform: rotate(260deg);
         }
     }
-
     .btn {
         padding: 6px;
         --bs-btn-bg: tranperent;
@@ -59,6 +61,9 @@
         justify-content: center;
         align-items: flex-start;
         border: 0;
+        svg {
+            margin: 4px;
+        }
         &.btn-dark {
             --bs-btn-hover-color: white;
             --bs-btn-active-color: white;
@@ -77,11 +82,8 @@
                 background-color: rgba(0, 0, 0, 0.9);
             }
         }
-
-        svg {
-            margin: 4px;
-        }
         .nav-link {
+            display: flex;
             justify-content: center;
             align-items: center;
             text-align: center;
@@ -90,39 +92,59 @@
     }
 }
 
+//mobile
 @media (max-width: 576px) {
     .navbar {
-        position: fixed;
-        bottom: 6px;
-        left: 6px;
-        right: 6px;
-        width: calc(100% - 16px);
+        padding: 6px 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: 6px;
+        width: calc(100% - 12px);
+        .flex-nowrap {
+            padding-left: 5px;
+        }
         .navbar-nav {
+            margin-right: 28px;
             flex-direction: row;
-            width: 100%;
-            height: 100%;
-            overflow-y: scroll;
-            border-radius: 23px;
-            .nav-link.active {
-                padding: 0;
-            }
-            &::-webkit-scrollbar {
-                display: none;
-                -ms-overflow-style: none; /* IE and Edge */
-                scrollbar-width: none; /* Firefox */
+        }
+        .mode__button {
+            top: 0;
+            right: 0;
+        }
+        .btn {
+            padding: 6px;
+            .nav-link {
+                justify-content: center;
+                align-items: center;
+                text-align: center;
             }
         }
     }
 }
 
+//desktop
 @media (min-width: 576px) {
     .navbar {
-        margin-bottom: 6px;
+        padding: 6px 3px;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        margin: 6px;
+        width: min-content;
+
+        .flex-nowrap {
+            flex-direction: column;
+            padding: 0 3px 5px 3px;
+        }
         .navbar-nav {
-            flex-direction: row;
-            width: 100%;
-            height: 100%;
-            border-radius: 23px;
+            flex-direction: column;
+            margin-bottom: 28px;
+            overflow-x: auto;
+        }
+        .mode__button {
+            bottom: 0;
+            right: 0;
         }
     }
 }

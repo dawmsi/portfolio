@@ -1,82 +1,86 @@
-.carousel {
-    padding: 0;
-    height: 100%;
-    width: 100%;
+//default
 
-    .carousel-inner {
-        top: 0;
-        left: 0;
-        justify-content: center;
-        overflow: visible;
-        height: calc(100% - 28.8px);
-
-        .carousel-item {
-            height: 98%;
+//mobile
+@media (max-width: 576px) {
+    .carousel {
+        padding: 0;
+        height: 100%;
+        width: 100%;
+        .carousel-inner {
+            top: 0;
+            left: 0;
+            justify-content: center;
+            overflow: visible;
+            height: calc(100% - 28.8px);
+            .carousel-item {
+                height: 98%;
+                box-shadow: 0px 0px 8px 4px rgba(0, 0, 0, 0.25);
+                border-radius: 23px;
+                width: 100%;
+                .inside__item__container {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    height: 100%;
+                    padding: 12px;
+                }
+            }
+        }
+        .carousel-indicators {
+            display: flex;
+            justify-self: center;
             box-shadow: 0px 0px 8px 4px rgba(0, 0, 0, 0.25);
             border-radius: 23px;
-            width: 100%;
-            .inside__item__container {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                height: 100%;
-                padding: 12px;
+            width: fit-content;
+            padding: 2px 6px;
+            margin: -1px auto;
+            .active {
+                height: 0.8rem;
+                width: 0.8rem;
+                align-self: center;
+                opacity: 0.9;
+                border-color: white;
+                border-width: 1.6px;
+                border-style: solid;
+                background-color: transparent;
+            }
+            Button {
+                height: 1.4px;
+                width: 0.8rem;
+                border-radius: 5.5px;
             }
         }
     }
 
-    .carousel-indicators {
-        display: flex;
-        justify-self: center;
-        box-shadow: 0px 0px 8px 4px rgba(0, 0, 0, 0.25);
-        border-radius: 23px;
-        width: fit-content;
-        padding: 2px 6px;
-        margin: -1px auto;
-
+    .carousel-light .carousel-indicators {
+        --bs-bg-opacity: 1;
+        background-color: rgba(
+            var(--bs-dark-rgb),
+            var(--bs-bg-opacity)
+        ) !important;
+    }
+    .carousel-dark .carousel-indicators {
+        --bs-bg-opacity: 1;
+        background-color: rgba(
+            var(--bs-light-rgb),
+            var(--bs-bg-opacity)
+        ) !important;
+    }
+    .carousel-item-next:not(.carousel-item-start),
+    .active.carousel-item-end {
+        transform: scale(0.9) translateX(120%);
+    }
+    .carousel-item-prev:not(.carousel-item-end),
+    .active.carousel-item-start {
+        transform: scale(0.9) translateX(-120%);
+    }
+    .carousel-dark .carousel-indicators {
         .active {
-            height: 0.8rem;
-            width: 0.8rem;
-            align-self: center;
-            opacity: 0.9;
-            border-color: white;
-            border-width: 1.6px;
-            border-style: solid;
-            background-color: transparent;
-        }
-        Button {
-            height: 1.4px;
-            width: 0.8rem;
-            border-radius: 5.5px;
+            border-color: black;
         }
     }
 }
 
-.carousel-light .carousel-indicators {
-    --bs-bg-opacity: 1;
-    background-color: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity)) !important;
-}
-
-.carousel-dark .carousel-indicators {
-    --bs-bg-opacity: 1;
-    background-color: rgba(
-        var(--bs-light-rgb),
-        var(--bs-bg-opacity)
-    ) !important;
-}
-
-.carousel-item-next:not(.carousel-item-start),
-.active.carousel-item-end {
-    transform: scale(0.9) translateX(120%);
-}
-
-.carousel-item-prev:not(.carousel-item-end),
-.active.carousel-item-start {
-    transform: scale(0.9) translateX(-120%);
-}
-
-.carousel-dark .carousel-indicators {
-    .active {
-        border-color: black;
-    }
+//desktop
+@media (min-width: 576px) {
 }

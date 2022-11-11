@@ -5,7 +5,24 @@ $theme-colors: (
 
 @import '~bootstrap/scss/bootstrap';
 
+//default
 .app {
     position: relative;
     min-height: 382px;
+}
+
+//mobile
+@media (max-width: 576px) {
+}
+
+//desktop
+@media (min-width: 576px) {
+    .app__row {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-content: stretch;
+        align-items: center;
+
+    }
 }
