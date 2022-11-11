@@ -10,11 +10,13 @@
     .current__img {
         border-radius: 23px;
         height: auto;
+        max-height: 60%;
     }
     .current__body {
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
+        width: 100%;
 
         .current__title {
             text-align: center;
