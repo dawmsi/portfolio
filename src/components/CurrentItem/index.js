@@ -6,17 +6,19 @@ export const CurrentItem = ({ image, isLight }) => {
         <>
             <Card className="current__card">
                 {image ? (
-                    <Card.Img
+                    <div
                         className="current__img"
-                        variant="top"
-                        src={image}
-                    />
+                        style={{ backgroundImage: `url(${image})` }}
+                    ></div>
                 ) : (
-                    <Figure className="noimage">No image</Figure>
+                    <Figure className="no__image">
+                        <p>No image</p>
+                    </Figure>
                 )}
+
                 <Card.Body className="current__body">
                     <Card.Title className="current__title">Modest</Card.Title>
-                    <Card.Text className="current__text">Lorem</Card.Text>
+                    <Card.Text className="current__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi quae sequi adipisci nostrum mollitia cupiditate enim minima quis ipsa quidem, consectetur veniam. Tempora accusamus sunt id, asperiores ipsam suscipit itaque fugit animi. Eum incidunt quae ab, culpa quibusdam, laboriosam aliquid vitae vel magni ipsa deserunt natus. Nostrum quae iste error consequuntur nam officiis voluptas vel! Sequi voluptates doloremque eveniet omnis, est consequuntur. Magni vel, minima a quo et quaerat facilis laboriosam qui odio inventore omnis laudantium reiciendis reprehenderit saepe modi, id voluptates quam autem quae voluptate facere excepturi dicta consequuntur sit? Atque distinctio quia soluta voluptate itaque, unde ducimus vitae.</Card.Text>
                     <div className="current__button__area">
                         <Button
                             className="current__button"
