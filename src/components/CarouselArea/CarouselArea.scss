@@ -2,15 +2,13 @@
     padding: 0;
     height: 100%;
     width: 100%;
-    position: relative;
 
     .carousel-inner {
-        position: relative;
         top: 0;
         left: 0;
         justify-content: center;
         overflow: visible;
-        height: calc(100% - 26.8px);
+        height: calc(100% - 28.8px);
 
         .carousel-item {
             height: 98%;
@@ -34,7 +32,7 @@
         border-radius: 23px;
         width: fit-content;
         padding: 2px 6px;
-        margin: 0 auto;
+        margin: -1px auto;
 
         .active {
             height: 0.8rem;

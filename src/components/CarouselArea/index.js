@@ -1,7 +1,7 @@
 import React from 'react'
 import { Carousel, Container } from 'react-bootstrap'
 import './CarouselArea.scss'
-export const CarouselArea = ({ CurrentItem, pause, isLight }) => {
+export const CarouselArea = ({ image, CurrentItem, pause, isLight }) => {
     return (
         <>
             <Carousel
@@ -17,7 +17,7 @@ export const CarouselArea = ({ CurrentItem, pause, isLight }) => {
                 >
                     {CurrentItem ? (
                         <Container className="inside__item__container">
-                            <CurrentItem isLight={isLight} />
+                            <CurrentItem image={image} isLight={isLight} />
                         </Container>
                     ) : (
                         ''

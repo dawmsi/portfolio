@@ -3,5 +3,9 @@ $theme-colors: (
     'dark': #121212
 ) !default;
 
-
 @import '~bootstrap/scss/bootstrap';
+
+.app {
+    position: relative;
+    min-height: 382px;
+}

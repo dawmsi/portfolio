@@ -1,5 +1,6 @@
 .app__row {
     height: calc(100% - 64px);
+    max-height: calc(100% - 64px);
     box-sizing: border-box;
 }
 
@@ -19,7 +20,6 @@
         gap: 6px;
         justify-content: space-between;
         padding: 6px;
-
         .main__col {
             padding: 0 4px;
             height: 100%;

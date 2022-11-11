@@ -1,7 +1,6 @@
 .current__card {
     width: 100%;
     height: 100%;
-    margin: 0 -12px;
     border: 0;
     background-color: transparent;
     border-radius: 23px;
@@ -12,11 +11,21 @@
         height: auto;
         max-height: 60%;
     }
+    .noimage {
+        background-color: rgba(132, 132, 132, 0.497);
+        width: 100%;
+        height: 50%;
+        border-radius: 23px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
     .current__body {
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
         width: 100%;
+        height: 20%;
 
         .current__title {
             text-align: center;

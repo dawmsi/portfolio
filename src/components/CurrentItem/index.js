@@ -1,22 +1,22 @@
 import React from 'react'
-import { Button, Card } from 'react-bootstrap'
+import { Button, Card, Figure } from 'react-bootstrap'
 import './CurrentItem.scss'
-export const CurrentItem = ({ isLight }) => {
+export const CurrentItem = ({ image, isLight }) => {
     return (
         <>
             <Card className="current__card">
-                <Card.Img
-                    className="current__img"
-                    variant="top"
-                    src="https://www.site-shot.com/cached_image/kjki0mESEe2qWAJCrBEAAw"
-                />
+                {image ? (
+                    <Card.Img
+                        className="current__img"
+                        variant="top"
+                        src={image}
+                    />
+                ) : (
+                    <Figure className="noimage">No image</Figure>
+                )}
                 <Card.Body className="current__body">
-                    <Card.Title className="current__title">
-                        Tatto Ink
-                    </Card.Title>
-                    <Card.Text className="current__text">
-                        Site for tattoo parlor
-                    </Card.Text>
+                    <Card.Title className="current__title">Modest</Card.Title>
+                    <Card.Text className="current__text">Lorem</Card.Text>
                     <div className="current__button__area">
                         <Button
                             className="current__button"
@@ -24,7 +24,7 @@ export const CurrentItem = ({ isLight }) => {
                         >
                             <a
                                 className={isLight ? 'link-light' : 'link-dark'}
-                                href="https://dawmsi.github.io/tatoo-project/"
+                                href="https://dawmsi.github.io/blog-project/"
                             >
                                 Check
                             </a>

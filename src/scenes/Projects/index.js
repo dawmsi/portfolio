@@ -9,6 +9,7 @@ export const Projects = ({ isCarouseled, isLight }) => {
             {isCarouseled ? (
                 <CarouselArea
                     isLight={isLight}
+                    image="https://www.site-shot.com/cached_image/Q7a_JmGiEe2ObwJCrBEAAw"
                     CurrentItem={CurrentItem}
                     pause="hover"
                 />
