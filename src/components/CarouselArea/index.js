@@ -1,5 +1,5 @@
 import React from 'react'
-import { Carousel, Container, Row } from 'react-bootstrap'
+import { Carousel, Container } from 'react-bootstrap'
 import './CarouselArea.scss'
 export const CarouselArea = ({ image, CurrentItem, pause, isLight }) => {
     return (

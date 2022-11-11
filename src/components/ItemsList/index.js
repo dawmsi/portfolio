@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container, Row } from 'react-bootstrap'
+import { Row } from 'react-bootstrap'
 import './ItemsList.scss'
 export const ItemsList = ({ image, CurrentItem, isLight }) => {
     return (

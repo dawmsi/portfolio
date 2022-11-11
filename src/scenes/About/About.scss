@@ -1,0 +1,52 @@
+//default
+.about__row {
+    height: 33%;
+    .about__col {
+        text-align: center;
+        margin: auto;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .about__text {
+            border-radius: 23px;
+            background-color: aliceblue;
+            padding: 6px;
+        }
+        .avatar {
+            background-color: gray;
+            width: 200px;
+            height: 200px;
+            border: 6px solid rgba(var(--bs-light-rgb), 1);
+            box-shadow: 0px 0px 8px 4px rgba(0, 0, 0, 0.25);
+            border-radius: 50%;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+    }
+}
+
+//mobile
+
+@media (max-width: 576px) {
+    .about__row {
+        .about__col {
+            .avatar {
+            }
+        }
+    }
+}
+
+//desktop
+@media (min-width: 576px) {
+    .about__row {
+        height: 100%;
+        .about__col {
+            .avatar {
+                width: 200px;
+                height: 200px;
+            }
+        }
+    }
+}
