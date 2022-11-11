@@ -17,12 +17,4 @@ $theme-colors: (
 
 //desktop
 @media (min-width: 576px) {
-    .app__row {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        align-content: stretch;
-        align-items: center;
-
-    }
 }
