@@ -40,7 +40,6 @@
     }
     .mode__button {
         position: absolute;
-        z-index: 10;
         background-color: transparent;
         border: 0;
         border-radius: 50%;
@@ -133,6 +132,8 @@
         right: 0;
         margin: 6px;
         width: min-content;
+        height: calc(100% - 12px);
+        /* height: -webkit-fill-available; */
 
         .flex-nowrap {
             flex-direction: column;
