@@ -1,33 +1,86 @@
 import React from 'react'
-import { Accordion, Card, Row, Col } from 'react-bootstrap'
+import { Card, Button } from 'react-bootstrap'
 import avatarImg from './ava.JPEG'
 import './About.scss'
 
 export const About = ({ isLight }) => {
     return (
-        <>
-            <Row sm={12} className="about__row">
-                <Col sm={3} className="about__col">
-                    <Card.Title className="about__text">info</Card.Title>
-                </Col>
-                <Col sm={6} className="about__col">
-                    <Card
-                        style={{
-                            backgroundImage: `url(${avatarImg})`
-                        }}
-                        border={isLight ? 'light' : 'dark'}
-                        className="avatar"
-                    ></Card>
-                </Col>
-                <Col sm={3} className="about__col">
-                    <Card.Title
-                        bg={isLight ? 'light' : 'dark'}
-                        className="about__text"
-                    >
-                        more
-                    </Card.Title>
-                </Col>
-            </Row>
-        </>
+        <div className="center__area">
+            <div className="btns__area">
+                <Button
+                    border={isLight ? 'light' : 'dark'}
+                    variant={isLight ? 'dark' : 'light'}
+                    className="about__btn"
+                    id={6}
+                >
+                    Education
+                </Button>
+                <Button
+                    border={isLight ? 'light' : 'dark'}
+                    variant={isLight ? 'dark' : 'light'}
+                    className="about__btn"
+                    id={7}
+                >
+                    Some
+                </Button>
+                <Button
+                    border={isLight ? 'light' : 'dark'}
+                    variant={isLight ? 'dark' : 'light'}
+                    className="about__btn"
+                    id={5}
+                >
+                    Other
+                </Button>
+                <Button
+                    border={isLight ? 'light' : 'dark'}
+                    variant={isLight ? 'dark' : 'light'}
+                    className="about__btn"
+                    id={4}
+                >
+                    Hobby
+                </Button>
+                <Button
+                    border={isLight ? 'light' : 'dark'}
+                    variant={isLight ? 'dark' : 'light'}
+                    className="about__btn"
+                    id={8}
+                >
+                    Courses
+                </Button>
+                <Button
+                    border={isLight ? 'light' : 'dark'}
+                    variant={isLight ? 'dark' : 'light'}
+                    className="about__btn"
+                    id={1}
+                >
+                    About
+                </Button>
+                <Button
+                    border={isLight ? 'light' : 'dark'}
+                    variant={isLight ? 'dark' : 'light'}
+                    className="about__btn"
+                    id={3}
+                >
+                    Insta
+                </Button>
+                <Button
+                    border={isLight ? 'light' : 'dark'}
+                    variant={isLight ? 'dark' : 'light'}
+                    className="about__btn"
+                    id={2}
+                >
+                    LinkIn
+                </Button>
+            </div>
+            <div className="avatar__area">
+                <Card
+                    style={{
+                        backgroundImage: `url(${avatarImg})`
+                    }}
+                    border={isLight ? 'light' : 'dark'}
+                    className="avatar"
+                ></Card>
+            </div>
+        </div>
     )
 }
