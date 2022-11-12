@@ -1,12 +1,21 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Card, Button } from 'react-bootstrap'
 import avatarImg from './ava.JPEG'
 import './About.scss'
 
 export const About = ({ isLight }) => {
+    const [isActive, setIsActive] = useState(false)
+    const handleClick = (event) => {
+        setIsActive((current) => !current)
+    }
     return (
         <div className="center__area">
-            <div className="btns__area">
+            <div
+                className={
+                    isActive ? 'rotation__area btns__area ' : 'btns__area'
+                }
+                onClick={handleClick}
+            >
                 <Button
                     border={isLight ? 'light' : 'dark'}
                     variant={isLight ? 'dark' : 'light'}
