@@ -18,7 +18,7 @@ export const NavBar = ({ isLight, changeTheme }) => {
                 <Container className="flex-nowrap">
                     <Nav navbarScroll={true} variant="pills">
                         <div className="flex-fill">
-                            <Nav.Link eventKey="about" as={Link} to={'/portfolio'}>
+                            <Nav.Link eventKey="about" as={Link} to={'/'}>
                                 <Button variant={isLight ? 'light' : 'dark'}>
                                     <Person />
                                 </Button>

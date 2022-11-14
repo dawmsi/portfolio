@@ -6,11 +6,19 @@
     position: relative;
     .rotation__area {
         transform: rotate(360deg) scale(1.1);
+        .clicable__btn {
+            transform: rotate(-360deg);
+        }
+    }
+    .rotation__area {
+        transform: rotate(360deg) scale(1.1);
         .about__btn {
             transform: rotate(-360deg);
         }
     }
-    .btns__area {
+
+    .btns__area,
+    .btns__click__area {
         position: absolute;
         height: 100%;
         width: 100%;
@@ -18,14 +26,22 @@
         justify-content: center;
         align-items: center;
         rotate: 21deg;
-        transition: transform 1s;
-        .about__btn {
+        transition: transform 3s, margin 3s;
+        .scaled__btn {
             position: absolute;
             border-radius: 23px;
             padding: 6px;
-            transition: transform 1s;
+            transition: transform 3s, margin 1s;
+            margin: 0;
+            z-index: 40;
+        }
+        .clicable__btn {
+            position: absolute;
+            border-radius: 23px;
+            padding: 6px;
+            transition: transform 3s, margin 3s;
             &:nth-child(1) {
-                margin-bottom: -260px;
+                margin-bottom: -270px;
             }
             &:nth-child(2) {
                 margin-bottom: -190px;
@@ -54,6 +70,81 @@
             }
         }
     }
+    .btns__area {
+        rotate: 47deg;
+        .about__btn {
+            background-color: transparent;
+            position: absolute;
+            border-radius: 23px;
+            rotate: -25deg;
+            padding: 6px;
+            transition: transform 3s;
+            margin: 100px;
+            &:nth-child(1) {
+                margin-bottom: -320px;
+            }
+            &:nth-child(2) {
+                margin-bottom: -190px;
+                margin-left: -190px;
+            }
+            &:nth-child(3) {
+                margin-bottom: -160px;
+                margin-right: -250px;
+            }
+            &:nth-child(4) {
+                margin-top: 30px;
+                margin-right: -300px;
+            }
+            &:nth-child(5) {
+                margin-left: -320px;
+                margin-bottom: 20px;
+            }
+            &:nth-child(6) {
+                margin-top: -190px;
+                margin-left: -190px;
+            }
+            &:nth-child(7) {
+                margin-top: -190px;
+                margin-right: -190px;
+            }
+            &:nth-child(8) {
+                margin-top: -330px;
+            }
+            &:nth-child(9) {
+                margin-bottom: -320px;
+                margin-left: -120px;
+            }
+            &:nth-child(10) {
+                margin-bottom: -180px;
+                margin-left: -320px;
+            }
+            &:nth-child(11) {
+                margin-bottom: -360px;
+                margin-right: -110px;
+            }
+            &:nth-child(12) {
+                margin-right: -360px;
+                margin-bottom: -10px;
+            }
+            &:nth-child(13) {
+                margin-top: -10px;
+                margin-left: -390px;
+            }
+            &:nth-child(14) {
+                margin-top: -360px;
+                margin-left: -120px;
+            }
+            &:nth-child(15) {
+                margin-top: -130px;
+                margin-right: -390px;
+            }
+            &:nth-child(16) {
+                margin-top: -320px;
+                margin-right: -140px;
+            }
+        }
+    }
+
     .avatar__area {
         height: 100%;
         display: flex;
@@ -61,6 +152,7 @@
         align-items: center;
         z-index: 30;
         .avatar {
+            visibility: visible;
             background-color: gray;
             width: 200px;
             height: 200px;
@@ -70,6 +162,13 @@
             background-position: center;
             background-size: cover;
             background-repeat: no-repeat;
+            transition: all 1s;
+        }
+        .hide {
+            width: 0;
+            height: 0;
+            border-width: calc(100px);
+            z-index: -1;
         }
     }
 }

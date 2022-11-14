@@ -1,85 +1,118 @@
 import React, { useState } from 'react'
-import { Card, Button } from 'react-bootstrap'
+import { Card } from 'react-bootstrap'
 import avatarImg from './ava.JPEG'
 import './About.scss'
+import { ClickableButton } from '../../components/ClickableButton/ClickableButton'
+import { UnclickableButton } from '../../components/UnclickableButton/UnclickableButton'
 
 export const About = ({ isLight }) => {
     const [isActive, setIsActive] = useState(false)
     const handleClick = (event) => {
-        setIsActive((current) => !current)
+        setIsActive(!isActive)
     }
     return (
         <div className="center__area">
             <div
                 className={
-                    isActive ? 'rotation__area btns__area ' : 'btns__area'
+                    !isActive ? 'btns__area' : 'rotation__area btns__area '
                 }
-                onClick={handleClick}
             >
-                <Button
-                    border={isLight ? 'light' : 'dark'}
-                    variant={isLight ? 'dark' : 'light'}
-                    className="about__btn"
+                <UnclickableButton id={10} inside="someT" isLight={isLight} />
+                <UnclickableButton id={11} inside="OtherT" isLight={isLight} />
+                <UnclickableButton id={12} inside="HobbyT" isLight={isLight} />
+                <UnclickableButton
+                    id={13}
+                    inside="CoursesT"
+                    isLight={isLight}
+                />
+                <UnclickableButton id={14} inside="AboutT" isLight={isLight} />
+                <UnclickableButton id={15} inside="InstaT" isLight={isLight} />
+                <UnclickableButton id={16} inside="LinkInT" isLight={isLight} />
+                <UnclickableButton
+                    id={17}
+                    inside="EducationT"
+                    isLight={isLight}
+                />
+                <UnclickableButton id={10} inside="someT" isLight={isLight} />
+                <UnclickableButton id={11} inside="OtherT" isLight={isLight} />
+                <UnclickableButton id={12} inside="HobbyT" isLight={isLight} />
+                <UnclickableButton
+                    id={13}
+                    inside="CoursesT"
+                    isLight={isLight}
+                />
+                <UnclickableButton id={14} inside="AboutT" isLight={isLight} />
+                <UnclickableButton id={15} inside="InstaT" isLight={isLight} />
+                <UnclickableButton id={16} inside="LinkInT" isLight={isLight} />
+                <UnclickableButton
+                    id={17}
+                    inside="EducationT"
+                    isLight={isLight}
+                />
+            </div>
+            <div
+                className={
+                    isActive
+                        ? 'rotation__area btns__click__area '
+                        : 'btns__click__area'
+                }
+            >
+                <ClickableButton
+                    isLight={isLight}
+                    handleClick={handleClick}
                     id={6}
-                >
-                    Education
-                </Button>
-                <Button
-                    border={isLight ? 'light' : 'dark'}
-                    variant={isLight ? 'dark' : 'light'}
-                    className="about__btn"
+                    inside={'Education'}
+                    isActive={isActive}
+                />
+                <ClickableButton
+                    isLight={isLight}
+                    handleClick={handleClick}
                     id={7}
-                >
-                    Some
-                </Button>
-                <Button
-                    border={isLight ? 'light' : 'dark'}
-                    variant={isLight ? 'dark' : 'light'}
-                    className="about__btn"
+                    inside={'Some'}
+                    isActive={isActive}
+                />
+                <ClickableButton
+                    isLight={isLight}
+                    handleClick={handleClick}
                     id={5}
-                >
-                    Other
-                </Button>
-                <Button
-                    border={isLight ? 'light' : 'dark'}
-                    variant={isLight ? 'dark' : 'light'}
-                    className="about__btn"
+                    inside={'Other'}
+                    isActive={isActive}
+                />
+                <ClickableButton
+                    isLight={isLight}
+                    handleClick={handleClick}
                     id={4}
-                >
-                    Hobby
-                </Button>
-                <Button
-                    border={isLight ? 'light' : 'dark'}
-                    variant={isLight ? 'dark' : 'light'}
-                    className="about__btn"
+                    inside={'Hobby'}
+                    isActive={isActive}
+                />
+                <ClickableButton
+                    isLight={isLight}
+                    handleClick={handleClick}
                     id={8}
-                >
-                    Courses
-                </Button>
-                <Button
-                    border={isLight ? 'light' : 'dark'}
-                    variant={isLight ? 'dark' : 'light'}
-                    className="about__btn"
+                    inside={'Courses'}
+                    isActive={isActive}
+                />
+                <ClickableButton
+                    isLight={isLight}
+                    handleClick={handleClick}
                     id={1}
-                >
-                    About
-                </Button>
-                <Button
-                    border={isLight ? 'light' : 'dark'}
-                    variant={isLight ? 'dark' : 'light'}
-                    className="about__btn"
+                    inside={'About'}
+                    isActive={isActive}
+                />
+                <ClickableButton
+                    isLight={isLight}
+                    handleClick={handleClick}
                     id={3}
-                >
-                    Insta
-                </Button>
-                <Button
-                    border={isLight ? 'light' : 'dark'}
-                    variant={isLight ? 'dark' : 'light'}
-                    className="about__btn"
+                    inside={'Insta'}
+                    isActive={isActive}
+                />
+                <ClickableButton
+                    isLight={isLight}
+                    handleClick={handleClick}
                     id={2}
-                >
-                    LinkIn
-                </Button>
+                    inside={'LinkIn'}
+                    isActive={isActive}
+                />
             </div>
             <div className="avatar__area">
                 <Card
@@ -87,7 +120,7 @@ export const About = ({ isLight }) => {
                         backgroundImage: `url(${avatarImg})`
                     }}
                     border={isLight ? 'light' : 'dark'}
-                    className="avatar"
+                    className={!isActive ? 'avatar' : 'avatar hide'}
                 ></Card>
             </div>
         </div>
