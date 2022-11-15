@@ -6,6 +6,20 @@ import { ClickableButton } from '../../components/ClickableButton/ClickableButto
 import { UnclickableButton } from '../../components/UnclickableButton/UnclickableButton'
 
 export const About = ({ isLight }) => {
+    const unclickCount = 18
+    const unclickBtnsArr = []
+
+    for (let i = 0; i < unclickCount; i++) {
+        unclickBtnsArr.push(
+            <UnclickableButton
+                key={i + 1}
+                id={i + 1}
+                inside="<> </>"
+                isLight={isLight}
+            />
+        )
+    }
+
     const [isActive, setIsActive] = useState(false)
     const handleClick = (event) => {
         setIsActive(!isActive)
@@ -17,40 +31,7 @@ export const About = ({ isLight }) => {
                     !isActive ? 'btns__area' : 'rotation__area btns__area '
                 }
             >
-                <UnclickableButton id={10} inside="someT" isLight={isLight} />
-                <UnclickableButton id={11} inside="OtherT" isLight={isLight} />
-                <UnclickableButton id={12} inside="HobbyT" isLight={isLight} />
-                <UnclickableButton
-                    id={13}
-                    inside="CoursesT"
-                    isLight={isLight}
-                />
-                <UnclickableButton id={14} inside="AboutT" isLight={isLight} />
-                <UnclickableButton id={15} inside="InstaT" isLight={isLight} />
-                <UnclickableButton id={16} inside="LinkInT" isLight={isLight} />
-                <UnclickableButton
-                    id={17}
-                    inside="EducationT"
-                    isLight={isLight}
-                />
-                <UnclickableButton id={10} inside="someT" isLight={isLight} />
-                <UnclickableButton id={11} inside="OtherT" isLight={isLight} />
-                <UnclickableButton id={12} inside="HobbyT" isLight={isLight} />
-                <UnclickableButton
-                    id={13}
-                    inside="CoursesT"
-                    isLight={isLight}
-                />
-                <UnclickableButton id={14} inside="AboutT" isLight={isLight} />
-                <UnclickableButton id={15} inside="InstaT" isLight={isLight} />
-                <UnclickableButton id={16} inside="LinkInT" isLight={isLight} />
-                <UnclickableButton
-                    id={17}
-                    inside="EducationT"
-                    isLight={isLight}
-                />
-                <UnclickableButton id={14} inside="AboutT" isLight={isLight} />
-                <UnclickableButton id={15} inside="InstaT" isLight={isLight} />
+                {unclickBtnsArr}
             </div>
             <div
                 className={

@@ -26,20 +26,21 @@
         justify-content: center;
         align-items: center;
         rotate: 21deg;
-        transition: transform 3s, margin 3s;
-        .scaled__btn {
-            position: absolute;
-            border-radius: 23px;
-            padding: 6px;
-            transition: transform 3s, margin 1s;
-            margin: 0;
-            z-index: 40;
+        transition: transform 3s 0.5s, margin 3s;
+
+        .clicked__btn {
+            animation: myanim 1s alternate;
+            @keyframes myanim {
+                30% {
+                    margin: 0;
+                }
+            }
         }
         .clicable__btn {
             position: absolute;
             border-radius: 23px;
             padding: 6px;
-            transition: transform 3s, margin 3s;
+            transition: transform 3s 0.5s, margin 1s;
             &:nth-child(1) {
                 margin-bottom: -270px;
             }
@@ -76,7 +77,7 @@
             position: absolute;
             border-radius: 23px;
             padding: 6px;
-            transition: transform 3s;
+            transition: transform 3s 0.5s;
             margin: 100px;
             &:nth-child(11) {
                 margin-bottom: -280px;
@@ -156,10 +157,9 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        z-index: 30;
         .avatar {
             visibility: visible;
-            background-color: gray;
+            background-color: white;
             width: 200px;
             height: 200px;
             border: 6px solid rgba(var(--bs-light-rgb), 1);
@@ -174,7 +174,6 @@
             width: 0;
             height: 0;
             border-width: calc(100px);
-            z-index: -1;
         }
     }
 }

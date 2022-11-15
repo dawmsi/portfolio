@@ -5,8 +5,7 @@ export const ClickableButton = ({
     isLight,
     inside,
     isActive,
-    handleClick,
-    flag
+    handleClick
 }) => {
     const [isClicked, setIsClicked] = useState(false)
 
@@ -21,12 +20,14 @@ export const ClickableButton = ({
         <>
             <Button
                 variant={isLight ? 'dark' : 'light'}
-                className={!isClicked ? 'clicable__btn' : 'scaled__btn btn'}
+                className={
+                    !isClicked ? 'clicable__btn' : ' clicable__btn clicked__btn'
+                }
                 id={id}
                 onClick={clickHandker}
                 inside={inside}
             >
-                {inside}
+                {!isClicked ? inside : 'Avatar'}
             </Button>
         </>
     )
