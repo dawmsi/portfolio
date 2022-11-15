@@ -49,6 +49,8 @@ export const About = ({ isLight }) => {
                     inside="EducationT"
                     isLight={isLight}
                 />
+                <UnclickableButton id={14} inside="AboutT" isLight={isLight} />
+                <UnclickableButton id={15} inside="InstaT" isLight={isLight} />
             </div>
             <div
                 className={
