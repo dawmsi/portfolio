@@ -6,7 +6,7 @@ export const ClickableButton = ({
     isLight,
     inside,
     isActive,
-    handleClick
+    setIsActive
 }) => {
     const [isClicked, setIsClicked] = useState(false)
 
@@ -15,7 +15,7 @@ export const ClickableButton = ({
         } else if (isActive && isClicked) {
             e.currentTarget.classList.toggle('clicked__btn')
             setIsClicked(!isClicked)
-            handleClick()
+            setIsActive(false)
             let btn = e
             setTimeout(() => {
                 btn.target.classList.toggle('clicked__btn')
@@ -23,7 +23,7 @@ export const ClickableButton = ({
         } else {
             e.currentTarget.classList.toggle('clicked__btn')
             setIsClicked(!isClicked)
-            handleClick()
+            setIsActive(true)
             let btn = e
             setTimeout(() => {
                 btn.target.classList.toggle('clicked__btn')
@@ -34,6 +34,7 @@ export const ClickableButton = ({
     return (
         <>
             <Button
+                disabled={isActive && !isClicked ? true : false}
                 variant={isLight ? 'dark' : 'light'}
                 className={'clicable__btn'}
                 id={id}

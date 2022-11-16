@@ -21,9 +21,7 @@ export const About = ({ isLight }) => {
     }
 
     const [isActive, setIsActive] = useState(false)
-    const handleClick = (event) => {
-        setIsActive(!isActive)
-    }
+
     return (
         <div className="center__area">
             <div
@@ -42,56 +40,56 @@ export const About = ({ isLight }) => {
             >
                 <ClickableButton
                     isLight={isLight}
-                    handleClick={handleClick}
+                    setIsActive={setIsActive}
                     id={6}
                     inside={'Education'}
                     isActive={isActive}
                 />
                 <ClickableButton
                     isLight={isLight}
-                    handleClick={handleClick}
+                    setIsActive={setIsActive}
                     id={7}
                     inside={'Some'}
                     isActive={isActive}
                 />
                 <ClickableButton
                     isLight={isLight}
-                    handleClick={handleClick}
+                    setIsActive={setIsActive}
                     id={5}
                     inside={'Other'}
                     isActive={isActive}
                 />
                 <ClickableButton
                     isLight={isLight}
-                    handleClick={handleClick}
+                    setIsActive={setIsActive}
                     id={4}
                     inside={'Hobby'}
                     isActive={isActive}
                 />
                 <ClickableButton
                     isLight={isLight}
-                    handleClick={handleClick}
+                    setIsActive={setIsActive}
                     id={8}
-                    inside={'Courses'}
+                    inside={'Discord'}
                     isActive={isActive}
                 />
                 <ClickableButton
                     isLight={isLight}
-                    handleClick={handleClick}
+                    setIsActive={setIsActive}
                     id={1}
                     inside={'About'}
                     isActive={isActive}
                 />
                 <ClickableButton
                     isLight={isLight}
-                    handleClick={handleClick}
+                    setIsActive={setIsActive}
                     id={3}
                     inside={'Insta'}
                     isActive={isActive}
                 />
                 <ClickableButton
                     isLight={isLight}
-                    handleClick={handleClick}
+                    setIsActive={setIsActive}
                     id={2}
                     inside={'LinkIn'}
                     isActive={isActive}
@@ -104,7 +102,7 @@ export const About = ({ isLight }) => {
                     }}
                     border={isLight ? 'light' : 'dark'}
                     className={!isActive ? 'avatar' : 'avatar hide'}
-                ></Card>
+                >link</Card>
             </div>
         </div>
     )

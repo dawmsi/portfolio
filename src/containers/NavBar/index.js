@@ -18,7 +18,11 @@ export const NavBar = ({ isLight, changeTheme }) => {
                 <Container className="flex-nowrap">
                     <Nav navbarScroll={true} variant="pills">
                         <div className="flex-fill">
-                            <Nav.Link eventKey="about" as={Link} to={'/'}>
+                            <Nav.Link
+                                eventKey="about"
+                                as={Link}
+                                to={`/portfolio/about`}
+                            >
                                 <Button variant={isLight ? 'light' : 'dark'}>
                                     <Person />
                                 </Button>
@@ -28,7 +32,7 @@ export const NavBar = ({ isLight, changeTheme }) => {
                             <Nav.Link
                                 eventKey="skills"
                                 as={Link}
-                                to={'/skills'}
+                                to={'/portfolio/skills'}
                             >
                                 <Button variant={isLight ? 'light' : 'dark'}>
                                     <Diagram2 />
@@ -39,7 +43,7 @@ export const NavBar = ({ isLight, changeTheme }) => {
                             <Nav.Link
                                 eventKey="projects"
                                 as={Link}
-                                to={'/projects'}
+                                to={'/portfolio/projects'}
                             >
                                 <Button variant={isLight ? 'light' : 'dark'}>
                                     <Grid />
@@ -50,7 +54,7 @@ export const NavBar = ({ isLight, changeTheme }) => {
                             <Nav.Link
                                 eventKey="statistic"
                                 as={Link}
-                                to={'/statistic'}
+                                to={'/portfolio/statistic'}
                             >
                                 <Button variant={isLight ? 'light' : 'dark'}>
                                     <Bezier2 />
