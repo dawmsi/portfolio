@@ -26,7 +26,7 @@
         justify-content: center;
         align-items: center;
         rotate: 21deg;
-        transition: transform 3s 0.5s, margin 1s;
+        transition: transform 2s 0.5s, margin 1s;
 
         .clicked__btn {
             animation: myanim 1s alternate;
@@ -41,7 +41,7 @@
             position: absolute;
             border-radius: 23px;
             padding: 6px;
-            transition: transform 3s 0.5s, margin 1s;
+            transition: transform 2s 0.5s, margin 1s;
             &:nth-child(1) {
                 margin-bottom: -270px;
             }
@@ -81,7 +81,7 @@
             position: absolute;
             border-radius: 23px;
             padding: 6px;
-            transition: transform 3s 0.5s;
+            transition: transform 2s 0.5s;
             margin: 100px;
             &:nth-child(11) {
                 margin-bottom: -280px;

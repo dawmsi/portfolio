@@ -4,6 +4,7 @@ import avatarImg from './ava.JPEG'
 import './About.scss'
 import { ClickableButton } from '../../components/ClickableButton/ClickableButton'
 import { UnclickableButton } from '../../components/UnclickableButton/UnclickableButton'
+import { Discord, Github, Linkedin, Telegram } from 'react-bootstrap-icons'
 
 export const About = ({ isLight }) => {
     const unclickCount = 20
@@ -21,6 +22,30 @@ export const About = ({ isLight }) => {
     }
 
     const [isActive, setIsActive] = useState(false)
+    const [currentKey, setCurrentKey] = useState('avatar')
+
+    const AboutChanger = (btn) => {
+        switch (btn) {
+            case 'Info':
+                return 'Info'
+            case 'Education':
+                return 'Education'
+            case 'Telegram':
+                return 'Telegram'
+            case 'Discord':
+                return 'Discord'
+            case 'Hobby':
+                return 'Hobby'
+            case 'Courses':
+                return 'Courses'
+            case 'Linkedin':
+                return 'Linkedin'
+            case 'Github':
+                return 'Github'
+            default:
+                return
+        }
+    }
 
     return (
         <div className="center__area">
@@ -44,20 +69,26 @@ export const About = ({ isLight }) => {
                     id={6}
                     inside={'Education'}
                     isActive={isActive}
+                    type="Education"
+                    setCurrentKey={setCurrentKey}
                 />
                 <ClickableButton
                     isLight={isLight}
                     setIsActive={setIsActive}
                     id={7}
-                    inside={'Some'}
+                    inside={<Telegram />}
                     isActive={isActive}
+                    type="Telegram"
+                    setCurrentKey={setCurrentKey}
                 />
                 <ClickableButton
                     isLight={isLight}
                     setIsActive={setIsActive}
                     id={5}
-                    inside={'Other'}
+                    inside={<Discord />}
                     isActive={isActive}
+                    type="Discord"
+                    setCurrentKey={setCurrentKey}
                 />
                 <ClickableButton
                     isLight={isLight}
@@ -65,44 +96,57 @@ export const About = ({ isLight }) => {
                     id={4}
                     inside={'Hobby'}
                     isActive={isActive}
+                    type="Hobby"
+                    setCurrentKey={setCurrentKey}
                 />
                 <ClickableButton
                     isLight={isLight}
                     setIsActive={setIsActive}
                     id={8}
-                    inside={'Discord'}
+                    inside={'Courses'}
                     isActive={isActive}
+                    type="Courses"
+                    setCurrentKey={setCurrentKey}
                 />
                 <ClickableButton
                     isLight={isLight}
                     setIsActive={setIsActive}
                     id={1}
-                    inside={'About'}
+                    inside={<Linkedin />}
                     isActive={isActive}
+                    type="Linkedin"
+                    setCurrentKey={setCurrentKey}
                 />
                 <ClickableButton
                     isLight={isLight}
                     setIsActive={setIsActive}
                     id={3}
-                    inside={'Insta'}
+                    inside={<Github />}
                     isActive={isActive}
+                    type="Github"
+                    setCurrentKey={setCurrentKey}
                 />
                 <ClickableButton
                     isLight={isLight}
                     setIsActive={setIsActive}
                     id={2}
-                    inside={'LinkIn'}
+                    inside={'Info'}
                     isActive={isActive}
+                    type="Info"
+                    setCurrentKey={setCurrentKey}
                 />
             </div>
             <div className="avatar__area">
                 <Card
                     style={{
+                        position: 'relative',
                         backgroundImage: `url(${avatarImg})`
                     }}
                     border={isLight ? 'light' : 'dark'}
                     className={!isActive ? 'avatar' : 'avatar hide'}
-                >link</Card>
+                >
+                    {AboutChanger(currentKey)}
+                </Card>
             </div>
         </div>
     )
