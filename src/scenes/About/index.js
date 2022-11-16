@@ -6,7 +6,7 @@ import { ClickableButton } from '../../components/ClickableButton/ClickableButto
 import { UnclickableButton } from '../../components/UnclickableButton/UnclickableButton'
 
 export const About = ({ isLight }) => {
-    const unclickCount = 18
+    const unclickCount = 20
     const unclickBtnsArr = []
 
     for (let i = 0; i < unclickCount; i++) {
