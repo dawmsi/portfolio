@@ -30,18 +30,48 @@ export const About = ({ isLight }) => {
                 return 'Info'
             case 'Education':
                 return 'Education'
-            case 'Telegram':
-                return 'Telegram'
-            case 'Discord':
-                return 'Discord'
             case 'Hobby':
                 return 'Hobby'
             case 'Courses':
                 return 'Courses'
+
+            case 'Telegram':
+                return (
+                    <a
+                        className={isLight ? 'link-dark' : 'link-light'}
+                        href="https://t.me"
+                    >
+                        <Telegram />
+                    </a>
+                )
+            case 'Discord':
+                return (
+                    <a
+                        className={isLight ? 'link-dark' : 'link-light'}
+                        href="https://t.me"
+                    >
+                        <Discord />
+                    </a>
+                )
+
             case 'Linkedin':
-                return 'Linkedin'
+                return (
+                    <a
+                        className={isLight ? 'link-dark' : 'link-light'}
+                        href="https://t.me"
+                    >
+                        <Linkedin />
+                    </a>
+                )
             case 'Github':
-                return 'Github'
+                return (
+                    <a
+                        className={isLight ? 'link-dark' : 'link-light'}
+                        href="https://t.me"
+                    >
+                        <Github />
+                    </a>
+                )
             default:
                 return
         }
@@ -145,7 +175,9 @@ export const About = ({ isLight }) => {
                     border={isLight ? 'light' : 'dark'}
                     className={!isActive ? 'avatar' : 'avatar hide'}
                 >
-                    {AboutChanger(currentKey)}
+                    <div className="ava__centre">
+                        {AboutChanger(currentKey)}
+                    </div>
                 </Card>
             </div>
         </div>
