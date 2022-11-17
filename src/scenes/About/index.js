@@ -99,25 +99,42 @@ export const About = ({ isLight }) => {
                     id={6}
                     inside={'Education'}
                     isActive={isActive}
-                    type="Education"
+                    type="text"
+                    part="Education"
                     setCurrentKey={setCurrentKey}
                 />
                 <ClickableButton
                     isLight={isLight}
                     setIsActive={setIsActive}
                     id={7}
-                    inside={<Telegram />}
+                    inside={
+                        <a
+                            href="https://t.me"
+                            className={isLight ? 'link-light' : 'link-dark'}
+                        >
+                            <Telegram />
+                        </a>
+                    }
                     isActive={isActive}
-                    type="Telegram"
+                    type="social"
+                    part="Telegram"
                     setCurrentKey={setCurrentKey}
                 />
                 <ClickableButton
                     isLight={isLight}
                     setIsActive={setIsActive}
                     id={5}
-                    inside={<Discord />}
+                    inside={
+                        <a
+                            href="https://discord.com/"
+                            className={isLight ? 'link-light' : 'link-dark'}
+                        >
+                            <Discord />
+                        </a>
+                    }
                     isActive={isActive}
-                    type="Discord"
+                    type="social"
+                    part="Discord"
                     setCurrentKey={setCurrentKey}
                 />
                 <ClickableButton
@@ -126,7 +143,8 @@ export const About = ({ isLight }) => {
                     id={4}
                     inside={'Hobby'}
                     isActive={isActive}
-                    type="Hobby"
+                    type="text"
+                    part="Hobby"
                     setCurrentKey={setCurrentKey}
                 />
                 <ClickableButton
@@ -135,25 +153,42 @@ export const About = ({ isLight }) => {
                     id={8}
                     inside={'Courses'}
                     isActive={isActive}
-                    type="Courses"
+                    type="text"
+                    part="Courses"
                     setCurrentKey={setCurrentKey}
                 />
                 <ClickableButton
                     isLight={isLight}
                     setIsActive={setIsActive}
                     id={1}
-                    inside={<Linkedin />}
+                    inside={
+                        <a
+                            href="https://ua.linkedin.com/"
+                            className={isLight ? 'link-light' : 'link-dark'}
+                        >
+                            <Linkedin />
+                        </a>
+                    }
                     isActive={isActive}
-                    type="Linkedin"
+                    type="social"
+                    part="Linkedin"
                     setCurrentKey={setCurrentKey}
                 />
                 <ClickableButton
                     isLight={isLight}
                     setIsActive={setIsActive}
                     id={3}
-                    inside={<Github />}
+                    inside={
+                        <a
+                            href="https://github.com/dawmsi"
+                            className={isLight ? 'link-light' : 'link-dark'}
+                        >
+                            <Github />
+                        </a>
+                    }
                     isActive={isActive}
-                    type="Github"
+                    type="social"
+                    part="Github"
                     setCurrentKey={setCurrentKey}
                 />
                 <ClickableButton
@@ -162,7 +197,8 @@ export const About = ({ isLight }) => {
                     id={2}
                     inside={'Info'}
                     isActive={isActive}
-                    type="Info"
+                    type="text"
+                    part="Info"
                     setCurrentKey={setCurrentKey}
                 />
             </div>

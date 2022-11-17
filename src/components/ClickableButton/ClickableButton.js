@@ -1,12 +1,13 @@
 import React, { useState } from 'react'
 import { Button } from 'react-bootstrap'
-import { PersonFill } from 'react-bootstrap-icons'
+
 export const ClickableButton = ({
     id,
     isLight,
     inside,
     isActive,
     setIsActive,
+    part,
     type,
     setCurrentKey
 }) => {
@@ -24,7 +25,7 @@ export const ClickableButton = ({
                 setCurrentKey('avatar')
             } else {
                 setIsActive(true)
-                setCurrentKey(type)
+                setCurrentKey(part)
             }
             setTimeout(() => {
                 btn.target.classList.toggle('clicked__btn')
@@ -32,17 +33,29 @@ export const ClickableButton = ({
         }
     }
 
-    return (
-        <>
+    if (type === 'text')
+        return (
+            <>
+                <Button
+                    disabled={isActive && !isClicked ? true : false}
+                    variant={isLight ? 'dark' : 'light'}
+                    className={'clicable__btn'}
+                    id={id}
+                    onClick={clickHandker}
+                >
+                    {!isClicked ? inside : '<<'}
+                </Button>
+            </>
+        )
+    else if (type === 'social')
+        return (
             <Button
                 disabled={isActive && !isClicked ? true : false}
                 variant={isLight ? 'dark' : 'light'}
                 className={'clicable__btn'}
                 id={id}
-                onClick={clickHandker}
             >
-                {!isClicked ? inside : '<<'}
+                {inside}
             </Button>
-        </>
-    )
+        )
 }

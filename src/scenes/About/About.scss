@@ -214,6 +214,15 @@
     justify-content: center;
     align-items: flex-start;
     border: 0;
+    &:hover {
+        a.link-dark svg {
+            color: white;
+        }
+        a.link-light svg {
+            color: var(--bs-btn-hover-color);
+        }
+    }
+
     svg {
         margin: 4px;
     }
@@ -234,13 +243,6 @@
             --bs-btn-active-color: white;
             background-color: rgba(0, 0, 0, 0.9);
         }
-    }
-    .nav-link {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        text-decoration: none;
     }
 }
 
