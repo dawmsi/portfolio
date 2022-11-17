@@ -100,12 +100,16 @@
             }
         }
         .current__body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
             width: 30%;
             .current__title {
-                text-align: left;
+
             }
             .current__text {
-                text-align: left;
+
             }
             .current__button__area {
                 display: flex;

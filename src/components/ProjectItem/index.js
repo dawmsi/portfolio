@@ -35,12 +35,6 @@ export const ProjectItem = ({ isLight, itemObj }) => {
                                 Check
                             </a>
                         </Button>
-                        <Button
-                            className="current__button"
-                            variant={isLight ? 'dark' : 'light'}
-                        >
-                            Details
-                        </Button>
                     </div>
                 </Card.Body>
             </Card>

@@ -42,18 +42,18 @@
 //desktop
 @media (min-width: 576px) {
     .skills__card {
+        box-sizing: border-box;
         display: flex;
         flex-direction: row;
-        justify-content: space-evenly;
+        justify-content: space-between;
+        align-items: center;
+        padding: 12px;
         height: 100%;
-        width: 80%;
-        margin: 0 auto;
+        width: 100%;
         .skills__circular {
-            width: calc(50% - 24px);
+            width: calc(40% - 24px);
         }
         .skills__body {
-            height: 90%;
-            width: 50%;
             .skills__title {
             }
         }

@@ -1,5 +1,5 @@
 import React from 'react'
-import { Carousel, Container } from 'react-bootstrap'
+import { Carousel } from 'react-bootstrap'
 import './CarouselArea.scss'
 export const CarouselArea = ({ pause, itemsArray, CurrentItem, isLight }) => {
     return (
@@ -20,12 +20,12 @@ export const CarouselArea = ({ pause, itemsArray, CurrentItem, isLight }) => {
                         }
                     >
                         {CurrentItem ? (
-                            <Container className="inside__item__container">
+                            <div className="inside__item__container">
                                 <CurrentItem
                                     isLight={isLight}
                                     itemObj={cuIte}
                                 />
-                            </Container>
+                            </div>
                         ) : (
                             ''
                         )}
