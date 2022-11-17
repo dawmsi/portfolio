@@ -1,0 +1,61 @@
+//default
+.skills__card {
+    border: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100%;
+    width: 100%;
+    .skills__circular {
+        padding: 12px;
+    }
+
+    .skills__body {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        margin: 12px auto;
+        height: 30%;
+        width: 50%;
+        .skills__title {
+            text-align: center;
+        }
+        .skills__progress {
+        }
+    }
+}
+
+//mobile
+@media (max-width: 576px) {
+    .skills__card {
+        .skills__circular {
+        }
+        .skills__body {
+            .skills__title {
+            }
+            .skills__progress {
+            }
+        }
+    }
+}
+
+//desktop
+@media (min-width: 576px) {
+    .skills__card {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        height: 100%;
+        width: 80%;
+        margin: 0 auto;
+        .skills__circular {
+            width: calc(50% - 24px);
+        }
+        .skills__body {
+            height: 90%;
+            width: 50%;
+            .skills__title {
+            }
+        }
+    }
+}

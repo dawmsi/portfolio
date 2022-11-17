@@ -9,7 +9,8 @@ export const Skills = ({ isLight }) => {
             id: 2,
             name: 'CSS',
             complete: 60
-        }
+        },
+        { id: 3, name: 'Лажати', complete: 100 }
     ]
 
     return (
