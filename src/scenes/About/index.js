@@ -71,7 +71,7 @@ export const About = ({ isLight }) => {
                     id={2}
                     inside={
                         <a
-                            href="https://t.me"
+                            href="https://t.me/DAoFFl"
                             className={isLight ? 'link-light' : 'link-dark'}
                         >
                             <Telegram />
@@ -88,7 +88,7 @@ export const About = ({ isLight }) => {
                     id={3}
                     inside={
                         <a
-                            href="https://discord.com/"
+                            href="https://discordapp.com/users/dawmsi#0895"
                             className={isLight ? 'link-light' : 'link-dark'}
                         >
                             <Discord />
@@ -125,7 +125,7 @@ export const About = ({ isLight }) => {
                     id={6}
                     inside={
                         <a
-                            href="https://ua.linkedin.com/"
+                            href="https://www.linkedin.com/in/dawmsi/"
                             className={isLight ? 'link-light' : 'link-dark'}
                         >
                             <Linkedin />
