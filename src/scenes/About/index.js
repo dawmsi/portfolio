@@ -34,44 +34,6 @@ export const About = ({ isLight }) => {
                 return 'Hobby'
             case 'Courses':
                 return 'Courses'
-
-            case 'Telegram':
-                return (
-                    <a
-                        className={isLight ? 'link-dark' : 'link-light'}
-                        href="https://t.me"
-                    >
-                        <Telegram />
-                    </a>
-                )
-            case 'Discord':
-                return (
-                    <a
-                        className={isLight ? 'link-dark' : 'link-light'}
-                        href="https://t.me"
-                    >
-                        <Discord />
-                    </a>
-                )
-
-            case 'Linkedin':
-                return (
-                    <a
-                        className={isLight ? 'link-dark' : 'link-light'}
-                        href="https://t.me"
-                    >
-                        <Linkedin />
-                    </a>
-                )
-            case 'Github':
-                return (
-                    <a
-                        className={isLight ? 'link-dark' : 'link-light'}
-                        href="https://t.me"
-                    >
-                        <Github />
-                    </a>
-                )
             default:
                 return
         }
@@ -96,7 +58,7 @@ export const About = ({ isLight }) => {
                 <ClickableButton
                     isLight={isLight}
                     setIsActive={setIsActive}
-                    id={6}
+                    id={1}
                     inside={'Education'}
                     isActive={isActive}
                     type="text"
@@ -106,7 +68,7 @@ export const About = ({ isLight }) => {
                 <ClickableButton
                     isLight={isLight}
                     setIsActive={setIsActive}
-                    id={7}
+                    id={2}
                     inside={
                         <a
                             href="https://t.me"
@@ -123,7 +85,7 @@ export const About = ({ isLight }) => {
                 <ClickableButton
                     isLight={isLight}
                     setIsActive={setIsActive}
-                    id={5}
+                    id={3}
                     inside={
                         <a
                             href="https://discord.com/"
@@ -150,7 +112,7 @@ export const About = ({ isLight }) => {
                 <ClickableButton
                     isLight={isLight}
                     setIsActive={setIsActive}
-                    id={8}
+                    id={5}
                     inside={'Courses'}
                     isActive={isActive}
                     type="text"
@@ -160,7 +122,7 @@ export const About = ({ isLight }) => {
                 <ClickableButton
                     isLight={isLight}
                     setIsActive={setIsActive}
-                    id={1}
+                    id={6}
                     inside={
                         <a
                             href="https://ua.linkedin.com/"
@@ -177,7 +139,7 @@ export const About = ({ isLight }) => {
                 <ClickableButton
                     isLight={isLight}
                     setIsActive={setIsActive}
-                    id={3}
+                    id={7}
                     inside={
                         <a
                             href="https://github.com/dawmsi"
@@ -194,7 +156,7 @@ export const About = ({ isLight }) => {
                 <ClickableButton
                     isLight={isLight}
                     setIsActive={setIsActive}
-                    id={2}
+                    id={8}
                     inside={'Info'}
                     isActive={isActive}
                     type="text"
