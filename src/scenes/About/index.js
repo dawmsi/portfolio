@@ -80,6 +80,7 @@ export const About = ({ isLight }) => {
                     id={2}
                     inside={
                         <a
+                            target="_blank"
                             href="https://t.me/DAoFFl"
                             className={isLight ? 'link-light' : 'link-dark'}
                         >
@@ -97,6 +98,7 @@ export const About = ({ isLight }) => {
                     id={3}
                     inside={
                         <a
+                            target="_blank"
                             href="https://discordapp.com/users/dawmsi#0895"
                             className={isLight ? 'link-light' : 'link-dark'}
                         >
@@ -134,6 +136,7 @@ export const About = ({ isLight }) => {
                     id={6}
                     inside={
                         <a
+                            target="_blank"
                             href="https://www.linkedin.com/in/dawmsi/"
                             className={isLight ? 'link-light' : 'link-dark'}
                         >
@@ -151,6 +154,7 @@ export const About = ({ isLight }) => {
                     id={7}
                     inside={
                         <a
+                            target="_blank"
                             href="https://github.com/dawmsi"
                             className={isLight ? 'link-light' : 'link-dark'}
                         >
