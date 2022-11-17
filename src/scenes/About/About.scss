@@ -26,10 +26,10 @@
         justify-content: center;
         align-items: center;
         rotate: 21deg;
-        transition: transform 2s 0.5s, margin 1s;
+        transition: transform 2s 0.4s, margin 1s;
 
         .clicked__btn {
-            animation: myanim 0.8s alternate;
+            animation: myanim 0.9s alternate;
             @keyframes myanim {
                 from {
                     font-size: 0;
