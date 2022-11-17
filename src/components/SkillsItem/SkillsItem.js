@@ -1,4 +1,5 @@
 import React from 'react'
+import { ProgressBar } from 'react-bootstrap'
 import { CircularProgressbar, buildStyles } from 'react-circular-progressbar'
 import 'react-circular-progressbar/dist/styles.css'
 
@@ -7,7 +8,14 @@ export const SkillsItem = ({ isLight, itemName }) => {
 
     return (
         <>
-            <div style={{ padding: '22px' }}>
+            <div
+                style={{
+                    padding: '22px',
+                    display: 'flex',
+                    justifyContent: 'space-evenly',
+                    height: '70%'
+                }}
+            >
                 <CircularProgressbar
                     strokeWidth={2}
                     value={percentage}
@@ -28,8 +36,36 @@ export const SkillsItem = ({ isLight, itemName }) => {
                     })}
                 />
             </div>
-            <div style={{ textAlign: 'center', fontSize: '26px' }}>
+            <div
+                style={{ textAlign: 'center', fontSize: '26px', height: '20%' }}
+            >
                 {itemName}
+            </div>
+            <div
+                style={{
+                    textAlign: 'center',
+                    fontSize: '14px',
+                    height: '10%',
+                    width: '50%',
+                    margin: '0 auto'
+                }}
+            >
+                <ProgressBar>
+                    <ProgressBar
+                        striped
+                        variant="warning"
+                        now={percentage}
+                        key={1}
+                        label="7"
+                    />
+                    <ProgressBar
+                        striped
+                        variant="info"
+                        label="3"
+                        now={30}
+                        key={2}
+                    />
+                </ProgressBar>
             </div>
         </>
     )
