@@ -30,8 +30,11 @@
 
         .clicked__btn {
             animation: myanim 0.8s alternate;
-            font-size: 0;
             @keyframes myanim {
+                from {
+                    font-size: 0;
+                    padding: 12px;
+                }
                 30% {
                     margin: 0;
                 }
