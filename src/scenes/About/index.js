@@ -40,7 +40,11 @@ export const About = ({ isLight }) => {
                     </p>
                 )
             case 'Hobby':
-                return <p>Write music</p>
+                return (
+                    <p>
+                        Write music, <br /> Running
+                    </p>
+                )
             case 'Courses':
                 return (
                     <p>
