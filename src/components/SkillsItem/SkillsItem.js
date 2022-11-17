@@ -60,7 +60,7 @@ export const SkillsItem = ({ isLight, itemName }) => {
                     />
                     <ProgressBar
                         striped
-                        variant="info"
+                        variant={isLight ? 'dark' : 'info'}
                         label="3"
                         now={30}
                         key={2}
