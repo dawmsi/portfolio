@@ -27,9 +27,18 @@ export const About = ({ isLight }) => {
     const AboutChanger = (btn) => {
         switch (btn) {
             case 'Info':
-                return 'Info'
+                return (
+                    <p className="show__effect">
+                        Hello <br /> my name is <br /> Denys
+                    </p>
+                )
             case 'Education':
-                return 'Education'
+                return (
+                    <p>
+                        I graduated <br /> from university <br /> with a
+                        master's degree <br /> in software <br /> engineering
+                    </p>
+                )
             case 'Hobby':
                 return 'Hobby'
             case 'Courses':
@@ -174,7 +183,15 @@ export const About = ({ isLight }) => {
                     className={!isActive ? 'avatar' : 'avatar hide'}
                 >
                     <div className="ava__centre">
-                        {AboutChanger(currentKey)}
+                        <div
+                            className={
+                                isActive
+                                    ? 'text__centre show__effect'
+                                    : 'text__centre'
+                            }
+                        >
+                            {AboutChanger(currentKey)}
+                        </div>
                     </div>
                 </Card>
             </div>
