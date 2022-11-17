@@ -1,7 +1,13 @@
 import React from 'react'
 import { Carousel, Container } from 'react-bootstrap'
 import './CarouselArea.scss'
-export const CarouselArea = ({ image, CurrentItem, pause, isLight }) => {
+export const CarouselArea = ({
+    image,
+    CurrentItem,
+    pause,
+    isLight,
+    itemName
+}) => {
     return (
         <>
             <Carousel
@@ -17,7 +23,11 @@ export const CarouselArea = ({ image, CurrentItem, pause, isLight }) => {
                 >
                     {CurrentItem ? (
                         <Container className="inside__item__container">
-                            <CurrentItem image={image} isLight={isLight} />
+                            <CurrentItem
+                                image={image}
+                                isLight={isLight}
+                                itemName={itemName}
+                            />
                         </Container>
                     ) : (
                         ''
@@ -30,7 +40,10 @@ export const CarouselArea = ({ image, CurrentItem, pause, isLight }) => {
                 >
                     {CurrentItem ? (
                         <Container className="inside__item__container">
-                            <CurrentItem isLight={isLight} />
+                            <CurrentItem
+                                isLight={isLight}
+                                itemName={itemName}
+                            />
                         </Container>
                     ) : (
                         ''

@@ -40,9 +40,13 @@ export const About = ({ isLight }) => {
                     </p>
                 )
             case 'Hobby':
-                return <p>Hobby</p>
+                return <p>Write music</p>
             case 'Courses':
-                return <p>Courses</p>
+                return (
+                    <p>
+                        Front-end development passed in the company of SkillUp
+                    </p>
+                )
             default:
                 return
         }
@@ -81,6 +85,7 @@ export const About = ({ isLight }) => {
                     inside={
                         <a
                             target="_blank"
+                            rel="noreferrer"
                             href="https://t.me/DAoFFl"
                             className={isLight ? 'link-light' : 'link-dark'}
                         >
@@ -99,6 +104,7 @@ export const About = ({ isLight }) => {
                     inside={
                         <a
                             target="_blank"
+                            rel="noreferrer"
                             href="https://discordapp.com/users/dawmsi#0895"
                             className={isLight ? 'link-light' : 'link-dark'}
                         >
@@ -137,6 +143,7 @@ export const About = ({ isLight }) => {
                     inside={
                         <a
                             target="_blank"
+                            rel="noreferrer"
                             href="https://www.linkedin.com/in/dawmsi/"
                             className={isLight ? 'link-light' : 'link-dark'}
                         >
@@ -155,6 +162,7 @@ export const About = ({ isLight }) => {
                     inside={
                         <a
                             target="_blank"
+                            rel="noreferrer"
                             href="https://github.com/dawmsi"
                             className={isLight ? 'link-light' : 'link-dark'}
                         >
