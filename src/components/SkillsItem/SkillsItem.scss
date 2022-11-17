@@ -29,6 +29,7 @@
 @media (max-width: 576px) {
     .skills__card {
         .skills__circular {
+            padding: 36px;
         }
         .skills__body {
             .skills__title {
@@ -52,6 +53,7 @@
         width: 100%;
         .skills__circular {
             width: calc(40% - 24px);
+            margin: auto;
         }
         .skills__body {
             .skills__title {
