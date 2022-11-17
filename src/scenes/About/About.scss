@@ -29,7 +29,8 @@
         transition: transform 2s 0.5s, margin 1s;
 
         .clicked__btn {
-            animation: myanim 1s alternate;
+            animation: myanim 0.8s alternate;
+            font-size: 0;
             @keyframes myanim {
                 30% {
                     margin: 0;

@@ -50,9 +50,8 @@ export const ClickableButton = ({
     else if (type === 'social')
         return (
             <Button
-                disabled={isActive && !isClicked ? true : false}
                 variant={isLight ? 'dark' : 'light'}
-                className={'clicable__btn'}
+                className="clicable__btn"
                 id={id}
             >
                 {inside}

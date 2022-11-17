@@ -40,9 +40,9 @@ export const About = ({ isLight }) => {
                     </p>
                 )
             case 'Hobby':
-                return 'Hobby'
+                return <p>Hobby</p>
             case 'Courses':
-                return 'Courses'
+                return <p>Courses</p>
             default:
                 return
         }
