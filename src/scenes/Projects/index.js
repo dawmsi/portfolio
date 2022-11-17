@@ -1,7 +1,7 @@
 import React from 'react'
 
 import { CarouselArea } from '../../components/CarouselArea'
-import { CurrentItem } from '../../components/CurrentItem'
+import { ProjectItem } from '../../components/ProjectItem'
 import { ItemsList } from '../../components/ItemsList'
 export const Projects = ({ isCarouseled, isLight }) => {
     return (
@@ -10,16 +10,15 @@ export const Projects = ({ isCarouseled, isLight }) => {
                 <CarouselArea
                     isLight={isLight}
                     image="https://www.site-shot.com/cached_image/Q7a_JmGiEe2ObwJCrBEAAw"
-                    CurrentItem={CurrentItem}
+                    CurrentItem={ProjectItem}
                     pause="hover"
                 />
             ) : (
-
-                        <ItemsList
-                            isLight={isLight}
-                            image="https://www.site-shot.com/cached_image/Q7a_JmGiEe2ObwJCrBEAAw"
-                            CurrentItem={CurrentItem}
-                        ></ItemsList>
+                <ItemsList
+                    isLight={isLight}
+                    image="https://www.site-shot.com/cached_image/Q7a_JmGiEe2ObwJCrBEAAw"
+                    CurrentItem={ProjectItem}
+                ></ItemsList>
             )}
         </>
     )
