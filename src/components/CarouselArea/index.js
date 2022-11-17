@@ -1,13 +1,7 @@
 import React from 'react'
 import { Carousel, Container } from 'react-bootstrap'
 import './CarouselArea.scss'
-export const CarouselArea = ({
-    image,
-    CurrentItem,
-    pause,
-    isLight,
-    itemName
-}) => {
+export const CarouselArea = ({ pause, itemsArray, CurrentItem, isLight }) => {
     return (
         <>
             <Carousel
@@ -16,39 +10,27 @@ export const CarouselArea = ({
                 touch={true}
                 pause={pause}
             >
-                <Carousel.Item
-                    className={
-                        isLight ? 'bg-light text-dark' : 'bg-dark text-light'
-                    }
-                >
-                    {CurrentItem ? (
-                        <Container className="inside__item__container">
-                            <CurrentItem
-                                image={image}
-                                isLight={isLight}
-                                itemName={itemName}
-                            />
-                        </Container>
-                    ) : (
-                        ''
-                    )}
-                </Carousel.Item>
-                <Carousel.Item
-                    className={
-                        isLight ? 'bg-light text-dark' : 'bg-dark text-light'
-                    }
-                >
-                    {CurrentItem ? (
-                        <Container className="inside__item__container">
-                            <CurrentItem
-                                isLight={isLight}
-                                itemName={itemName}
-                            />
-                        </Container>
-                    ) : (
-                        ''
-                    )}
-                </Carousel.Item>
+                {itemsArray.map((cuIte) => (
+                    <Carousel.Item
+                        key={cuIte.id}
+                        className={
+                            isLight
+                                ? 'bg-light text-dark'
+                                : 'bg-dark text-light'
+                        }
+                    >
+                        {CurrentItem ? (
+                            <Container className="inside__item__container">
+                                <CurrentItem
+                                    isLight={isLight}
+                                    itemObj={cuIte}
+                                />
+                            </Container>
+                        ) : (
+                            ''
+                        )}
+                    </Carousel.Item>
+                ))}
             </Carousel>
         </>
     )

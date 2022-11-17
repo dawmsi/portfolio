@@ -1,14 +1,14 @@
 import React from 'react'
 import { Button, Card, Figure } from 'react-bootstrap'
 import './ProjectItem.scss'
-export const ProjectItem = ({ image, isLight }) => {
+export const ProjectItem = ({ isLight, itemObj }) => {
     return (
         <>
             <Card className="current__card">
-                {image ? (
+                {itemObj.image ? (
                     <div
                         className="current__img"
-                        style={{ backgroundImage: `url(${image})` }}
+                        style={{ backgroundImage: `url(${itemObj.image})` }}
                     ></div>
                 ) : (
                     <Figure className="no__image">
@@ -17,22 +17,11 @@ export const ProjectItem = ({ image, isLight }) => {
                 )}
 
                 <Card.Body className="current__body">
-                    <Card.Title className="current__title">Modest</Card.Title>
+                    <Card.Title className="current__title">
+                        {itemObj.name}
+                    </Card.Title>
                     <Card.Text className="current__text">
-                        Lorem ipsum, dolor sit amet consectetur adipisicing
-                        elit. Animi quae sequi adipisci nostrum mollitia
-                        cupiditate enim minima quis ipsa quidem, consectetur
-                        veniam. Tempora accusamus sunt id, asperiores ipsam
-                        suscipit itaque fugit animi. Eum incidunt quae ab, culpa
-                        quibusdam, laboriosam aliquid vitae vel magni ipsa
-                        deserunt natus. Nostrum quae iste error consequuntur nam
-                        officiis voluptas vel! Sequi voluptates doloremque
-                        eveniet omnis, est consequuntur. Magni vel, minima a quo
-                        et quaerat facilis laboriosam qui odio inventore omnis
-                        laudantium reiciendis reprehenderit saepe modi, id
-                        voluptates quam autem quae voluptate facere excepturi
-                        dicta consequuntur sit? Atque distinctio quia soluta
-                        voluptate itaque, unde ducimus vitae.
+                        {itemObj.description}
                     </Card.Text>
                     <div className="current__button__area">
                         <Button
@@ -41,7 +30,7 @@ export const ProjectItem = ({ image, isLight }) => {
                         >
                             <a
                                 className={isLight ? 'link-light' : 'link-dark'}
-                                href="https://dawmsi.github.io/blog-project/"
+                                href={itemObj.link}
                             >
                                 Check
                             </a>

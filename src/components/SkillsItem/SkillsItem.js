@@ -3,9 +3,7 @@ import { ProgressBar } from 'react-bootstrap'
 import { CircularProgressbar, buildStyles } from 'react-circular-progressbar'
 import 'react-circular-progressbar/dist/styles.css'
 
-export const SkillsItem = ({ isLight, itemName }) => {
-    const percentage = 70
-
+export const SkillsItem = ({ isLight, itemObj }) => {
     return (
         <>
             <div
@@ -18,19 +16,19 @@ export const SkillsItem = ({ isLight, itemName }) => {
             >
                 <CircularProgressbar
                     strokeWidth={2}
-                    value={percentage}
-                    text={`${percentage}%`}
+                    value={itemObj.complete}
+                    text={`${itemObj.complete}%`}
                     styles={buildStyles({
                         rotation: 0,
                         strokeLinecap: 'round',
                         textSize: '12px',
                         pathTransitionDuration: 0.5,
                         pathColor: isLight
-                            ? `rgba(0,0,0, ${percentage / 100})`
-                            : `rgba(255,255,255, ${percentage / 100})`,
+                            ? `rgba(0,0,0, ${itemObj.complete / 100})`
+                            : `rgba(255,255,255, ${itemObj.complete / 100})`,
                         textColor: isLight
-                            ? `rgba(0,0,0, ${percentage / 100})`
-                            : `rgba(255,255,255, ${percentage / 100})`,
+                            ? `rgba(0,0,0, ${itemObj.complete / 100})`
+                            : `rgba(255,255,255, ${itemObj.complete / 100})`,
                         trailColor: 'gray',
                         backgroundColor: 'gray'
                     })}
@@ -39,7 +37,7 @@ export const SkillsItem = ({ isLight, itemName }) => {
             <div
                 style={{ textAlign: 'center', fontSize: '26px', height: '20%' }}
             >
-                {itemName}
+                {itemObj.name}
             </div>
             <div
                 style={{
@@ -54,15 +52,15 @@ export const SkillsItem = ({ isLight, itemName }) => {
                     <ProgressBar
                         striped
                         variant="warning"
-                        now={percentage}
+                        now={itemObj.complete}
+                        label={itemObj.complete}
                         key={1}
-                        label="7"
                     />
                     <ProgressBar
                         striped
                         variant={isLight ? 'dark' : 'info'}
-                        label="3"
-                        now={30}
+                        label={100 - itemObj.complete}
+                        now={100 - itemObj.complete}
                         key={2}
                     />
                 </ProgressBar>
