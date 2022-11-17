@@ -3,18 +3,19 @@ import { CircularProgressbar, buildStyles } from 'react-circular-progressbar'
 import 'react-circular-progressbar/dist/styles.css'
 
 export const SkillsItem = ({ isLight, itemName }) => {
-    const percentage = 69
+    const percentage = 70
 
     return (
         <>
             <div style={{ padding: '22px' }}>
                 <CircularProgressbar
+                    strokeWidth={2}
                     value={percentage}
                     text={`${percentage}%`}
                     styles={buildStyles({
                         rotation: 0,
                         strokeLinecap: 'round',
-                        textSize: '16px',
+                        textSize: '12px',
                         pathTransitionDuration: 0.5,
                         pathColor: isLight
                             ? `rgba(0,0,0, ${percentage / 100})`
