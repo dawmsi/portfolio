@@ -5,7 +5,7 @@ import { Skills } from '../scenes/Skills'
 import { Projects } from '../scenes/Projects'
 import { Statistic } from '../scenes/Statistic'
 
-export const MainRoutes = ({ isCarouseled, isLight }) => {
+export const MainRoutes = ({ isLight }) => {
     return (
         <Routes>
             <Route path="/portfolio/">
@@ -16,7 +16,6 @@ export const MainRoutes = ({ isCarouseled, isLight }) => {
                     path="projects"
                     element={
                         <Projects
-                            isCarouseled={isCarouseled}
                             isLight={isLight}
                         />
                     }

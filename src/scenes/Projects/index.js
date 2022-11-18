@@ -3,12 +3,13 @@ import React from 'react'
 import { CarouselArea } from '../../components/CarouselArea'
 import { ProjectItem } from '../../components/ProjectItem'
 import { ItemsList } from '../../components/ItemsList'
-export const Projects = ({ isCarouseled, isLight }) => {
+export const Projects = ({ isLight }) => {
     const projects = [
         {
             id: 1,
             name: 'Modest',
-            description: 'Blog site, flex-box styling, google map, contact form',
+            description:
+                'Blog site, flex-box styling, google map, contact form',
             link: 'https://dawmsi.github.io/blog-project/',
             image: 'https://www.site-shot.com/cached_image/4di4QGacEe2oDAJCrBEAAg'
         },
@@ -23,19 +24,12 @@ export const Projects = ({ isCarouseled, isLight }) => {
     ]
     return (
         <>
-            {isCarouseled ? (
-                <CarouselArea
-                    itemsArray={projects}
-                    isLight={isLight}
-                    CurrentItem={ProjectItem}
-                    pause="hover"
-                />
-            ) : (
-                <ItemsList
-                    isLight={isLight}
-                    CurrentItem={ProjectItem}
-                ></ItemsList>
-            )}
+            <CarouselArea
+                itemsArray={projects}
+                isLight={isLight}
+                CurrentItem={ProjectItem}
+                pause="hover"
+            />
         </>
     )
 }
