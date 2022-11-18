@@ -7,7 +7,7 @@ export const ProjectItem = ({ isLight, itemObj }) => {
 
     useEffect(() => {
         imageFetcher(itemObj.link, setImg)
-    }, [])
+    }, [itemObj.link])
 
     return (
         <>

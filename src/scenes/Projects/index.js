@@ -1,5 +1,4 @@
 import React from 'react'
-import { useState } from 'react'
 import { CarouselArea } from '../../components/CarouselArea'
 import { ProjectItem } from '../../components/ProjectItem'
 export const Projects = ({ isLight }) => {
