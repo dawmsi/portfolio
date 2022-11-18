@@ -112,6 +112,7 @@
     .carousel {
         padding: 16px;
         .carousel-inner {
+            height: calc(100% - 20.8px);
             .carousel-item {
                 .inside__item__container {
                 }

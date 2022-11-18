@@ -3,7 +3,6 @@ import { Col, Row, Card } from 'react-bootstrap'
 import './Main.scss'
 import { Title } from '../../components/Title'
 import { MainRoutes } from '../../routes/MainRoutes'
-import { useState } from 'react'
 
 export const Main = ({ isLight }) => {
     return (
