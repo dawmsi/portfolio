@@ -1,14 +1,23 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { Button, Card, Figure } from 'react-bootstrap'
+import { imageFetcher } from '../../services/imageFetcher/imageFetcher'
 import './ProjectItem.scss'
 export const ProjectItem = ({ isLight, itemObj }) => {
+    const [img, setImg] = useState('')
+
+    useEffect(() => {
+        imageFetcher(itemObj.link, setImg)
+    }, [])
+
     return (
         <>
             <Card className="current__card">
-                {itemObj.image ? (
+                {img ? (
                     <div
                         className="current__img"
-                        style={{ backgroundImage: `url(${itemObj.image})` }}
+                        style={{
+                            backgroundImage: `url(${img})`
+                        }}
                     ></div>
                 ) : (
                     <Figure className="no__image">

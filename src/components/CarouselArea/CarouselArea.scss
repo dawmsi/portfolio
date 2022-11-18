@@ -3,6 +3,10 @@
     padding: 0;
     height: 100%;
     width: 100%;
+
+    .overturn{
+        transform: rotateY(90deg);
+    }
     .carousel-inner {
         top: 0;
         left: 0;
