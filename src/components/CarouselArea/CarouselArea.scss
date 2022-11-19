@@ -4,15 +4,28 @@
     height: 100%;
     width: 100%;
 
-    .overturn{
-        transform: rotateY(90deg);
-    }
     .carousel-inner {
         top: 0;
         left: 0;
         justify-content: center;
         overflow: visible;
         height: calc(100% - 28.8px);
+        .overturn {
+            animation: myanim1 0.8s alternate;
+        }
+        @keyframes myanim1 {
+            50% {
+                transform: rotateY(-90deg) scale(0.7) rotate(45deg);
+            }
+        }
+        .overturn__back {
+            animation: myanim2 0.8s alternate;
+        }
+        @keyframes myanim2 {
+            50% {
+                transform: rotateY(90deg) scale(0.7) rotate(-45deg);
+            }
+        }
         .carousel-item {
             box-sizing: border-box;
             height: 98%;

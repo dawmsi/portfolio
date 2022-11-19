@@ -1,17 +1,9 @@
 import React from 'react'
-import { Row } from 'react-bootstrap'
 import './ItemsList.scss'
-export const ItemsList = ({ itemsArray, CurrentItem, isLight }) => {
+export const ItemsList = ({ itemsArray, CurrentItem }) => {
     return (
         <>
-            <Row className="list">
-                <CurrentItem isLight={isLight} itemObj={itemsArray} />
-                <CurrentItem isLight={isLight} itemObj={itemsArray} />
-                <CurrentItem isLight={isLight} itemObj={itemsArray} />
-                <CurrentItem isLight={isLight} itemObj={itemsArray} />
-                <CurrentItem isLight={isLight} itemObj={itemsArray} />
-                <CurrentItem isLight={isLight} itemObj={itemsArray} />
-            </Row>
+            <div className="list">list of skills</div>
         </>
     )
 }
