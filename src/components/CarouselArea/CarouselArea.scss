@@ -132,6 +132,16 @@
         padding: 16px;
         .carousel-inner {
             height: calc(100% - 20.8px);
+            @keyframes myanim1 {
+                50% {
+                    transform: rotateY(-90deg) scale(0.7) rotate(15deg);
+                }
+            }
+            @keyframes myanim2 {
+                50% {
+                    transform: rotateY(90deg) scale(0.7) rotate(-15deg);
+                }
+            }
             .carousel-item {
                 .inside__item__container {
                 }
