@@ -11,6 +11,11 @@
         display: flex;
         flex-direction: column;
         overflow-y: scroll;
+        &::-webkit-scrollbar {
+            display: none;
+            -ms-overflow-style: none; /* IE and Edge */
+            scrollbar-width: none; /* Firefox */
+        }
         top: 0;
         left: 0;
         right: 0;
