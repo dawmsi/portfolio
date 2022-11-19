@@ -8,7 +8,7 @@ import { Statistic } from '../scenes/Statistic'
 export const MainRoutes = ({ isLight }) => {
     return (
         <Routes>
-            <Route path="/portfolio/">
+            <Route path="portfolio/">
                 <Route index element={<About isLight={isLight} />} />
                 <Route path="about" element={<About isLight={isLight} />} />
                 <Route path="skills" element={<Skills isLight={isLight} />} />
