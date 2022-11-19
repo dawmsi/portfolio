@@ -25,7 +25,6 @@ export const Projects = ({ isLight }) => {
                 itemsArray={projects}
                 isLight={isLight}
                 CurrentItem={ProjectItem}
-                pause="hover"
             />
         </>
     )

@@ -30,11 +30,10 @@ export const CarouselArea = ({
             <Carousel
                 {...(overturn
                     ? { activeIndex: currentNumber, interval: null }
-                    : {})}
+                    : { pause: 'hover' })}
                 variant={isLight ? 'dark' : 'light'}
                 controls={false}
                 touch={true}
-                pause={pause}
             >
                 {itemsArray.map((cuIte) => (
                     <Carousel.Item
