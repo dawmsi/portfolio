@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { Card } from 'react-bootstrap'
 import avatarImg from './ava.JPEG'
 import './About.scss'
@@ -6,7 +6,13 @@ import { ClickableButton } from '../../components/ClickableButton/ClickableButto
 import { UnclickableButton } from '../../components/UnclickableButton/UnclickableButton'
 import { Discord, Github, Linkedin, Telegram } from 'react-bootstrap-icons'
 
+import { useNavigate } from 'react-router-dom'
+
 export const About = ({ isLight }) => {
+    const navigate = useNavigate()
+
+    useEffect(() => navigate(0), [navigate])
+
     const unclickCount = 20
     const unclickBtnsArr = []
 
