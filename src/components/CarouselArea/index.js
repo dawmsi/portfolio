@@ -59,7 +59,7 @@ export const CarouselArea = ({
                                     itemObj={cuIte}
                                 />
                             ) : (
-                                <ItemsList isLight={isLight} />
+                                <ItemsList itemObj={cuIte} isLight={isLight} />
                             )}
                         </div>
                     </Carousel.Item>
