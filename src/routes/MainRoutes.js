@@ -10,11 +10,15 @@ import { Main } from '../containers/Main'
 export const MainRoutes = ({ isLight }) => {
     return (
         <Routes>
-            <Route path="/" element={<Navigate to="/portfolio" replace />} />
-            <Route path="/portfolio/*" render={() => <Main isLight={isLight} />} />
+            <Route path="*" element={<Navigate to="/portfolio" replace />} />
             <Route path="/portfolio" element={<Main isLight={isLight} />}>
                 <Route index element={<Welcome isLight={isLight} />} />
-                <Route path="about" element={<About isLight={isLight} />} anima/>
+
+                <Route
+                    path="about"
+                    element={<About isLight={isLight} />}
+                    anima
+                />
                 <Route path="skills" element={<Skills isLight={isLight} />} />
                 <Route
                     path="projects"
