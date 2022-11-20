@@ -20,21 +20,6 @@ export const Title = ({ isLight }) => {
                             }
                         >
                             <Breadcrumb className="title__col">
-{/*                                 {pathnames.length > 0 ? (
-                                    <Breadcrumb.Item
-                                        linkAs={Link}
-                                        linkProps={{ to: '/' }}
-                                        className={
-                                            isLight ? 'text-dark' : 'text-light'
-                                        }
-                                    >
-                                        About
-                                    </Breadcrumb.Item>
-                                ) : (
-                                    <Breadcrumb.Item active>
-                                        About
-                                    </Breadcrumb.Item>
-                                )} */}
                                 {pathnames.map((name, index) => {
                                     const routeTo = `/${pathnames
                                         .slice(0, index + 1)

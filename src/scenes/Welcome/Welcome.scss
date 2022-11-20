@@ -1,0 +1,16 @@
+//default
+.welcome__area {
+    border: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+//mobile
+
+@media (max-width: 576px) {
+}
+
+//desktop
+@media (min-width: 576px) {
+}

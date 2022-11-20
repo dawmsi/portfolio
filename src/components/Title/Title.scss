@@ -1,8 +1,11 @@
 //default
 
 .title__col {
+    position: relative;
+    z-index: 50;
     flex-wrap: nowrap;
     padding: 0 6px;
+
     .title__container {
         display: flex;
         justify-content: center;
