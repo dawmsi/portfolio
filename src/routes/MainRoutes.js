@@ -5,7 +5,7 @@ import { Skills } from '../scenes/Skills'
 import { Projects } from '../scenes/Projects'
 import { Statistic } from '../scenes/Statistic'
 import { Welcome } from '../scenes/Welcome'
-import { Main } from '../containers/Main'
+import { Main } from '../layouts/Main'
 
 export const MainRoutes = ({ isLight }) => {
     return (
@@ -13,7 +13,6 @@ export const MainRoutes = ({ isLight }) => {
             <Route path="*" element={<Navigate to="/portfolio" replace />} />
             <Route path="/portfolio" element={<Main isLight={isLight} />}>
                 <Route index element={<Welcome isLight={isLight} />} />
-
                 <Route
                     path="about"
                     element={<About isLight={isLight} />}
