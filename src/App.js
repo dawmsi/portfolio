@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import './App.scss'
-import { NavBar } from './containers/NavBar'
+import { NavBar } from './components/NavBar'
 import { Row } from 'react-bootstrap'
 import { MainRoutes } from './routes/MainRoutes'
 
