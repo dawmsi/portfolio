@@ -10,7 +10,7 @@ export const MainRoutes = ({ isLight }) => {
     return (
         <Routes>
             <Route path="*" element={<Navigate to="/portfolio" replace />} />
-            <Route path="portfolio/">
+            <Route path="portfolio/*">
                 <Route index element={<Welcome isLight={isLight} />} />
                 <Route path="about" element={<About isLight={isLight} />} />
                 <Route path="skills" element={<Skills isLight={isLight} />} />
