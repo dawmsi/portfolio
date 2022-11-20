@@ -2,7 +2,7 @@ import React from 'react'
 import { Col, Row, Card } from 'react-bootstrap'
 import './Main.scss'
 import { Title } from '../../components/Title'
-import { MainRoutes } from '../../routes/MainRoutes'
+import { Outlet } from 'react-router-dom'
 
 export const Main = ({ isLight }) => {
     return (
@@ -12,9 +12,7 @@ export const Main = ({ isLight }) => {
                     <Row>
                         <Title isLight={isLight} />
                     </Row>
-                    <Col className="main__col">
-                        <MainRoutes isLight={isLight}></MainRoutes>
-                    </Col>
+                    <Col className="main__col"><Outlet /></Col>
                 </Card.Body>
             </Card>
         </>

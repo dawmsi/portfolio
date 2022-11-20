@@ -4,6 +4,7 @@ import './App.scss'
 import { NavBar } from './containers/NavBar'
 import { Main } from './containers/Main'
 import { Row } from 'react-bootstrap'
+import { MainRoutes } from './routes/MainRoutes'
 
 function App() {
     const [isLight, setIsLight] = useState(true)
@@ -12,7 +13,7 @@ function App() {
     return (
         <div className="app">
             <Row className="app__row">
-                <Main isLight={isLight} />
+                <MainRoutes isLight={isLight}></MainRoutes>
                 <NavBar isLight={isLight} changeTheme={changeTheme} />
             </Row>
         </div>
