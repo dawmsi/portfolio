@@ -11,20 +11,20 @@ export const MainRoutes = ({ isLight }) => {
     return (
         <Routes>
             <Route path="*" element={<Navigate to="/portfolio" replace />} />
-            <Route path="/portfolio" element={<Main isLight={isLight} />}>
+            <Route path="/portfolio/*" element={<Main isLight={isLight} />}>
                 <Route index element={<Welcome isLight={isLight} />} />
 
                 <Route
-                    path="about"
+                    path="about/*"
                     element={<About isLight={isLight} />}
                     anima
                 />
-                <Route path="skills" element={<Skills isLight={isLight} />} />
+                <Route path="skills/*" element={<Skills isLight={isLight} />} />
                 <Route
-                    path="projects"
+                    path="projects/*"
                     element={<Projects isLight={isLight} />}
                 />
-                <Route path="statistic" element={<Statistic />} />
+                <Route path="statistic/*" element={<Statistic />} />
             </Route>
         </Routes>
     )
