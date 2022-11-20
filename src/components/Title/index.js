@@ -34,7 +34,14 @@ export const Title = ({ isLight }) => {
                                         <Breadcrumb.Item
                                             key={name}
                                             linkAs={Link}
-                                            linkProps={{ to: `${routeTo}` }}
+                                            linkProps={
+                                                !index
+                                                    ? {
+                                                          to: routeTo,
+                                                          reloadDocument: true
+                                                      }
+                                                    : { to: routeTo }
+                                            }
                                             className={
                                                 isLight
                                                     ? 'text-dark'
