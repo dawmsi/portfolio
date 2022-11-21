@@ -13,8 +13,16 @@ function App() {
             <div
                 style={
                     isLight
-                        ? { backdropFilter: 'brightness(33%) blur(10px)' }
-                        : { backdropFilter: 'brightness(103%) blur(10px)' }
+                        ? {
+                              backdropFilter: 'brightness(53%) blur(0.2em)',
+                              webkitBackdropFilter:
+                                  'brightness(53%) blur(0.2em)'
+                          }
+                        : {
+                              backdropFilter: 'brightness(93%) blur(0.2em)',
+                              webkitBackdropFilter:
+                                  'brightness(93%) blur(0.2em)'
+                          }
                 }
                 className="app__backdrop"
             >
