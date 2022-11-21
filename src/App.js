@@ -15,12 +15,12 @@ function App() {
                     isLight
                         ? {
                               backdropFilter: 'brightness(52%) blur(0.2em)',
-                              webkitBackdropFilter:
+                              WebkitBackdropFilter:
                                   'brightness(52%) blur(0.2em)'
                           }
                         : {
                               backdropFilter: 'brightness(82%) blur(0.2em)',
-                              webkitBackdropFilter:
+                              WebkitBackdropFilter:
                                   'brightness(82%) blur(0.2em)'
                           }
                 }
