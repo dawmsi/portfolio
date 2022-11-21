@@ -3,13 +3,12 @@
     padding: 0;
     height: 100%;
     width: 100%;
-
     .carousel-inner {
         top: 0;
         left: 0;
         justify-content: center;
         overflow: visible;
-        height: calc(100% - 28.8px);
+        height: calc(100% - 18.8px);
         .overturn {
             animation: myanim1 0.8s alternate;
         }
@@ -129,9 +128,9 @@
 //desktop
 @media (min-width: 576px) {
     .carousel {
-        padding: 16px;
+        padding: 8px;
         .carousel-inner {
-            height: calc(100% - 20.8px);
+            height: calc(100% - 8.8px);
             @keyframes myanim1 {
                 50% {
                     transform: rotateY(-90deg) scale(0.7) rotate(15deg);
