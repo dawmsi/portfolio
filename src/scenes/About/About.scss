@@ -46,6 +46,12 @@
             border-radius: 23px;
             padding: 6px;
             transition: transform 3.3s 0.7s, margin 1.1s;
+            &.btn-light {
+                --bs-btn-color: black;
+            }
+            &.btn-dark {
+                font-weight: lighter;
+            }
             &:nth-child(1) {
                 margin-bottom: -270px;
             }
@@ -87,6 +93,12 @@
             padding: 6px;
             transition: transform 3.3s 0.7s;
             margin: 100px;
+            &.btn-dark {
+                font-weight: lighter;
+            }
+            &.btn-liht {
+                font-weight: bolder;
+            }
             &:nth-child(11) {
                 margin-bottom: -280px;
                 margin-right: -70px;
