@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Card } from 'react-bootstrap'
-import avatarImg from './ava.JPEG'
+import avatarImg from './ava.jpeg'
 import './About.scss'
 import { ClickableButton } from '../../components/ClickableButton/ClickableButton'
 import { UnclickableButton } from '../../components/UnclickableButton/UnclickableButton'
