@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import { Button } from 'react-bootstrap'
-import { ArrowCounterclockwise } from 'react-bootstrap-icons'
 
 export const ClickableButton = ({
     id,
