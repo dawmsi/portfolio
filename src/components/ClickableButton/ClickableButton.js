@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { Button } from 'react-bootstrap'
+import { ArrowCounterclockwise } from 'react-bootstrap-icons'
 
 export const ClickableButton = ({
     id,
@@ -39,7 +40,7 @@ export const ClickableButton = ({
                 <Button
                     disabled={isActive && !isClicked ? true : false}
                     variant={isLight ? 'dark' : 'light'}
-                    className={'clicable__btn'}
+                    className={isClicked ? 'clicable__btn' : 'clicable__btn'}
                     id={id}
                     onClick={clickHandker}
                 >
