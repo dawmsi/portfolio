@@ -5,6 +5,11 @@ import './Welcome.scss'
 export const Welcome = ({ isLight }) => {
     return (
         <Card
+            style={
+                isLight
+                    ? { textShadow: 'rgba(0, 0, 0, 0.25) 0 0 13px' }
+                    : { textShadow: 'rgba(255, 255, 255, 0.25) 0 0 13px' }
+            }
             bg="transparent"
             className={
                 isLight ? 'welcome__area text-light' : 'welcome__area text-dark'

@@ -7,7 +7,6 @@ import { UnclickableButton } from '../../components/UnclickableButton/Unclickabl
 import { Discord, Github, Linkedin, Telegram } from 'react-bootstrap-icons'
 
 export const About = ({ isLight }) => {
-
     const unclickCount = 20
     const unclickBtnsArr = []
 
