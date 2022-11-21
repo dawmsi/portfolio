@@ -8,7 +8,8 @@ export const Projects = ({ isLight }) => {
             name: 'Modest',
             description:
                 'Blog site, flex-box styling, google map, contact form',
-            link: 'https://dawmsi.github.io/blog-project/'
+            link: 'https://dawmsi.github.io/blog-project/',
+            details: 'Blog site, flex-box styling, google map, contact form'
         },
         {
             id: 2,
@@ -16,7 +17,7 @@ export const Projects = ({ isLight }) => {
             description:
                 'search by city, practice clear js, fetch, work with API, ',
             link: 'https://dawmsi.github.io/weather/',
-            image: 'https://www.site-shot.com/cached_image/hseRYmafEe2TkQJCrBEAAw'
+            details: 'search by city, practice clear js, fetch, work with API, '
         }
     ]
     return (

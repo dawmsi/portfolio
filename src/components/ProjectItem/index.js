@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { Button, Card, Figure } from 'react-bootstrap'
 import { imageFetcher } from '../../services/imageFetcher/imageFetcher'
 import './ProjectItem.scss'
-export const ProjectItem = ({ isLight, itemObj }) => {
+export const ProjectItem = ({itemObj, isLight }) => {
     const [img, setImg] = useState('')
 
     useEffect(() => {
