@@ -9,20 +9,29 @@
         justify-content: center;
         overflow: visible;
         height: calc(100% - 18.8px);
+
         .overturn {
-            animation: myanim1 0.8s alternate;
+            animation: myanim1 0.9s linear;
         }
         @keyframes myanim1 {
-            50% {
-                transform: rotateY(-90deg) scale(0.7) rotate(45deg);
+            51.1% {
+                transform: rotateY(-90deg) scale(0.7) rotate(-45deg);
+                opacity: 1;
+            }
+            51% {
+                transform: rotateY(90deg) scale(0.7) rotate(45deg);
+                opacity: 1;
             }
         }
         .overturn__back {
-            animation: myanim2 0.8s alternate;
+            animation: myanim2 0.9s linear;
         }
         @keyframes myanim2 {
-            50% {
-                transform: rotateY(90deg) scale(0.7) rotate(-45deg);
+            51.1% {
+                transform: rotateY(-90deg) scale(0.7) rotate(-45deg);
+            }
+            51% {
+                transform: rotateY(90deg) scale(0.7) rotate(45deg);
             }
         }
         .carousel-item {
@@ -32,6 +41,7 @@
             height: calc(100% - 28.8px);
             width: 100%;
             transition: all 0.4s;
+            opacity: 1;
             .inside__item__container {
                 display: flex;
                 flex: 0;
