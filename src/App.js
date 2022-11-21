@@ -2,7 +2,6 @@ import React, { useState } from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import './App.scss'
 import { NavBar } from './components/NavBar'
-import { Row } from 'react-bootstrap'
 import { MainRoutes } from './routes/MainRoutes'
 
 function App() {
@@ -11,10 +10,19 @@ function App() {
 
     return (
         <div className="app">
-            <Row className="app__row">
-                <MainRoutes isLight={isLight}></MainRoutes>
-                <NavBar isLight={isLight} changeTheme={changeTheme} />
-            </Row>
+            <div
+                style={
+                    isLight
+                        ? { backdropFilter: 'brightness(33%) blur(10px)' }
+                        : { backdropFilter: 'brightness(103%) blur(10px)' }
+                }
+                className="app__backdrop"
+            >
+                <div className="app__container">
+                    <MainRoutes isLight={isLight}></MainRoutes>
+                    <NavBar isLight={isLight} changeTheme={changeTheme} />
+                </div>
+            </div>
         </div>
     )
 }

@@ -9,13 +9,40 @@ $theme-colors: (
 .app {
     position: relative;
     min-height: 382px;
+    background-image: url('./backgroud.JPG');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-clip: border-box;
+    background-size: cover;
+    /* background-blend-mode: luminosity; */
+    .app__backdrop {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding: 6px;
+        .app__container {
+            box-sizing: border-box;
+            padding: 2px 0;
+        }
+    }
 }
-
 
 //mobile
 @media (max-width: 576px) {
+    .app__container {
+        height: calc(100% - 60px);
+        max-height: calc(100% - 60px);
+        width: 100%;
+    }
 }
 
 //desktop
 @media (min-width: 576px) {
+    .app__container {
+        width: calc(100% - 60px);
+        max-width: calc(100% - 60px);
+        height: calc(100% - 12px);
+    }
 }

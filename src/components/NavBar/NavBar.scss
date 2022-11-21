@@ -133,8 +133,7 @@
         right: 0;
         margin: 6px;
         width: min-content;
-        height: calc(100% - 12px);
-        height: -webkit-fill-available;
+        height: calc(100% - 20px);
 
         .flex-nowrap {
             flex-direction: column;
