@@ -11,8 +11,8 @@ export const Main = ({ isLight }) => {
                 style={
                     isLight
                         ? {
-                              backgroundColor: 'rgba(0, 0, 0, 0.1)',
-                              boxShadow: '0px 0px 8px 8px rgba(0, 0, 0, 0.1)'
+                              backgroundColor: 'rgba(113, 113, 113, 0.1)',
+                              boxShadow: '0px 0px 8px 8px rgba(113, 113, 113, 0.1)'
                           }
                         : {
                               backgroundColor: 'rgba(255, 255, 255, 0.1)',
