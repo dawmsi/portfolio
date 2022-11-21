@@ -20,7 +20,7 @@ function App() {
                           }
                         : {
                               backdropFilter: 'brightness(72%) blur(0.2em)',
-                              webkitBackdropFilter:
+                              WebkitBackdropFilter:
                                   'brightness(82%) blur(0.2em)'
                           }
                 }
