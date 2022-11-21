@@ -11,13 +11,13 @@ export const Main = ({ isLight }) => {
                 style={
                     isLight
                         ? {
-                              backgroundColor: 'rgba(113, 113, 113, 0.1)',
-                              boxShadow: '0px 0px 8px 8px rgba(113, 113, 113, 0.1)'
+                              backgroundColor: 'rgba(25, 25, 25, 0.2)',
+                              boxShadow: '0px 0px 8px 8px rgba(25, 25, 25, 0.2)'
                           }
                         : {
-                              backgroundColor: 'rgba(255, 255, 255, 0.1)',
+                              backgroundColor: 'rgba(225, 225, 225, 0.1)',
                               boxShadow:
-                                  '0px 0px 8px 6px rgba(255, 255, 255, 0.1)'
+                                  '0px 0px 8px 8px rgba(225, 225, 225, 0.1)'
                           }
                 }
                 className={isLight ? 'main text-dark' : ' main text-light'}
