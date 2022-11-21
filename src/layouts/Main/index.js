@@ -15,9 +15,9 @@ export const Main = ({ isLight }) => {
                               boxShadow: '0px 0px 8px 8px rgba(25, 25, 25, 0.2)'
                           }
                         : {
-                              backgroundColor: 'rgba(225, 225, 225, 0.1)',
+                              backgroundColor: 'rgba(245, 245, 245, 0.1)',
                               boxShadow:
-                                  '0px 0px 8px 8px rgba(225, 225, 225, 0.1)'
+                                  '0px 0px 8px 8px rgba(245, 245, 245, 0.1)'
                           }
                 }
                 className={isLight ? 'main text-dark' : ' main text-light'}
