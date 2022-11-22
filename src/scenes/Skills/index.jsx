@@ -8,8 +8,24 @@ export const Skills = ({ isLight }) => {
             id: 1,
             name: 'HTML',
             complete: 80,
-            details: `, Tutorial , HOME , Introduction , Editors ,
-        Basic , Elements , Attributes , Headings ,
+            details: ` Basic`,
+            dependencies: [{ skillName: '', learned: false },]
+        },
+        {
+            id: 2,
+            name: 'CSS',
+            complete: 60
+        },
+        { id: 3, name: 'JAVASCRIPT', complete: 88 },
+        { id: 4, name: 'Material UI', complete: 67 },
+        { id: 5, name: 'Bootstrap', complete: 68 },
+        { id: 6, name: 'SA(C)SS', complete: 70 },
+        { id: 7, name: 'React', complete: 71 },
+        { id: 8, name: 'Redux', complete: 72 },
+        { id: 9, name: 'NodeJS', complete: 82 }
+    ]
+
+    /*  Elements , Attributes , Headings ,
         Paragraphs , Styles , Formatting , Quotations ,
         Comments , Colors , CSS , Links , Images ,
         Favicon , Tables , Lists , Block & Inline ,
@@ -29,21 +45,7 @@ export const Skills = ({ isLight }) => {
         Colors , Canvas , Audio/Video , Doctypes ,
         Character Sets , URL Encode , Lang Codes HTTP Messages
         HTTP Methods PX to EM Converter Keyboard Shortcuts`
-        },
-        {
-            id: 2,
-            name: 'CSS',
-            complete: 60
-        },
-        { id: 3, name: 'JAVASCRIPT', complete: 88 },
-        { id: 4, name: 'Material UI', complete: 67 },
-        { id: 5, name: 'Bootstrap', complete: 68 },
-        { id: 6, name: 'SA(C)SS', complete: 70 },
-        { id: 7, name: 'React', complete: 71 },
-        { id: 8, name: 'Redux', complete: 72 },
-        { id: 9, name: 'NodeJS', complete: 82 }
-    ]
-
+ */
     return (
         <>
             <CarouselArea
