@@ -1,25 +1,3 @@
-export const skills = [
-    {
-        id: 1,
-        name: 'HTML',
-        complete: 80,
-        details: ` Basic`,
-        dependencies: [{ skillName: '', learned: false }]
-    },
-    {
-        id: 2,
-        name: 'CSS',
-        complete: 60
-    },
-    { id: 3, name: 'JAVASCRIPT', complete: 88 },
-    { id: 4, name: 'Material UI', complete: 67 },
-    { id: 5, name: 'Bootstrap', complete: 68 },
-    { id: 6, name: 'SA(C)SS', complete: 70 },
-    { id: 7, name: 'React', complete: 71 },
-    { id: 8, name: 'Redux', complete: 72 },
-    { id: 9, name: 'NodeJS', complete: 82 }
-]
-
 /*  Elements , Attributes , Headings ,
         Paragraphs , Styles , Formatting , Quotations ,
         Comments , Colors , CSS , Links , Images ,
@@ -41,3 +19,155 @@ export const skills = [
         Character Sets , URL Encode , Lang Codes HTTP Messages
         HTTP Methods PX to EM Converter Keyboard Shortcuts`
  */
+
+export const skills = [
+    {
+        id: 1,
+        name: 'HTML',
+        details: ` Basic`,
+        dependencies: [
+            { id: 1, name: 'Elements', complete: true },
+            { id: 2, name: 'Attributes', complete: true },
+            { id: 3, name: 'Headings', complete: true },
+            { id: 4, name: 'Quotations', complete: true },
+            { id: 5, name: 'Comments', complete: true },
+            { id: 6, name: 'Colors', complete: true },
+            { id: 7, name: 'Links', complete: true },
+            { id: 8, name: 'Images', complete: true },
+            { id: 9, name: 'Favicon', complete: true },
+            { id: 10, name: 'Tables', complete: true },
+            { id: 11, name: 'Lists', complete: true },
+            { id: 12, name: 'Block & Inline', complete: true },
+            { id: 13, name: 'Classes', complete: true },
+            { id: 14, name: 'Iframes', complete: false }
+        ]
+    },
+    {
+        id: 2,
+        name: 'CSS',
+        dependencies: [
+            { id: 1, name: '', complete: false },
+            { id: 2, name: '', complete: false },
+            { id: 3, name: '', complete: false },
+            { id: 4, name: '', complete: false },
+            { id: 5, name: '', complete: false },
+            { id: 6, name: '', complete: false },
+            { id: 7, name: '', complete: false },
+            { id: 8, name: '', complete: false },
+            { id: 9, name: '', complete: false },
+            { id: 10, name: '', complete: false }
+        ]
+    },
+    {
+        id: 3,
+        name: 'JAVASCRIPT',
+        dependencies: [
+            { id: 1, name: '', complete: false },
+            { id: 2, name: '', complete: false },
+            { id: 3, name: '', complete: false },
+            { id: 4, name: '', complete: false },
+            { id: 5, name: '', complete: false },
+            { id: 6, name: '', complete: false },
+            { id: 7, name: '', complete: false },
+            { id: 8, name: '', complete: false },
+            { id: 9, name: '', complete: false },
+            { id: 10, name: '', complete: false }
+        ]
+    },
+    {
+        id: 4,
+        name: 'Material UI',
+        dependencies: [
+            { id: 1, name: '', complete: false },
+            { id: 2, name: '', complete: false },
+            { id: 3, name: '', complete: false },
+            { id: 4, name: '', complete: false },
+            { id: 5, name: '', complete: false },
+            { id: 6, name: '', complete: false },
+            { id: 7, name: '', complete: false },
+            { id: 8, name: '', complete: false },
+            { id: 9, name: '', complete: false },
+            { id: 10, name: '', complete: false }
+        ]
+    },
+    {
+        id: 5,
+        name: 'Bootstrap',
+        dependencies: [
+            { id: 1, name: '', complete: false },
+            { id: 2, name: '', complete: false },
+            { id: 3, name: '', complete: false },
+            { id: 4, name: '', complete: false },
+            { id: 5, name: '', complete: false },
+            { id: 6, name: '', complete: false },
+            { id: 7, name: '', complete: false },
+            { id: 8, name: '', complete: false },
+            { id: 9, name: '', complete: false },
+            { id: 10, name: '', complete: false }
+        ]
+    },
+    {
+        id: 6,
+        name: 'SA(C)SS',
+        dependencies: [
+            { id: 1, name: '', complete: false },
+            { id: 2, name: '', complete: false },
+            { id: 3, name: '', complete: false },
+            { id: 4, name: '', complete: false },
+            { id: 5, name: '', complete: false },
+            { id: 6, name: '', complete: false },
+            { id: 7, name: '', complete: false },
+            { id: 8, name: '', complete: false },
+            { id: 9, name: '', complete: false },
+            { id: 10, name: '', complete: false }
+        ]
+    },
+    {
+        id: 7,
+        name: 'React',
+        dependencies: [
+            { id: 1, name: '', complete: false },
+            { id: 2, name: '', complete: false },
+            { id: 3, name: '', complete: false },
+            { id: 4, name: '', complete: false },
+            { id: 5, name: '', complete: false },
+            { id: 6, name: '', complete: false },
+            { id: 7, name: '', complete: false },
+            { id: 8, name: '', complete: false },
+            { id: 9, name: '', complete: false },
+            { id: 10, name: '', complete: false }
+        ]
+    },
+    {
+        id: 8,
+        name: 'Redux',
+        dependencies: [
+            { id: 1, name: '', complete: false },
+            { id: 2, name: '', complete: false },
+            { id: 3, name: '', complete: false },
+            { id: 4, name: '', complete: false },
+            { id: 5, name: '', complete: false },
+            { id: 6, name: '', complete: false },
+            { id: 7, name: '', complete: false },
+            { id: 8, name: '', complete: false },
+            { id: 9, name: '', complete: false },
+            { id: 10, name: '', complete: false }
+        ]
+    },
+    {
+        id: 9,
+        name: 'NodeJS',
+        dependencies: [
+            { id: 1, name: '', complete: false },
+            { id: 2, name: '', complete: false },
+            { id: 3, name: '', complete: false },
+            { id: 4, name: '', complete: false },
+            { id: 5, name: '', complete: false },
+            { id: 6, name: '', complete: false },
+            { id: 7, name: '', complete: false },
+            { id: 8, name: '', complete: false },
+            { id: 9, name: '', complete: false },
+            { id: 10, name: '', complete: false }
+        ]
+    }
+]

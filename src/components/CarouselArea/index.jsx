@@ -1,7 +1,6 @@
 import React from 'react'
 import { useState } from 'react'
 import { Carousel } from 'react-bootstrap'
-
 import './CarouselArea.scss'
 export const CarouselArea = ({
     getImage,
@@ -21,7 +20,7 @@ export const CarouselArea = ({
         }
         setTimeout(() => {
             setOverturn(!overturn)
-        }, 400)
+        }, 310)
         setCurrentNumber(num)
         e.currentTarget.classList.toggle('overturn')
     }

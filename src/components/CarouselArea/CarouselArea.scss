@@ -11,20 +11,18 @@
         height: calc(100% - 18.8px);
 
         .overturn {
-            animation: myanim1 0.9s linear;
+            animation: myanim1 0.99s alternate;
         }
         @keyframes myanim1 {
             51.1% {
                 transform: rotateY(-90deg) scale(0.7) rotate(-45deg);
-                opacity: 1;
             }
             51% {
                 transform: rotateY(90deg) scale(0.7) rotate(45deg);
-                opacity: 1;
             }
         }
         .overturn__back {
-            animation: myanim2 0.9s linear;
+            animation: myanim2 0.8s alternate;
         }
         @keyframes myanim2 {
             51.1% {
