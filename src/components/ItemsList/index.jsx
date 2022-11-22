@@ -1,6 +1,6 @@
 import React from 'react'
 import { Form, ToggleButton } from 'react-bootstrap'
-import { CheckCircle, Circle } from 'react-bootstrap-icons'
+import { CheckCircle, Circle, XCircle } from 'react-bootstrap-icons'
 import './ItemsList.scss'
 export const ItemsList = ({ itemObj, isLight }) => {
     return (
@@ -34,6 +34,15 @@ export const ItemsList = ({ itemObj, isLight }) => {
                                     type="text"
                                     placeholder={skill.name}
                                 />
+                                <ToggleButton
+                                    disabled
+                                    style={{ backgroundColor: 'transparent' }}
+                                    id="toggle-check"
+                                    type="checkbox"
+                                    variant={isLight ? 'light' : 'dark'}
+                                >
+                                        <XCircle />
+                                </ToggleButton>
                             </Form>
                         ))}
                 </div>
