@@ -7,8 +7,8 @@ export const Welcome = ({ isLight }) => {
         <Card
             style={
                 isLight
-                    ? { textShadow: 'rgba(0, 0, 0, 0.25) 0 0 13px' }
-                    : { textShadow: 'rgba(255, 255, 255, 0.25) 0 0 13px' }
+                    ? { textShadow: '0 0 13px rgba(0, 0, 0, 0.25)' }
+                    : { textShadow: '0 0 13px rgba(255, 255, 255, 0.25)' }
             }
             bg="transparent"
             className={

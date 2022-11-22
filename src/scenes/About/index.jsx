@@ -68,7 +68,7 @@ export const About = ({ isLight }) => {
             <div
                 className={
                     isActive
-                        ? 'rotation__area btns__click__area '
+                        ? 'rotation__area btns__click__area'
                         : 'btns__click__area'
                 }
             >

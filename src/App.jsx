@@ -14,14 +14,14 @@ function App() {
                 style={
                     isLight
                         ? {
-                              backdropFilter: 'brightness(72%) blur(0.2em)',
+                              backdropFilter: 'brightness(65%) blur(0.3em)',
                               WebkitBackdropFilter:
-                                  'brightness(72%) blur(0.2em)'
+                                  'brightness(65%) blur(0.2em)'
                           }
                         : {
-                              backdropFilter: 'brightness(72%) blur(0.2em)',
+                              backdropFilter: 'brightness(75%) blur(0.3em)',
                               WebkitBackdropFilter:
-                                  'brightness(82%) blur(0.2em)'
+                                  'brightness(75%) blur(0.2em)'
                           }
                 }
                 className="app__backdrop"
