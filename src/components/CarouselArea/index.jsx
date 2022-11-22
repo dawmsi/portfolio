@@ -1,13 +1,14 @@
 import React from 'react'
 import { useState } from 'react'
 import { Carousel } from 'react-bootstrap'
-import { ItemsList } from '../ItemsList'
+
 import './CarouselArea.scss'
 export const CarouselArea = ({
     getImage,
-    pause,
     itemsArray,
+    ItemsList,
     CurrentItem,
+    BacksideItem,
     isLight
 }) => {
     const [currentNumber, setCurrentNumber] = useState()
@@ -59,7 +60,18 @@ export const CarouselArea = ({
                                     itemObj={cuIte}
                                 />
                             ) : (
-                                <ItemsList itemObj={cuIte} isLight={isLight} />
+                                (BacksideItem && (
+                                    <BacksideItem
+                                        itemObj={cuIte}
+                                        isLigh={isLight}
+                                    />
+                                )) ||
+                                (ItemsList && (
+                                    <ItemsList
+                                        itemObj={cuIte}
+                                        isLight={isLight}
+                                    />
+                                ))
                             )}
                         </div>
                     </Carousel.Item>

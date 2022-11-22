@@ -1,7 +1,9 @@
 import React from 'react'
+import { BacksideItem } from '../../components/BacksideItem/BacksideItem'
 import { CarouselArea } from '../../components/CarouselArea'
 import { ProjectItem } from '../../components/ProjectItem'
 import { projects } from './projectTempArray'
+
 export const Projects = ({ isLight }) => {
     return (
         <>
@@ -9,6 +11,7 @@ export const Projects = ({ isLight }) => {
                 itemsArray={projects}
                 isLight={isLight}
                 CurrentItem={ProjectItem}
+                BacksideItem={BacksideItem}
             />
         </>
     )
