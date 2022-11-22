@@ -23,7 +23,10 @@ export const MainRoutes = ({ isLight }) => {
                     path="projects"
                     element={<Projects isLight={isLight} />}
                 />
-                <Route path="statistic" element={<Statistic />} />
+                <Route
+                    path="statistic"
+                    element={<Statistic isLight={isLight} />}
+                />
             </Route>
         </Routes>
     )

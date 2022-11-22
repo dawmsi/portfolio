@@ -1,6 +1,7 @@
 // vars colors
 $theme-colors: (
-    'dark': rgb(17, 17, 17)
+    'dark': #111111,
+    'light': #f8f9fa
 ) !default;
 
 @import '~bootstrap/scss/bootstrap';
