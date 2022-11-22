@@ -17,8 +17,8 @@ export const Welcome = ({ isLight }) => {
         >
             <Card.Title>Your Welcome</Card.Title>
             <Card.Text className="text-center">
-                In this place you can check if the developer <br /> has the
-                necessary skills for your projects
+                Here you can check if the developer <br /> has the necessary
+                skills for your projects
             </Card.Text>
         </Card>
     )
