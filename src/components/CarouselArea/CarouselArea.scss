@@ -1,6 +1,6 @@
 //default
 .carousel {
-    padding: 0;
+    padding: 0 6px;
     height: 100%;
     width: 100%;
     .carousel-inner {
@@ -56,7 +56,7 @@
         border-radius: 23px;
         width: fit-content;
         padding: 2px 6px;
-        margin: -1px auto;
+        margin: 0 auto;
         .active {
             height: 0.8rem;
             width: 0.8rem;
@@ -136,7 +136,7 @@
 //tablet
 @media (min-width: 576px) {
     .carousel {
-        padding: 0 8px;
+        padding: 8px;
         .carousel-inner {
             height: calc(100% - 8.8px);
             @keyframes myanim1 {
@@ -155,7 +155,7 @@
             }
         }
         .carousel-indicators {
-            margin: 6px auto;
+            margin: 9px auto;
             .active {
             }
             Button {
