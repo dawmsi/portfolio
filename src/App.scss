@@ -71,7 +71,7 @@ $theme-colors: (
     }
 }
 
-//desktop
+//tablet
 @media (min-width: 576px) {
     .app__container {
         width: calc(100% - 60px);
