@@ -13,12 +13,15 @@ export const ProjectItem = ({itemObj, isLight }) => {
         <>
             <Card className="current__card">
                 {img ? (
+                    <div className="current__img__container">
                     <div
                         className="current__img"
                         style={{
                             backgroundImage: `url(${img})`
                         }}
                     ></div>
+                    </div>
+
                 ) : (
                     <Figure className="no__image">
                         <p>No image</p>

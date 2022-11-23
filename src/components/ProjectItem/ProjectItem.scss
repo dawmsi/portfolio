@@ -4,15 +4,23 @@
     height: 100%;
     border: 0;
     background-color: transparent;
+    .current__img__container {
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+        border-radius: 23px;
+        -webkit-filter: grayscale(60%);
+        filter: grayscale(60%);
+    }
     .current__img {
         border: 0;
         margin: 0;
         height: 100%;
         width: 100%;
-        border-radius: 23px;
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
+        transform: scale(1.13);
     }
     .no__image {
         border-radius: 23px;
