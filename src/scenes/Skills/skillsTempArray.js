@@ -1,127 +1,177 @@
 /* 
- Elements , Attributes , Headings ,
-        Paragraphs , Styles , Formatting , Quotations ,
-        Comments , Colors ,  , Links , Images ,
-        Favicon , Tables , Lists , Block & Inline ,
-        Classes , Id , Iframes , JavaScript , File Paths
-        , Head , Layout , Responsive , Computercode ,
-        Semantics , Style Guide , Entities , Symbols ,
-        Emojis , Charset , URL Encode , vs. XHTML ,
-        Forms , Forms , Form Attributes , Form Elements
-        , Input Types , Input Attributes , Input Form
-        Attributes , Graphics , Canvas , SVG , Media
-        , Media , Video , Audio , Plug-ins , YouTube
-        , APIs , Geolocation , Drag/Drop , Web Storage
-        , Web Workers , SSE , Examples , Examples ,
-        Quiz , Exercises , Certificate , Summary ,
-        Accessibility , References , Tag List , Attributes
-        , Global Attributes , Browser Support , Events ,
-        Colors , Canvas , Audio/Video , Doctypes ,
-        Character Sets , URL Encode , Lang Codes HTTP Messages
-        HTTP Methods PX to EM Converter Keyboard Shortcuts
- Selectors
- Comments
- Colors
- Backgrounds
- Borders
- Margins
- Padding
- Height/Width
- Box Model
- Outline
- Text
- Fonts
- Icons
- Links
- Lists
- Tables
- Display
- Max-width
- Position
- Z-index
- Overflow
- Float
- Inline-block
- Align
- Combinators
- Pseudo-class
- Pseudo-element
- Opacity
- Navigation Bar
- Dropdowns
- Image Gallery
- Image Sprites
- Attr Selectors
- Forms
- Counters
- Website Layout
- Units
- Specificity
- Math Functions
+Elements
+Attributes
+Headings
+ParagraphsStyles
+Formatting
+Quotations
+Comments
+Colors
+Links
+Images
+FaviconTables
+Lists
+Block & Inline
+ClassesId
+Iframes
+JavaScript
+File Paths   
+Head
+Layout
+Responsive
+Computercode
+SemanticsStyle Guide
+Entities
+Symbols
+EmojisCharset
+URL Encode
+vs. XHTML
+Forms
+Forms
+Form Attributes
+Form Elements  
+Input Types
+Input Attributes
+Input FormAttributes
+Graphics
+Canvas
+SVG
+Media
+Media
+Video
+Audio
+Plug-ins
+YouTube
+APIs
+Geolocation
+Drag/Drop
+Web Storage
+Web Workers
+SSE
+Examples
+Examples
+Quiz
+Exercises
+Certificate
+Summary
+Accessibility
+References
+Tag List
+Attributes
+Global Attributes
+Browser Support
+Events
+Colors
+Canvas
+Audio/Video
+Doctypes
+Character Sets
+URL Encode
+Lang Codes HTTP MessagesHTTP Methods PX to EM Converter Keyboard Shortcuts
 
 
- Output
- Statements
- Syntax
- Comments
- Variables
- Let
- Const
- Operators
- Arithmetic
- Assignment
- Data Types
- Functions
- Objects
- Events
- Strings
- String Methods
- String Search
- String Templates
- Numbers
- BigInt
- Number Methods
- Number Properties
- Arrays
- Array Methods
- Array Sort
- Array Iteration
- Array Const
- Dates
- Date Formats
- Date Get Methods
- Date Set Methods
- Math
- Random
- Booleans
- Comparisons
- If Else
- Switch
- Loop For
- Loop For In
- Loop For Of
- Loop While
- Break
- Iterables
- Sets
- Maps
- Typeof
- Type Conversion
- Bitwise
- RegExp
- Precedence
- Errors
- Scope
- Hoisting
- Strict Mode
- this Keyword
- Arrow Function
- Classes
- Modules
- JSON
+Selectors
+Comments
+Colors
+Backgrounds
+Borders
+Margins
+Padding
+Height/Width
+Box Model
+Outline
+Text
+Fonts
+Icons
+Links
+Lists
+Tables
+Display
+Max-width
+Position
+Z-index
+Overflow
+Float
+Inline-block
+Align
+Combinators
+Pseudo-class
+Pseudo-element
+Opacity
+Navigation Bar
+Dropdowns
+Image Gallery
+Image Sprites
+Attr Selectors
+Forms
+Counters
+Website Layout
+Units
+Specificity
+Math Functions
+
+Output
+Statements
+Syntax
+Comments
+Variables
+Let
+Const
+Operators
+Arithmetic
+Assignment
+Data Types
+Functions
+Objects
+Events
+Strings
+String Methods
+String Search
+String Templates
+Numbers
+BigInt
+Number Methods
+Number Properties
+Arrays
+Array Methods
+Array Sort
+Array Iteration
+Array Const
+Dates
+Date Formats
+Date Get Methods
+Date Set Methods
+Math
+Random
+Booleans
+Comparisons
+If Else
+Switch
+Loop For
+Loop For In
+Loop For Of
+Loop While
+Break
+Iterables
+Sets
+Maps
+Typeof
+Type Conversion
+Bitwise
+RegExp
+Precedence
+Errors
+Scope
+Hoisting
+Strict Mode
+this Keyword
+Arrow Function
+Classes
+Modules
+JSON
 J Debugging
 J Style Guide
- */
+*/
 
 export const skills = [
     {
@@ -373,22 +423,22 @@ export const skills = [
             { id: 2, name: ' ', complete: true },
             { id: 3, name: ' ', complete: false },
             { id: 4, name: ' ', complete: false },
-            { id: 5, name: ' ', complete: false },
+            { id: 5, name: ' ', complete: true },
             { id: 6, name: ' ', complete: false },
-            { id: 7, name: ' ', complete: false },
-            { id: 8, name: ' ', complete: false },
+            { id: 7, name: ' ', complete: true },
+            { id: 8, name: ' ', complete: true },
             { id: 9, name: ' ', complete: false },
-            { id: 10, name: ' ', complete: false },
-            { id: 11, name: ' ', complete: false },
-            { id: 12, name: ' ', complete: false },
+            { id: 10, name: ' ', complete: true },
+            { id: 11, name: ' ', complete: true },
+            { id: 12, name: ' ', complete: true },
             { id: 13, name: ' ', complete: false },
-            { id: 14, name: ' ', complete: false },
-            { id: 15, name: ' ', complete: false },
-            { id: 16, name: ' ', complete: false },
+            { id: 14, name: ' ', complete: true },
+            { id: 15, name: ' ', complete: true },
+            { id: 16, name: ' ', complete: true },
             { id: 17, name: ' ', complete: false },
-            { id: 18, name: ' ', complete: false },
+            { id: 18, name: ' ', complete: true },
             { id: 19, name: ' ', complete: false },
-            { id: 20, name: ' ', complete: false },
+            { id: 20, name: ' ', complete: true },
             { id: 21, name: ' ', complete: false },
             { id: 22, name: ' ', complete: false },
             { id: 23, name: ' ', complete: true },
@@ -407,30 +457,30 @@ export const skills = [
         dependencies: [
             { id: 1, name: ' ', complete: true },
             { id: 2, name: ' ', complete: true },
-            { id: 3, name: ' ', complete: true },
+            { id: 3, name: ' ', complete: false },
             { id: 4, name: ' ', complete: true },
             { id: 5, name: ' ', complete: false },
-            { id: 6, name: ' ', complete: false },
-            { id: 7, name: ' ', complete: false },
-            { id: 8, name: ' ', complete: false },
+            { id: 6, name: ' ', complete: true },
+            { id: 7, name: ' ', complete: true },
+            { id: 8, name: ' ', complete: true },
             { id: 9, name: ' ', complete: false },
-            { id: 10, name: ' ', complete: false },
-            { id: 11, name: ' ', complete: false },
+            { id: 10, name: ' ', complete: true },
+            { id: 11, name: ' ', complete: true },
             { id: 12, name: ' ', complete: false },
-            { id: 13, name: ' ', complete: false },
-            { id: 14, name: ' ', complete: false },
-            { id: 15, name: ' ', complete: false },
-            { id: 16, name: ' ', complete: false },
+            { id: 13, name: ' ', complete: true },
+            { id: 14, name: ' ', complete: true },
+            { id: 15, name: ' ', complete: true },
+            { id: 16, name: ' ', complete: true },
             { id: 17, name: ' ', complete: false },
-            { id: 18, name: ' ', complete: false },
-            { id: 19, name: ' ', complete: false },
-            { id: 20, name: ' ', complete: false },
-            { id: 21, name: ' ', complete: false },
-            { id: 22, name: ' ', complete: false },
-            { id: 23, name: ' ', complete: true },
+            { id: 18, name: ' ', complete: true },
+            { id: 19, name: ' ', complete: true },
+            { id: 20, name: ' ', complete: true },
+            { id: 21, name: ' ', complete: true },
+            { id: 22, name: ' ', complete: true },
+            { id: 23, name: ' ', complete: false },
             { id: 24, name: ' ', complete: true },
             { id: 25, name: ' ', complete: true },
-            { id: 26, name: ' ', complete: true },
+            { id: 26, name: ' ', complete: false },
             { id: 27, name: ' ', complete: false },
             { id: 28, name: ' ', complete: true },
             { id: 29, name: ' ', complete: true },
