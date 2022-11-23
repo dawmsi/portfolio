@@ -4,7 +4,7 @@
     position: relative;
     z-index: 50;
     flex-wrap: nowrap;
-    padding: 0 6px;
+    padding: auto 12px;
 
     .title__container {
         display: flex;
@@ -22,14 +22,15 @@
             justify-content: center;
             align-items: center;
             width: fit-content;
-            padding: auto 12px;
+            padding: 1px;
             --bs-border-opacity: 0.1;
             .breadcrumb {
                 justify-content: center;
-                margin: 0;
+                margin: -1px 0 0 0;
                 .breadcrumb-item.text-dark a,
                 .breadcrumb-item.text-light a {
                     color: inherit;
+                    text-decoration: none;
                 }
             }
         }
