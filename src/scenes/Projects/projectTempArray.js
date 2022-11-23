@@ -47,5 +47,28 @@ export const projects = [
         link: 'https://dawmsi.github.io/sometodo/',
         details:
             'The practice of using clean JS, erasing, crearing, editing local data and DOM elements'
+    },
+    {
+        id: 7,
+        name: 'Fake shop',
+        description: 'Product list and card page with header show',
+        link: 'https://637e43c7319a390ba02f2e5a--loquacious-nasturtium-e7e0f1.netlify.app',
+        details: `One of the projects in the courses where different packages were used such as: 
+            "@emotion/react": "^11.10.4",
+            "@emotion/styled": "^11.10.4",
+            "@mui/icons-material": "^5.10.6",
+            "@mui/material": "^5.10.6",
+            "@testing-library/jest-dom": "^5.16.5",
+            "@testing-library/react": "^13.4.0",
+            "@testing-library/user-event": "^13.5.0",
+            "axios": "^1.1.3",
+            "lodash": "^4.17.21",
+            "react": "^18.2.0",
+            "react-dom": "^18.2.0",
+            "react-redux": "^8.0.4",
+            "react-router-dom": "^6.4.1-pre.0",
+            "react-scripts": "5.0.1",
+            "redux": "^4.2.0",
+            "redux-thunk": "^2.4.1"`
     }
 ]
