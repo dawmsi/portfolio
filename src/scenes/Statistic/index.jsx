@@ -33,7 +33,7 @@ export const Statistic = ({ isLight }) => {
                         }
                     }
                 }}
-                margin={{ top: 60, right: 60, bottom: 60, left: 60 }}
+                margin={{ top: 80, right: 60, bottom: 50, left: 60 }}
                 xScale={{ type: 'point' }}
                 yScale={{
                     type: 'linear',

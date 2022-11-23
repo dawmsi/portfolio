@@ -19,9 +19,9 @@ function App() {
                                   'brightness(65%) blur(0.2em)'
                           }
                         : {
-                              backdropFilter: 'brightness(75%) blur(0.3em)',
+                              backdropFilter: 'brightness(85%) blur(0.3em)',
                               WebkitBackdropFilter:
-                                  'brightness(75%) blur(0.2em)'
+                                  'brightness(85%) blur(0.2em)'
                           }
                 }
                 className="app__backdrop"

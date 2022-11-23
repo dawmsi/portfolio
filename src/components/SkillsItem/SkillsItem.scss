@@ -1,29 +1,42 @@
 //default
 .skills__card {
+    width: 100%;
+    height: 100%;
     border: 0;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    height: 100%;
-    width: 100%;
-    .skills__circular {
-        padding: 12px;
+    align-items: center;
+    .skills__circular__container {
+        position: relative;
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+        .skills__circular {
+            position: absolute;
+            border: 0;
+            height: 100%;
+            width: 100%;
+            margin: 0;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 24px;
+        }
     }
 
     .skills__body {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
         margin: 12px auto;
         height: 30%;
-        width: 50%;
+        width: 100%;
         .skills__title {
             text-align: center;
         }
         .skills__progress {
             border: 0;
             background-color: transparent;
-            margin-right: 3px;
+            margin: auto;
+            width: 50%;
         }
     }
 }
@@ -32,7 +45,6 @@
 @media (max-width: 576px) {
     .skills__card {
         .skills__circular {
-            padding: 36px;
         }
         .skills__body {
             .skills__title {
@@ -46,17 +58,10 @@
 //desktop
 @media (min-width: 576px) {
     .skills__card {
-        box-sizing: border-box;
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
         align-items: center;
-        padding: 12px;
-        height: 100%;
-        width: 100%;
         .skills__circular {
-            width: calc(40% - 24px);
-            margin: auto;
         }
         .skills__body {
             .skills__title {

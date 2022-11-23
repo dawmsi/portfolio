@@ -13,27 +13,28 @@ export const SkillsItem = ({ isLight, itemObj }) => {
     return (
         <>
             <div className="skills__card">
-                <CircularProgressbar
-                    className="skills__circular"
-                    strokeWidth={2}
-                    value={percentage}
-                    text={`${percentage}%`}
-                    styles={buildStyles({
-                        rotation: 0,
-                        strokeLinecap: 'round',
-                        textSize: '12px',
-                        pathTransitionDuration: 0.5,
-                        pathColor: isLight
-                            ? `rgba(0,0,0, ${percentage / 100})`
-                            : `rgba(255,255,255, ${percentage / 100})`,
-                        textColor: isLight
-                            ? `rgba(0,0,0, ${28 / 100})`
-                            : `rgba(255,255,255, ${21 / 100})`,
-                        trailColor: 'gray',
-                        backgroundColor: 'gray'
-                    })}
-                />
-
+                <div className="skills__circular__container">
+                    <CircularProgressbar
+                        className="skills__circular"
+                        strokeWidth={2}
+                        value={percentage}
+                        text={`${percentage}%`}
+                        styles={buildStyles({
+                            rotation: 0,
+                            strokeLinecap: 'round',
+                            textSize: '12px',
+                            pathTransitionDuration: 0.5,
+                            pathColor: isLight
+                                ? `rgba(0,0,0, ${percentage / 100})`
+                                : `rgba(255,255,255, ${percentage / 100})`,
+                            textColor: isLight
+                                ? `rgba(0,0,0, ${28 / 100})`
+                                : `rgba(255,255,255, ${21 / 100})`,
+                            trailColor: 'gray',
+                            backgroundColor: 'gray'
+                        })}
+                    />
+                </div>
                 <div className="skills__body">
                     <div className="skills__title">{itemObj.name}</div>
                     <ProgressBar className="skills__progress">
