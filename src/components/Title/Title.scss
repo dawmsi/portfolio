@@ -21,7 +21,8 @@
             -khtml-border-radius: 23px;
             justify-content: center;
             align-items: center;
-            width: 100%;
+            width: fit-content;
+            padding: auto 12px;
             --bs-border-opacity: 0.1;
             .breadcrumb {
                 justify-content: center;
