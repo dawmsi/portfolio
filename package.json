@@ -1,6 +1,6 @@
 {
   "homepage": "http://dawmsi.github.io/portfolio",
-  "name": "portfolio-git-pages",
+  "name": "portfolio",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
