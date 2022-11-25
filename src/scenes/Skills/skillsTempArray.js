@@ -537,7 +537,7 @@ export const skills = [
             { id: 28, name: 'Error Boundaries', complete: false },
             { id: 29, name: 'Forwarding Refs', complete: true },
             { id: 30, name: 'Fragments', complete: false },
-            { id: 31, name: 'Higher-Order Components', complete: false },
+            { id: 31, name: 'Higher-Order Components', complete: true },
             {
                 id: 32,
                 name: 'Integrating with Other Libraries',
