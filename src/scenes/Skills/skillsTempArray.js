@@ -1,4 +1,5 @@
-/* 
+/* Accordion
+
 Elements
 Attributes
 Headings
@@ -171,7 +172,138 @@ Modules
 JSON
 J Debugging
 J Style Guide
+
+INPUTS
+Autocomplete
+Button
+Button Group
+Checkbox
+Floating Action Button
+Radio Group
+Rating
+Select
+Slider
+Switch
+Text Field
+Transfer List
+Toggle Button
+DATA DISPLAY
+Avatar
+Badge
+Chip
+Divider
+Icons
+Material Icons
+List
+Table
+Tooltip
+Typography
+FEEDBACK
+Alert
+Backdrop
+Dialog
+Progress
+Skeleton
+Snackbar
+SURFACES
+Accordion
+App Bar
+Card
+Paper
+NAVIGATION
+Bottom Navigation
+Breadcrumbs
+Drawer
+Link
+Menu
+Pagination
+Speed Dial
+Stepper
+Tabs
+LAYOUT
+Box
+Container
+Grid
+Grid v2
+NEW
+Stack
+Image List
+Hidden
+
+Accordion
+Alerts
+Badge
+Breadcrumb
+Buttons
+Button group
+Card
+Carousel
+Close button
+Collapse
+Dropdowns
+List group
+Modal
+Navbar
+Navs & tabs
+Offcanvas
+Pagination
+Placeholders
+Popovers
+Progress
+Scrollspy
+Spinners
+Toasts
+Tooltips
+
+
+Variables
+Nesting
+@import
+@mixin
+@extend
+String
+Numeric
+List
+Map
+Selector
+Introspection
+Color
 */
+/*
+Node.js Modules
+Node.js HTTP Module
+Node.js File System
+Node.js URL Module
+Node.js NPM
+Node.js Events
+Node.js Upload Files
+Node.js Email
+Node.js MySQL
+MySQL Get Started
+MySQL Create Database
+MySQL Create Table
+MySQL Insert Into
+MySQL Select From
+MySQL Where
+MySQL Order By
+MySQL Delete
+MySQL Drop Table
+MySQL Update
+MySQL Limit
+MySQL Join
+Node.js MongoDB
+MongoDB Get Started
+MongoDB Create Database
+MongoDB Create Collection
+MongoDB Insert
+MongoDB Find
+MongoDB Query
+MongoDB Sort
+MongoDB Delete
+MongoDB Drop Collection
+MongoDB Update
+MongoDB Limit
+MongoDB Join */
 
 export const skills = [
     {
@@ -275,159 +407,171 @@ export const skills = [
         id: 4,
         name: 'Material UI',
         dependencies: [
-            { id: 1, name: ' ', complete: true },
-            { id: 2, name: ' ', complete: true },
-            { id: 3, name: ' ', complete: true },
-            { id: 4, name: ' ', complete: true },
-            { id: 5, name: ' ', complete: true },
-            { id: 6, name: ' ', complete: false },
-            { id: 7, name: ' ', complete: true },
-            { id: 8, name: ' ', complete: true },
-            { id: 9, name: ' ', complete: true },
-            { id: 10, name: ' ', complete: true },
-            { id: 11, name: ' ', complete: true },
-            { id: 12, name: ' ', complete: true },
-            { id: 13, name: ' ', complete: true },
-            { id: 14, name: ' ', complete: false },
-            { id: 15, name: ' ', complete: true },
-            { id: 16, name: ' ', complete: true },
-            { id: 17, name: ' ', complete: true },
-            { id: 18, name: ' ', complete: true },
-            { id: 19, name: ' ', complete: true },
-            { id: 20, name: ' ', complete: false },
-            { id: 21, name: ' ', complete: true },
-            { id: 22, name: ' ', complete: true },
-            { id: 23, name: ' ', complete: true },
-            { id: 24, name: ' ', complete: true },
-            { id: 25, name: ' ', complete: true },
-            { id: 26, name: ' ', complete: true },
-            { id: 27, name: ' ', complete: false },
-            { id: 28, name: ' ', complete: true },
-            { id: 29, name: ' ', complete: true },
-            { id: 30, name: ' ', complete: true }
+            { id: 1, name: 'Autocomplete', complete: true },
+            { id: 2, name: 'Button', complete: true },
+            { id: 3, name: 'Button Group', complete: true },
+            { id: 4, name: 'Checkbox', complete: true },
+            { id: 5, name: 'Floating Action Button', complete: true },
+            { id: 6, name: 'Radio Group', complete: false },
+            { id: 7, name: 'Rating', complete: true },
+            { id: 8, name: 'Select', complete: true },
+            { id: 9, name: 'Slider', complete: true },
+            { id: 10, name: 'Switch', complete: true },
+            { id: 11, name: 'Text Field', complete: true },
+            { id: 12, name: 'Transfer List', complete: true },
+            { id: 13, name: 'Toggle Button', complete: true },
+            { id: 14, name: 'Avatar', complete: false },
+            { id: 15, name: 'Badge', complete: true },
+            { id: 16, name: 'Chip', complete: true },
+            { id: 17, name: 'Divider', complete: true },
+            { id: 18, name: 'Icons', complete: true },
+            { id: 19, name: 'Material Icons', complete: true },
+            { id: 20, name: 'List', complete: false },
+            { id: 21, name: 'Table', complete: true },
+            { id: 22, name: 'Tooltip', complete: true },
+            { id: 23, name: 'Typography', complete: true },
+            { id: 24, name: 'FEEDBACK', complete: true },
+            { id: 25, name: 'Alert', complete: true },
+            { id: 26, name: 'Backdrop', complete: true },
+            { id: 27, name: 'Dialog', complete: false },
+            { id: 28, name: 'Progress', complete: true },
+            { id: 29, name: 'Snackbar', complete: true },
+            { id: 30, name: 'Card', complete: true }
         ]
     },
     {
         id: 5,
         name: 'Bootstrap',
         dependencies: [
-            { id: 1, name: ' ', complete: true },
-            { id: 2, name: ' ', complete: true },
-            { id: 3, name: ' ', complete: true },
-            { id: 4, name: ' ', complete: true },
-            { id: 5, name: ' ', complete: false },
-            { id: 6, name: ' ', complete: true },
-            { id: 7, name: ' ', complete: false },
-            { id: 8, name: ' ', complete: true },
-            { id: 9, name: ' ', complete: true },
-            { id: 10, name: ' ', complete: true },
-            { id: 11, name: ' ', complete: true },
-            { id: 12, name: ' ', complete: true },
-            { id: 13, name: ' ', complete: true },
-            { id: 14, name: ' ', complete: false },
-            { id: 15, name: ' ', complete: true },
-            { id: 16, name: ' ', complete: true },
-            { id: 17, name: ' ', complete: true },
-            { id: 18, name: ' ', complete: true },
-            { id: 19, name: ' ', complete: true },
-            { id: 20, name: ' ', complete: false },
-            { id: 21, name: ' ', complete: true },
-            { id: 22, name: ' ', complete: true },
-            { id: 23, name: ' ', complete: true },
-            { id: 24, name: ' ', complete: true },
-            { id: 25, name: ' ', complete: true },
-            { id: 26, name: ' ', complete: true },
-            { id: 27, name: ' ', complete: false },
-            { id: 28, name: ' ', complete: true },
-            { id: 29, name: ' ', complete: true },
-            { id: 30, name: ' ', complete: true }
+            { id: 1, name: 'Badge', complete: true },
+            { id: 2, name: 'Breadcrumb', complete: true },
+            { id: 3, name: 'Buttons', complete: true },
+            { id: 4, name: 'Button group', complete: true },
+            { id: 5, name: 'Carousel', complete: false },
+            { id: 6, name: 'Close button', complete: true },
+            { id: 7, name: 'Collapse', complete: false },
+            { id: 8, name: 'Dropdowns', complete: true },
+            { id: 9, name: 'List group', complete: true },
+            { id: 10, name: 'Modal', complete: true },
+            { id: 11, name: 'Navbar', complete: true },
+            { id: 12, name: 'Navs & tabs', complete: true },
+            { id: 13, name: 'Offcanvas', complete: true },
+            { id: 14, name: 'Pagination', complete: false },
+            { id: 15, name: 'Placeholders', complete: true },
+            { id: 16, name: 'Popovers', complete: true },
+            { id: 17, name: 'Progress', complete: true },
+            { id: 18, name: 'Scrollspy', complete: true },
+            { id: 19, name: 'Spinners', complete: true },
+            { id: 20, name: 'Toasts', complete: false },
+            { id: 21, name: 'Tooltips', complete: true },
+            { id: 22, name: 'Breakpoints', complete: true },
+            { id: 23, name: 'Containers', complete: true },
+            { id: 24, name: 'Grid', complete: true },
+            { id: 25, name: 'Columns', complete: true },
+            { id: 26, name: 'Gutters', complete: true },
+            { id: 27, name: 'Utilities', complete: false },
+            { id: 28, name: 'Z-index', complete: true },
+            { id: 29, name: 'CSS Grid', complete: true },
+            { id: 30, name: 'Breakpoints', complete: true }
         ]
     },
     {
         id: 6,
         name: 'SA(C)SS',
         dependencies: [
-            { id: 1, name: ' ', complete: true },
-            { id: 2, name: ' ', complete: true },
-            { id: 3, name: ' ', complete: true },
-            { id: 4, name: ' ', complete: true },
-            { id: 5, name: ' ', complete: true },
-            { id: 6, name: ' ', complete: false },
-            { id: 7, name: ' ', complete: true },
-            { id: 8, name: ' ', complete: true },
-            { id: 9, name: ' ', complete: true },
-            { id: 10, name: ' ', complete: true },
-            { id: 11, name: ' ', complete: true },
-            { id: 12, name: ' ', complete: true },
-            { id: 13, name: ' ', complete: true },
-            { id: 14, name: ' ', complete: false },
-            { id: 15, name: ' ', complete: true },
-            { id: 16, name: ' ', complete: true },
-            { id: 17, name: ' ', complete: true },
-            { id: 18, name: ' ', complete: false },
-            { id: 19, name: ' ', complete: true },
-            { id: 20, name: ' ', complete: false },
-            { id: 21, name: ' ', complete: true },
-            { id: 22, name: ' ', complete: true },
-            { id: 23, name: ' ', complete: true },
-            { id: 24, name: ' ', complete: false },
-            { id: 25, name: ' ', complete: true },
-            { id: 26, name: ' ', complete: true },
-            { id: 27, name: ' ', complete: false },
-            { id: 28, name: ' ', complete: true },
-            { id: 29, name: ' ', complete: true },
-            { id: 30, name: ' ', complete: true }
+            { id: 1, name: 'Variables', complete: true },
+            { id: 2, name: 'Nesting', complete: true },
+            { id: 3, name: '@import', complete: true },
+            { id: 4, name: '@mixin', complete: true },
+            { id: 5, name: '@extend', complete: true },
+            { id: 6, name: '@use', complete: true },
+            { id: 7, name: '@forward', complete: false },
+            { id: 8, name: 'xin and @i nclude', complete: true },
+            { id: 9, name: '@function', complete: true },
+            { id: 10, name: '@error', complete: true },
+            { id: 11, name: '@debug', complete: false },
+            { id: 12, name: '@at-root', complete: true },
+            { id: 13, name: 'String', complete: true },
+            { id: 14, name: 'Numeric', complete: true },
+            { id: 15, name: 'List', complete: true },
+            { id: 16, name: 'Map', complete: true },
+            { id: 17, name: 'Selector', complete: true },
+            { id: 18, name: 'Introspection', complete: true },
+            { id: 19, name: 'Color', complete: true }
         ]
     },
     {
         id: 7,
         name: 'React',
         dependencies: [
-            { id: 1, name: ' ', complete: true },
-            { id: 2, name: ' ', complete: true },
-            { id: 3, name: ' ', complete: true },
-            { id: 4, name: ' ', complete: true },
-            { id: 5, name: ' ', complete: true },
-            { id: 6, name: ' ', complete: true },
-            { id: 7, name: ' ', complete: true },
-            { id: 8, name: ' ', complete: false },
-            { id: 9, name: ' ', complete: true },
-            { id: 10, name: ' ', complete: true },
-            { id: 11, name: ' ', complete: true },
-            { id: 12, name: ' ', complete: true },
-            { id: 13, name: ' ', complete: true },
-            { id: 14, name: ' ', complete: false },
-            { id: 15, name: ' ', complete: true },
-            { id: 16, name: ' ', complete: true },
-            { id: 17, name: ' ', complete: false },
-            { id: 18, name: ' ', complete: true },
-            { id: 19, name: ' ', complete: false },
-            { id: 20, name: ' ', complete: false },
-            { id: 21, name: ' ', complete: true },
-            { id: 22, name: ' ', complete: true },
-            { id: 23, name: ' ', complete: false },
-            { id: 24, name: ' ', complete: true },
-            { id: 25, name: ' ', complete: true },
-            { id: 26, name: ' ', complete: true },
-            { id: 27, name: ' ', complete: false },
-            { id: 28, name: ' ', complete: true },
-            { id: 29, name: ' ', complete: true },
-            { id: 30, name: ' ', complete: true }
+            { id: 1, name: 'Components and Props', complete: true },
+            { id: 2, name: 'State and Lifecycle', complete: true },
+            { id: 3, name: 'Handling Events', complete: true },
+            { id: 4, name: 'Conditional Rendering', complete: true },
+            { id: 5, name: 'Lists and Keys', complete: true },
+            { id: 6, name: 'Forms', complete: true },
+            { id: 7, name: 'Lifting State Up', complete: false },
+            { id: 8, name: 'Composition vs Inheritance', complete: false },
+            { id: 9, name: 'Thinking In React', complete: true },
+            { id: 10, name: 'Rendering Elements', complete: true },
+            { id: 11, name: 'Hooks at a Glance', complete: false },
+            { id: 12, name: 'Using the State Hook', complete: true },
+            { id: 13, name: 'Using the Effect Hook', complete: true },
+            { id: 14, name: 'Rules of Hooks', complete: false },
+            { id: 15, name: 'Building Your Own Hooks', complete: true },
+            { id: 16, name: 'Hooks API Reference', complete: false },
+            { id: 17, name: 'React', complete: false },
+            { id: 18, name: 'React.Component', complete: true },
+            { id: 19, name: 'ReactDOM', complete: true },
+            { id: 20, name: 'ReactDOMClient', complete: false },
+            { id: 21, name: 'ReactDOMServer', complete: false },
+            { id: 22, name: 'DOM Elements', complete: true },
+            { id: 23, name: 'SyntheticEvent', complete: false },
+            { id: 24, name: 'Test Utilities', complete: false },
+            { id: 25, name: 'Test Renderer', complete: false },
+            { id: 26, name: 'JS Environment Requirements', complete: false },
+            { id: 27, name: 'Glossary', complete: false },
+            { id: 28, name: 'Accessibility', complete: false },
+            { id: 29, name: 'Code-Splitting', complete: false },
+            { id: 30, name: 'Context', complete: true },
+            { id: 28, name: 'Error Boundaries', complete: false },
+            { id: 29, name: 'Forwarding Refs', complete: false },
+            { id: 30, name: 'Fragments', complete: false },
+            { id: 31, name: 'Higher-Order Components', complete: false },
+            {
+                id: 32,
+                name: 'Integrating with Other Libraries',
+                complete: true
+            },
+            { id: 33, name: 'JSX In Depth', complete: false },
+            { id: 34, name: 'Optimizing Performance', complete: true },
+            { id: 35, name: 'Portals', complete: false },
+            { id: 36, name: 'Profiler', complete: false },
+            { id: 37, name: 'React Without ES6', complete: false },
+            { id: 38, name: 'React Without JSX', complete: false },
+            { id: 39, name: 'Reconciliation', complete: false },
+            { id: 40, name: 'Refs and the DOM', complete: false },
+            { id: 41, name: 'Render Props', complete: false },
+            { id: 42, name: 'Static Type Checking', complete: false },
+            { id: 43, name: 'Strict Mode', complete: false },
+            { id: 44, name: 'Typechecking With PropTypes', complete: false },
+            { id: 45, name: 'Uncontrolled Components', complete: false },
+            { id: 46, name: 'Web Components', complete: false }
         ]
     },
     {
         id: 8,
         name: 'Redux',
         dependencies: [
-            { id: 1, name: ' ', complete: true },
-            { id: 2, name: ' ', complete: true },
-            { id: 3, name: ' ', complete: false },
-            { id: 4, name: ' ', complete: false },
-            { id: 5, name: ' ', complete: true },
-            { id: 6, name: ' ', complete: false },
-            { id: 7, name: ' ', complete: true },
-            { id: 8, name: ' ', complete: true },
-            { id: 9, name: ' ', complete: false },
+            { id: 1, name: 'Redux Overview', complete: true },
+            { id: 2, name: 'Redux Concepts and Data Flow', complete: true },
+            { id: 3, name: 'State, Actions, and Reducers', complete: true },
+            { id: 4, name: 'Store', complete: true },
+            { id: 5, name: 'UI and React', complete: true },
+            { id: 6, name: 'Async Logic and Data Fetching', complete: false },
+            { id: 7, name: 'Standard Redux Patterns', complete: true },
+            { id: 8, name: 'Modern Redux with Redux Toolkit', complete: true }
+            /*             { id: 9, name: ' ', complete: false },
             { id: 10, name: ' ', complete: true },
             { id: 11, name: ' ', complete: true },
             { id: 12, name: ' ', complete: true },
@@ -448,43 +592,49 @@ export const skills = [
             { id: 27, name: ' ', complete: false },
             { id: 28, name: ' ', complete: true },
             { id: 29, name: ' ', complete: true },
-            { id: 30, name: ' ', complete: true }
+            { id: 30, name: ' ', complete: true } */
         ]
     },
     {
         id: 9,
         name: 'NodeJS',
         dependencies: [
-            { id: 1, name: ' ', complete: true },
-            { id: 2, name: ' ', complete: true },
-            { id: 3, name: ' ', complete: false },
-            { id: 4, name: ' ', complete: true },
-            { id: 5, name: ' ', complete: false },
-            { id: 6, name: ' ', complete: true },
-            { id: 7, name: ' ', complete: true },
-            { id: 8, name: ' ', complete: true },
-            { id: 9, name: ' ', complete: false },
-            { id: 10, name: ' ', complete: true },
-            { id: 11, name: ' ', complete: true },
-            { id: 12, name: ' ', complete: false },
-            { id: 13, name: ' ', complete: true },
-            { id: 14, name: ' ', complete: true },
-            { id: 15, name: ' ', complete: true },
-            { id: 16, name: ' ', complete: true },
-            { id: 17, name: ' ', complete: false },
-            { id: 18, name: ' ', complete: true },
-            { id: 19, name: ' ', complete: true },
-            { id: 20, name: ' ', complete: true },
-            { id: 21, name: ' ', complete: true },
-            { id: 22, name: ' ', complete: true },
-            { id: 23, name: ' ', complete: false },
-            { id: 24, name: ' ', complete: true },
-            { id: 25, name: ' ', complete: true },
-            { id: 26, name: ' ', complete: false },
-            { id: 27, name: ' ', complete: false },
-            { id: 28, name: ' ', complete: true },
-            { id: 29, name: ' ', complete: true },
-            { id: 30, name: ' ', complete: true }
+            { id: 1, name: 'Node.js Modules', complete: true },
+            { id: 2, name: 'Node.js HTTP Module', complete: true },
+            { id: 3, name: 'Node.js File System', complete: true },
+            { id: 4, name: 'Node.js URL Module', complete: true },
+            { id: 5, name: 'Node.js NPM', complete: true },
+            { id: 6, name: 'Node.js Events', complete: true },
+            { id: 7, name: 'Node.js Upload Files', complete: true },
+            { id: 8, name: 'Node.js Email', complete: true },
+            { id: 9, name: 'Node.js MySQL', complete: true },
+            { id: 10, name: 'MySQL Create Database', complete: true },
+            { id: 11, name: 'MySQL Create Table', complete: true },
+            { id: 12, name: 'MySQL Insert Into', complete: false },
+            { id: 13, name: 'MySQL Select From', complete: false },
+            { id: 14, name: 'MySQL Where', complete: false },
+            { id: 15, name: 'MySQL Order By', complete: false },
+            { id: 16, name: 'MySQL Delete', complete: false },
+            { id: 17, name: 'MySQL Drop Table', complete: false },
+            { id: 18, name: 'MySQL Update', complete: false },
+            { id: 19, name: 'MySQL Limit', complete: false },
+            { id: 20, name: 'MySQL Join', complete: false },
+            { id: 21, name: 'Node.js MongoDB', complete: true },
+            { id: 22, name: 'MongoDB Create Database', complete: true },
+            { id: 23, name: 'MongoDB Create Collection', complete: true },
+            { id: 24, name: 'MongoDB Insert', complete: true },
+            { id: 25, name: 'MongoDB Find', complete: true },
+            { id: 26, name: 'MongoDB Query', complete: true },
+            { id: 27, name: 'MongoDB Sort', complete: true },
+            { id: 28, name: 'MongoDB Delete', complete: true },
+            { id: 29, name: 'Higher-Order Components', complete: false },
+            {
+                id: 30,
+                name: 'Integrating with Other Libraries',
+                complete: true
+            },
+            { id: 31, name: 'JSX In Depth', complete: false },
+            { id: 32, name: 'Optimizing Performance', complete: true }
         ]
     }
 ]
