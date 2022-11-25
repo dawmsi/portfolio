@@ -9,9 +9,11 @@
 
         &.btn-dark {
             font-weight: lighter;
+            text-shadow: 0 0 13px rgba(0, 0, 0, 0.25);
         }
-        &.btn-liht {
-            font-weight: bolder;
+        &.btn-light {
+            font-weight: normal;
+            text-shadow: 0 0 13px rgba(255, 255, 255, 0.25);
         }
         &:nth-child(11) {
             margin-bottom: -280px;
