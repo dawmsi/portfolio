@@ -19,6 +19,12 @@
         width: 100%;
         border-radius: 23px;
         padding: 24px;
+        overflow-y: scroll;
+        &::-webkit-scrollbar {
+            display: none;
+            -ms-overflow-style: none; /* IE and Edge */
+            scrollbar-width: none; /* Firefox */
+        }
         p {
             display: flex;
             justify-content: center;
