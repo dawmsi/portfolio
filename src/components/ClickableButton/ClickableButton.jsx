@@ -15,11 +15,11 @@ export const ClickableButton = ({
     const [isClicked, setIsClicked] = useState(false)
 
     const clickHandker = (e) => {
-        let btn = e
+        let btn = e.currentTarget
 
         if (isActive && !isClicked) {
         } else {
-            e.currentTarget.classList.toggle('clicked__btn')
+            btn.classList.toggle('clicked__btn')
             setIsClicked(!isClicked)
             if (isActive && isClicked) {
                 setIsActive(false)
@@ -29,7 +29,7 @@ export const ClickableButton = ({
                 setCurrentKey(part)
             }
             setTimeout(() => {
-                btn.target.classList.toggle('clicked__btn')
+                btn.classList.remove('clicked__btn')
             }, 800)
         }
     }
