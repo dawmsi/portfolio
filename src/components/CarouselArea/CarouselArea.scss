@@ -9,9 +9,8 @@
         justify-content: center;
         overflow: visible;
         height: calc(100% - 18.8px);
-
         .overturn {
-            animation: myanim1 0.99s alternate;
+            animation: myanim1 0.9s linear;
         }
         @keyframes myanim1 {
             51.1% {
@@ -22,7 +21,7 @@
             }
         }
         .overturn__back {
-            animation: myanim2 0.8s alternate;
+            animation: myanim2 0.9s linear;
         }
         @keyframes myanim2 {
             51.1% {
@@ -34,8 +33,6 @@
         }
         .carousel-item {
             box-sizing: border-box;
-            box-shadow: 0px 0px 8px 4px rgba(0, 0, 0, 0.25);
-            border-radius: 23px;
             height: calc(100% - 28.8px);
             width: 100%;
             transition: all 0.4s;
@@ -46,6 +43,8 @@
                 height: 100%;
                 width: 100%;
                 padding: 6px;
+                box-shadow: 0px 0px 8px 4px rgba(0, 0, 0, 0.25);
+                border-radius: 23px;
             }
         }
     }

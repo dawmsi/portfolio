@@ -9,8 +9,8 @@ export const Skills = ({ isLight }) => {
         <>
             <CarouselArea
                 itemsArray={skills}
-                ItemsList={ItemsList}
                 CurrentItem={SkillsItem}
+                Backside={ItemsList}
                 isLight={isLight}
             />
         </>

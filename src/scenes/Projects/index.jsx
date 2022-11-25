@@ -11,7 +11,7 @@ export const Projects = ({ isLight }) => {
                 itemsArray={projects}
                 isLight={isLight}
                 CurrentItem={ProjectItem}
-                BacksideItem={BacksideItem}
+                Backside={BacksideItem}
             />
         </>
     )
