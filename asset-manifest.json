@@ -1,15 +1,27 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.c44c1c36.css",
+<<<<<<< HEAD
     "main.js": "/portfolio/static/js/main.b4119d41.js",
+=======
+    "main.js": "/portfolio/static/js/main.3009c28c.js",
+>>>>>>> parent of 355bce6 (Updates)
     "static/media/backgroud.jpg": "/portfolio/static/media/backgroud.77fe8a9b82265bfe4108.jpg",
     "static/media/ava.jpeg": "/portfolio/static/media/ava.94b66b7b9a5a90bc92ec.jpeg",
     "index.html": "/portfolio/index.html",
     "main.c44c1c36.css.map": "/portfolio/static/css/main.c44c1c36.css.map",
+<<<<<<< HEAD
     "main.b4119d41.js.map": "/portfolio/static/js/main.b4119d41.js.map"
   },
   "entrypoints": [
     "static/css/main.c44c1c36.css",
     "static/js/main.b4119d41.js"
+=======
+    "main.3009c28c.js.map": "/portfolio/static/js/main.3009c28c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c44c1c36.css",
+    "static/js/main.3009c28c.js"
+>>>>>>> parent of 355bce6 (Updates)
   ]
 }
