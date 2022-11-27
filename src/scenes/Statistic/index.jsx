@@ -33,7 +33,7 @@ export const Statistic = ({ isLight }) => {
                         }
                     }
                 }}
-                margin={{ top: 80, right: 60, bottom: 50, left: 60 }}
+                margin={{ top: 80, right: 60, bottom: 60, left: 60 }}
                 xScale={{ type: 'point' }}
                 yScale={{
                     type: 'linear',
@@ -49,7 +49,7 @@ export const Statistic = ({ isLight }) => {
                 axisBottom={{
                     orient: 'bottom',
                     tickSize: 0,
-                    tickPadding: 20,
+                    tickPadding: 33,
                     tickRotation: 0,
                     colors: isLight ? '#f8f9fa' : '#111111',
                     legendOffset: 36,
