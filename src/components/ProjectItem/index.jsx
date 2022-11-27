@@ -34,6 +34,7 @@ export const ProjectItem = ({ itemObj, isLight }) => {
                                 onClick={(e) => e.stopPropagation()}
                             >
                                 <a
+                                    target="_blank"
                                     className={
                                         isLight ? 'link-light' : 'link-dark'
                                     }
