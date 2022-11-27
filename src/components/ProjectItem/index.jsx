@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { Button, Card, Figure } from 'react-bootstrap'
-import { BoxArrowUpRight, Fingerprint } from 'react-bootstrap-icons'
+import { Fingerprint } from 'react-bootstrap-icons'
 import { imageFetcher } from '../../services/imageFetcher/imageFetcher'
 import './ProjectItem.scss'
 export const ProjectItem = ({ itemObj, isLight }) => {
@@ -24,8 +24,8 @@ export const ProjectItem = ({ itemObj, isLight }) => {
                         <div
                             className={
                                 isLight
-                                    ? 'current__button__area light'
-                                    : 'current__button__area dark'
+                                    ? 'current__button__area hint light'
+                                    : 'current__button__area hint dark'
                             }
                         >
                             <Button

@@ -32,7 +32,6 @@
         height: 100%;
         width: 100%;
         opacity: 0;
-        animation: showing 2s linear;
         &.light {
             background-color: rgba(0, 0, 0, 0.4);
         }
@@ -51,9 +50,9 @@
                 display: flex;
                 justify-content: flex-end;
                 align-items: flex-end;
-                svg {
-                    rotate: -45deg;
-                }
+            }
+            svg {
+                rotate: -45deg;
             }
         }
     }

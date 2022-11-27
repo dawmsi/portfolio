@@ -7,6 +7,18 @@ $theme-colors: (
 @import '~bootstrap/scss/bootstrap';
 
 //default
+
+.hint {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    animation: showing 2s linear;
+    svg {
+        rotate: -45deg;
+    }
+}
+
 .app {
     position: relative;
     min-height: 382px;

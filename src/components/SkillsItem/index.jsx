@@ -1,5 +1,6 @@
 import React from 'react'
 import { ProgressBar } from 'react-bootstrap'
+import { Fingerprint } from 'react-bootstrap-icons'
 import { CircularProgressbar, buildStyles } from 'react-circular-progressbar'
 import 'react-circular-progressbar/dist/styles.css'
 import './SkillsItem.scss'
@@ -13,6 +14,9 @@ export const SkillsItem = ({ isLight, itemObj }) => {
     return (
         <>
             <div className="skills__card">
+                <div className="hint">
+                    <Fingerprint size={48} />
+                </div>
                 <div className="skills__circular__container">
                     <CircularProgressbar
                         className="skills__circular"
