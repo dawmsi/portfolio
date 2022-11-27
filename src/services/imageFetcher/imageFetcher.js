@@ -1,5 +1,6 @@
 export const imageFetcher = async (url, setFunc) => {
-    let imageUrl = `https://api.screenshotlayer.com/api/capture?access_key=0d96b879a9b95d77e20da568bfa298bb&url=${url}/&viewport=1200x720&width=720`
+    const key = 'b374b20c9a67d2a7ec4a59b0e56ba336'
+    let imageUrl = `https://api.screenshotlayer.com/api/capture?access_key=${key}&url=${url}/&viewport=1200x720&width=720`
     fetch(imageUrl, {
         method: 'GET',
         mode: 'no-cors',
