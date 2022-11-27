@@ -9,7 +9,7 @@
         left: 0;
         justify-content: center;
         overflow: visible;
-        height: calc(100% - 18.8px);
+        height: calc(100% - 8.8px);
         .overturn {
             animation: myanim1 0.9s linear;
         }
@@ -34,7 +34,7 @@
         }
         .carousel-item {
             box-sizing: border-box;
-            height: calc(100% - 28.8px);
+            height: calc(100% - 18.8px);
             width: 100%;
             transition: all 0.4s;
             opacity: 1;
@@ -47,7 +47,7 @@
         border-radius: 23px;
         width: fit-content;
         padding: 2px 6px;
-        margin: 0 auto;
+        margin: -9px auto;
         .active {
             height: 0.8rem;
             width: 0.8rem;
@@ -141,7 +141,7 @@
             }
         }
         .carousel-indicators {
-            margin: 9px auto;
+            margin: 3px auto;
             .active {
             }
             Button {
