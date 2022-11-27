@@ -27,8 +27,8 @@ export const SkillsItem = ({ index, isLight, itemObj }) => {
                         </div>
                     </div>
                 ) : index === 1 ? (
-                    <div className="hint__area__rotated">
-                        <div className="swipe-hint swipe-horizontal">
+                    <div className="hint__area">
+                        <div className="swipe-hint swipe-horizontal swipe-back">
                             <Fingerprint
                                 size={48}
                                 className={isLight ? 'text-dark' : 'text-light'}

@@ -10,7 +10,8 @@
     .hint__area {
         rotate: 90deg;
         z-index: 10;
-        right: 26%;
+        right: 0;
+        left: 0;
         svg {
             rotate: -135deg;
         }
