@@ -1,10 +1,23 @@
 import React from 'react'
 import { Form, ToggleButton } from 'react-bootstrap'
-import { CheckCircle, Circle, XCircle } from 'react-bootstrap-icons'
+import {
+    CheckCircle,
+    Circle,
+    Fingerprint,
+    XCircle
+} from 'react-bootstrap-icons'
 import './ItemsList.scss'
 export const ItemsList = ({ itemObj, isLight }) => {
     return (
         <div className="list__container">
+            <div className="hint__area">
+                <div className="swipe-hint swipe-horizontal">
+                    <Fingerprint
+                        size={48}
+                        className={isLight ? 'text-dark' : 'text-light'}
+                    />
+                </div>
+            </div>
             <div className="list">
                 <div className="list__item" key={itemObj.id}>
                     {itemObj.dependencies.map((skill) => (

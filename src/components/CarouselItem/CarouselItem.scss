@@ -1,0 +1,24 @@
+//default
+.inside__item__container {
+    position: relative;
+    display: flex;
+    flex: 0;
+    height: 100%;
+    width: 100%;
+    padding: 6px;
+    box-shadow: 0px 0px 8px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 23px;
+}
+//mobile
+
+@media (max-width: 576px) {
+    .inside__item__container {
+        margin: 0;
+    }
+}
+
+//tablet
+@media (min-width: 576px) {
+    .inside__item__container {
+    }
+}

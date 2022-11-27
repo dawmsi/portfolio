@@ -35,6 +35,7 @@ export const ProjectItem = ({ itemObj, isLight }) => {
                             >
                                 <a
                                     target="_blank"
+                                    rel="noreferrer"
                                     className={
                                         isLight ? 'link-light' : 'link-dark'
                                     }

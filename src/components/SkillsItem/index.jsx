@@ -5,7 +5,7 @@ import { CircularProgressbar, buildStyles } from 'react-circular-progressbar'
 import 'react-circular-progressbar/dist/styles.css'
 import './SkillsItem.scss'
 
-export const SkillsItem = ({ isLight, itemObj }) => {
+export const SkillsItem = ({ index, isLight, itemObj }) => {
     let complete = itemObj.dependencies.filter(
         (c) => c.complete === true
     ).length
@@ -14,9 +14,23 @@ export const SkillsItem = ({ isLight, itemObj }) => {
     return (
         <>
             <div className="skills__card">
-                <div className="hint">
-                    <Fingerprint size={48} />
-                </div>
+                {index > 0 && (
+                    <div className="hint">
+                        <Fingerprint size={48} />
+                    </div>
+                )}
+                {index === 0 ? (
+                    <div className="hint__area">
+                        <div className="swipe-hint swipe-horizontal">
+                            <Fingerprint
+                                size={48}
+                                className={isLight ? 'text-dark' : 'text-light'}
+                            />
+                        </div>
+                    </div>
+                ) : (
+                    ''
+                )}
                 <div className="skills__circular__container">
                     <CircularProgressbar
                         className="skills__circular"

@@ -7,6 +7,14 @@
     width: 100%;
     flex: 0 0 auto;
     margin: 2px 0 3px 0;
+    .hint__area {
+        rotate: 90deg;
+        z-index: 10;
+        right: 26%;
+        svg {
+            rotate: -135deg;
+        }
+    }
     .list {
         position: absolute;
         display: flex;

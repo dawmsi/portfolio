@@ -19,6 +19,101 @@ $theme-colors: (
     }
 }
 
+$width: 100px;
+
+.hint__area {
+    position: absolute;
+    right: 36%;
+    bottom: 50%;
+    svg {
+        rotate: -45deg;
+    }
+}
+.swipe-hint {
+    width: 100%;
+    margin: 25%;
+    z-index: 99;
+    &.swipe-horizontal {
+        position: relative;
+        width: 100px;
+        svg {
+            position: absolute;
+            display: inline-block;
+            color: black;
+            border-radius: 100%;
+            font-family: FontAwesome;
+            animation: hint-finger ease-in 2s;
+            animation-iteration-count: 1;
+            margin-top: -12px;
+            z-index: 100;
+            opacity: 0;
+        }
+        &:before {
+            border-radius: 23px;
+            position: absolute;
+            content: ' ';
+            background: linear-gradient(
+                to right,
+                rgb(143, 143, 143) 0%,
+                rgba(102, 102, 102, 0.5) 15%,
+                rgba(62, 62, 62, 0) 99%,
+                rgba(64, 64, 64, 0) 100%
+            );
+            right: 8px;
+            top: 0;
+            width: 0;
+            height: 20px;
+            animation: hint-dot ease-in 2s;
+            animation-iteration-count: 1;
+        }
+    }
+}
+
+@keyframes hint-finger {
+    0% {
+        right: 0;
+        transform: scale(1);
+    }
+    20% {
+        right: 0;
+        transform: scale(0.7);
+        opacity: 1;
+    }
+    50% {
+        right: $width;
+        transform: scale(0.7);
+    }
+    60% {
+        transform: scale(1);
+    }
+    80% {
+        opacity: 0;
+        right: $width;
+        transform: scale(1);
+    }
+    100% {
+    }
+}
+
+@keyframes hint-dot {
+    20% {
+        opacity: 0;
+        width: 0;
+    }
+    50% {
+        opacity: 0.7;
+        width: $width;
+    }
+    60% {
+        opacity: 0;
+        width: $width;
+    }
+    100% {
+        opacity: 0;
+        width: 0;
+    }
+}
+
 .app {
     position: relative;
     min-height: 382px;

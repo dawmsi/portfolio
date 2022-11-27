@@ -1,5 +1,6 @@
 import React from 'react'
 import { useState } from 'react'
+import './CarouselItem.scss'
 export const CarouselItem = ({
     cuIte,
     index,
@@ -42,6 +43,7 @@ export const CarouselItem = ({
                 {!localOverturn ? (
                     <CurrentItem
                         {...(getImage ? { getImage: getImage } : {})}
+                        index={index}
                         isLight={isLight}
                         itemObj={cuIte}
                     />
