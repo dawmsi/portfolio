@@ -48,29 +48,6 @@
             line-height: 20px;
             max-height: 60px;
         }
-        .current__button__area {
-            .current__button {
-                padding: 8px 16px;
-                margin: 4px auto;
-                border: 0;
-                border-radius: 23px;
-                a {
-                    text-decoration: none;
-                }
-                &.btn-light {
-                    background-color: rgba(255, 255, 255, 0.9);
-                }
-                &.btn-light:hover {
-                    background-color: white;
-                }
-                &.btn-dark {
-                    background-color: rgba(0, 0, 0, 0.9);
-                }
-                &.btn-dark:hover {
-                    background-color: black;
-                }
-            }
-        }
     }
 }
 
@@ -87,10 +64,6 @@
             .current__title {
             }
             .current__text {
-            }
-            .current__button__area {
-                display: flex;
-                flex-direction: row;
             }
         }
     }
@@ -116,11 +89,6 @@
             .current__title {
             }
             .current__text {
-            }
-            .current__button__area {
-                display: flex;
-                flex-direction: column;
-                justify-content: space-between;
             }
         }
     }
