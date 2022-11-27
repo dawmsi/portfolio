@@ -18,7 +18,8 @@ export const CarouselArea = ({
                 {...(overturn
                     ? {
                           interval: null,
-                          touch: false
+                          touch: false,
+                          indicators: false
                       }
                     : {
                           touch: true

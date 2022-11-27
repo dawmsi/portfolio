@@ -12,7 +12,6 @@ export const CarouselItem = ({
     Backside
 }) => {
     const [localOverturn, setLocalOverturn] = useState(overturn)
-
     const localOverturnHandler = (el) => {
         const card = el.currentTarget
         setOverturn((overturn) => !overturn)
