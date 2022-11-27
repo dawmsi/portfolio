@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import { Button, Card, Figure } from 'react-bootstrap'
+import { BoxArrowUpRight, Fingerprint } from 'react-bootstrap-icons'
 import { imageFetcher } from '../../services/imageFetcher/imageFetcher'
 import './ProjectItem.scss'
-export const ProjectItem = ({itemObj, isLight }) => {
+export const ProjectItem = ({ itemObj, isLight }) => {
     const [img, setImg] = useState('')
 
     useEffect(() => {
@@ -14,14 +15,35 @@ export const ProjectItem = ({itemObj, isLight }) => {
             <Card className="current__card">
                 {img ? (
                     <div className="current__img__container">
-                    <div
-                        className="current__img"
-                        style={{
-                            backgroundImage: `url(${img})`
-                        }}
-                    ></div>
+                        <div
+                            className="current__img"
+                            style={{
+                                backgroundImage: `url(${img})`
+                            }}
+                        ></div>
+                        <div
+                            className={
+                                isLight
+                                    ? 'current__button__area light'
+                                    : 'current__button__area dark'
+                            }
+                        >
+                            <Button
+                                className="current__button"
+                                variant={isLight ? 'light' : 'dark'}
+                                onClick={(e) => e.stopPropagation()}
+                            >
+                                <a
+                                    className={
+                                        isLight ? 'link-light' : 'link-dark'
+                                    }
+                                    href={itemObj.link}
+                                >
+                                    <Fingerprint size={48} />
+                                </a>
+                            </Button>
+                        </div>
                     </div>
-
                 ) : (
                     <Figure className="no__image">
                         <p>No image</p>
@@ -35,19 +57,6 @@ export const ProjectItem = ({itemObj, isLight }) => {
                     <Card.Text className="current__text">
                         {itemObj.description}
                     </Card.Text>
-                    <div className="current__button__area">
-                        <Button
-                            className="current__button"
-                            variant={isLight ? 'dark' : 'light'}
-                        >
-                            <a
-                                className={isLight ? 'link-light' : 'link-dark'}
-                                href={itemObj.link}
-                            >
-                                Check
-                            </a>
-                        </Button>
-                    </div>
                 </Card.Body>
             </Card>
         </>

@@ -30,6 +30,12 @@ $theme-colors: (
     }
 }
 
+@keyframes showing {
+    50% {
+        opacity: 0.8;
+    }
+}
+
 //default buttons
 .btn {
     padding: 6px;
@@ -61,29 +67,6 @@ $theme-colors: (
         }
     }
 }
-.current__button__area {
-    .current__button {
-        padding: 8px 16px;
-        margin: 4px auto;
-        border: 0;
-        border-radius: 23px;
-        a {
-            text-decoration: none;
-        }
-        &.btn-light {
-            background-color: rgba(255, 255, 255, 0.9);
-        }
-        &.btn-light:hover {
-            background-color: white;
-        }
-        &.btn-dark {
-            background-color: rgba(0, 0, 0, 0.9);
-        }
-        &.btn-dark:hover {
-            background-color: black;
-        }
-    }
-}
 
 //mobile
 @media (max-width: 576px) {
@@ -91,10 +74,6 @@ $theme-colors: (
         height: calc(100% - 60px);
         max-height: calc(100% - 60px);
         width: 100%;
-        .current__button__area {
-            display: flex;
-            flex-direction: row;
-        }
     }
 }
 
@@ -104,10 +83,5 @@ $theme-colors: (
         width: calc(100% - 60px);
         max-width: calc(100% - 60px);
         height: calc(100% - 12px);
-        .current__button__area {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-        }
     }
 }
