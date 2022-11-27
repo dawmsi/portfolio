@@ -1,10 +1,11 @@
 //default
-.current__card {
+
+.project__card {
     width: 100%;
     height: 100%;
     border: 0;
     background-color: transparent;
-    .current__img__container {
+    .project__img__container {
         position: relative;
         height: 100%;
         width: 100%;
@@ -13,7 +14,7 @@
         -webkit-filter: grayscale(40%);
         filter: grayscale(40%);
     }
-    .current__img {
+    .project__img {
         border: 0;
         margin: 0;
         height: 100%;
@@ -23,7 +24,7 @@
         background-position: center;
         transform: scale(1.13);
     }
-    .current__button__area {
+    .project__button__area {
         position: absolute;
         top: 0;
         bottom: 0;
@@ -32,13 +33,24 @@
         height: 100%;
         width: 100%;
         opacity: 0;
+        &.hint {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            opacity: 0;
+            animation: showing-img 2s linear;
+            svg {
+                rotate: -45deg;
+            }
+        }
+
         &.light {
             background-color: rgba(0, 0, 0, 0.4);
         }
         &.dark {
             background-color: rgba(255, 255, 255, 0.4);
         }
-        .current__button {
+        .project__button {
             background-color: transparent;
             border: 0;
             height: 100%;
@@ -68,11 +80,11 @@
             text-align: center;
         }
     }
-    .current__body {
-        .current__title {
+    .project__body {
+        .project__title {
             text-align: center;
         }
-        .current__text {
+        .project__text {
             text-align: center;
             overflow: hidden;
             text-overflow: ellipsis;
@@ -87,17 +99,17 @@
 
 //mobile
 @media (max-width: 576px) {
-    .current__card {
-        .current__img {
+    .project__card {
+        .project__img {
         }
         .no__image {
             p {
             }
         }
-        .current__body {
-            .current__title {
+        .project__body {
+            .project__title {
             }
-            .current__text {
+            .project__text {
             }
         }
     }
@@ -105,24 +117,24 @@
 
 //tablet
 @media (min-width: 576px) {
-    .current__card {
+    .project__card {
         flex-direction: row;
 
-        .current__img {
+        .project__img {
         }
         .no__image {
             p {
             }
         }
-        .current__body {
+        .project__body {
             display: flex;
             flex-direction: column;
             justify-content: flex-start;
             align-items: center;
             width: 30%;
-            .current__title {
+            .project__title {
             }
-            .current__text {
+            .project__text {
             }
         }
     }

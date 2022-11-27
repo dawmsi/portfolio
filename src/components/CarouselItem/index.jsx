@@ -48,7 +48,7 @@ export const CarouselItem = ({
                         itemObj={cuIte}
                     />
                 ) : (
-                    <Backside itemObj={cuIte} isLight={isLight} />
+                    <Backside index={index} itemObj={cuIte} isLight={isLight} />
                 )}
             </div>
         </>

@@ -13,9 +13,24 @@ $theme-colors: (
     bottom: 0;
     right: 0;
     opacity: 0;
-    animation: showing 2s linear;
+    animation: showing 3s linear;
     svg {
         rotate: -45deg;
+    }
+}
+
+@keyframes showing {
+    60% {
+        opacity: 0;
+    }
+    80% {
+        opacity: 0.8;
+    }
+}
+
+@keyframes showing-img {
+    50% {
+        opacity: 0.8;
     }
 }
 
@@ -24,9 +39,18 @@ $width: 100px;
 .hint__area {
     position: absolute;
     right: 36%;
-    bottom: 50%;
+    top: 40%;
     svg {
         rotate: -45deg;
+    }
+}
+.hint__area__rotated {
+    position: absolute;
+    right: 36%;
+    top: 50%;
+    rotate: 180deg;
+    svg {
+        rotate: -225deg;
     }
 }
 .swipe-hint {
@@ -134,12 +158,6 @@ $width: 100px;
             box-sizing: border-box;
             padding: 2px 0;
         }
-    }
-}
-
-@keyframes showing {
-    50% {
-        opacity: 0.8;
     }
 }
 

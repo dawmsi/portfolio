@@ -14,13 +14,20 @@ export const SkillsItem = ({ index, isLight, itemObj }) => {
     return (
         <>
             <div className="skills__card">
-                {index > 0 && (
-                    <div className="hint">
-                        <Fingerprint size={48} />
-                    </div>
-                )}
+                <div className="hint">
+                    <Fingerprint size={48} />
+                </div>
                 {index === 0 ? (
                     <div className="hint__area">
+                        <div className="swipe-hint swipe-horizontal">
+                            <Fingerprint
+                                size={48}
+                                className={isLight ? 'text-dark' : 'text-light'}
+                            />
+                        </div>
+                    </div>
+                ) : index === 1 ? (
+                    <div className="hint__area__rotated">
                         <div className="swipe-hint swipe-horizontal">
                             <Fingerprint
                                 size={48}

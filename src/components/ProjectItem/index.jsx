@@ -12,11 +12,11 @@ export const ProjectItem = ({ itemObj, isLight }) => {
 
     return (
         <>
-            <Card className="current__card">
+            <Card className="project__card">
                 {img ? (
-                    <div className="current__img__container">
+                    <div className="project__img__container">
                         <div
-                            className="current__img"
+                            className="project__img"
                             style={{
                                 backgroundImage: `url(${img})`
                             }}
@@ -24,12 +24,12 @@ export const ProjectItem = ({ itemObj, isLight }) => {
                         <div
                             className={
                                 isLight
-                                    ? 'current__button__area hint light'
-                                    : 'current__button__area hint dark'
+                                    ? 'project__button__area hint light'
+                                    : 'project__button__area hint dark'
                             }
                         >
                             <Button
-                                className="current__button"
+                                className="project__button"
                                 variant={isLight ? 'light' : 'dark'}
                                 onClick={(e) => e.stopPropagation()}
                             >
@@ -52,11 +52,11 @@ export const ProjectItem = ({ itemObj, isLight }) => {
                     </Figure>
                 )}
 
-                <Card.Body className="current__body">
-                    <Card.Title className="current__title">
+                <Card.Body className="project__body">
+                    <Card.Title className="project__title">
                         {itemObj.name}
                     </Card.Title>
-                    <Card.Text className="current__text">
+                    <Card.Text className="project__text">
                         {itemObj.description}
                     </Card.Text>
                 </Card.Body>
