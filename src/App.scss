@@ -193,9 +193,11 @@ $width: 100px;
         left: 0;
         right: 0;
         padding: 4px;
+        height: 100%;
         .app__container {
             box-sizing: border-box;
             padding: 2px 0;
+            height: calc(100% - 12px);
         }
     }
 }
