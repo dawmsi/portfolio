@@ -10,13 +10,8 @@ import './ItemsList.scss'
 export const ItemsList = ({ index, itemObj, isLight }) => {
     return (
         <div className="list__container">
-            {index < 2 && (
-                <div className="hint">
-                    <Fingerprint size={48} />
-                </div>
-            )}
-            {index < 2 && (
-                <div className="hint__area">
+            {index === 0 && (
+                <div className="hint__area hint__area__vertical">
                     <div className="swipe-hint swipe-horizontal">
                         <Fingerprint
                             size={48}
@@ -25,6 +20,7 @@ export const ItemsList = ({ index, itemObj, isLight }) => {
                     </div>
                 </div>
             )}
+
             <div className="list">
                 <div className="list__item" key={itemObj.id}>
                     {itemObj.dependencies.map((skill) => (
