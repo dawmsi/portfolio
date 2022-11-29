@@ -126,7 +126,7 @@
     .carousel {
         padding: 8px;
         .carousel-inner {
-            height: calc(100% - 8.8px);
+            height: calc(100% - 18.8px);
             @keyframes myanim1 {
                 50% {
                     transform: rotateY(-90deg) scale(0.7) rotate(15deg);
@@ -141,7 +141,7 @@
             }
         }
         .carousel-indicators {
-            margin: 3px auto;
+            margin: 6px auto;
             .active {
             }
             Button {

@@ -14,9 +14,11 @@ export const SkillsItem = ({ index, isLight, itemObj }) => {
     return (
         <>
             <div className="skills__card">
-                <div className="hint">
-                    <Fingerprint size={48} />
-                </div>
+                {index <= 1 && (
+                    <div className="hint">
+                        <Fingerprint size={48} />
+                    </div>
+                )}
                 {index === 0 ? (
                     <div className="hint__area">
                         <div className="swipe-hint swipe-horizontal">
