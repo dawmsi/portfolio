@@ -20,6 +20,11 @@ export const ItemsList = ({ index, itemObj, isLight }) => {
                     </div>
                 </div>
             )}
+            {index === 0 && (
+                <div className="hint">
+                    <Fingerprint size={48} />
+                </div>
+            )}
 
             <div className="list">
                 <div className="list__item" key={itemObj.id}>

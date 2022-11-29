@@ -14,7 +14,7 @@ export const SkillsItem = ({ index, isLight, itemObj, overturn }) => {
     return (
         <>
             <div className="skills__card">
-                {index < 2 && (
+                {index === 0 && (
                     <div className="hint">
                         <Fingerprint size={48} />
                     </div>
