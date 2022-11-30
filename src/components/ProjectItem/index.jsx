@@ -4,21 +4,17 @@ import { Fingerprint } from 'react-bootstrap-icons'
 import { imageFetcher } from '../../services/imageFetcher/imageFetcher'
 import './ProjectItem.scss'
 export const ProjectItem = ({ itemObj, isLight }) => {
-    const [loading, setLoading] = useState(false)
+    const [loading, setLoading] = useState(true)
     const [img, setImg] = useState('')
 
     useEffect(() => {
-        if (imageFetcher(itemObj.link, setImg) && !img) {
-            setLoading(true)
-            imageFetcher(itemObj.link, setImg)
-            setLoading(false)
-        }
-    }, [img, itemObj.link])
+        imageFetcher(itemObj.link, setImg, setLoading)
+    }, [itemObj.link])
 
     return (
         <>
             <Card className="project__card">
-                {!loading && img ? (
+                {loading === false ? (
                     <div className="project__img__container">
                         <div
                             className="project__img"
@@ -57,6 +53,7 @@ export const ProjectItem = ({ itemObj, isLight }) => {
                     </Figure> */
                     <Figure
                         style={{
+                            position: 'relative',
                             width: '100%',
                             height: '100%',
                             display: 'flex',
@@ -65,6 +62,13 @@ export const ProjectItem = ({ itemObj, isLight }) => {
                         }}
                     >
                         <a
+                            style={{
+                                position: 'absolute',
+                                top: 0,
+                                bottom: 0,
+                                left: 0,
+                                right: 0
+                            }}
                             target="_blank"
                             rel="noreferrer"
                             className={isLight ? 'link-dark' : 'link-light'}
