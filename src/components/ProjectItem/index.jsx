@@ -1,19 +1,24 @@
 import React, { useEffect, useState } from 'react'
-import { Button, Card, Figure } from 'react-bootstrap'
+import { Button, Card, Figure, Spinner } from 'react-bootstrap'
 import { Fingerprint } from 'react-bootstrap-icons'
 import { imageFetcher } from '../../services/imageFetcher/imageFetcher'
 import './ProjectItem.scss'
 export const ProjectItem = ({ itemObj, isLight }) => {
+    const [loading, setLoading] = useState(false)
     const [img, setImg] = useState('')
 
     useEffect(() => {
-        imageFetcher(itemObj.link, setImg)
-    }, [itemObj.link])
+        if (imageFetcher(itemObj.link, setImg) && !img) {
+            setLoading(true)
+            imageFetcher(itemObj.link, setImg)
+            setLoading(false)
+        }
+    }, [img, itemObj.link])
 
     return (
         <>
             <Card className="project__card">
-                {img ? (
+                {!loading && img ? (
                     <div className="project__img__container">
                         <div
                             className="project__img"
@@ -47,8 +52,32 @@ export const ProjectItem = ({ itemObj, isLight }) => {
                         </div>
                     </div>
                 ) : (
-                    <Figure className="no__image">
+                    /* <Figure className="no__image">
                         <p>No image</p>
+                    </Figure> */
+                    <Figure
+                        style={{
+                            width: '100%',
+                            height: '100%',
+                            display: 'flex',
+                            justifyContent: 'center',
+                            alignItems: 'center'
+                        }}
+                    >
+                        <a
+                            target="_blank"
+                            rel="noreferrer"
+                            className={isLight ? 'link-dark' : 'link-light'}
+                            href={itemObj.link}
+                        >
+                            <Fingerprint className="hint" size={48} />
+                        </a>
+                        <Spinner
+                            style={{ margin: '0 auto' }}
+                            animation="border"
+                            variant={isLight ? 'dark' : 'light'}
+                            size="xxl"
+                        />
                     </Figure>
                 )}
 

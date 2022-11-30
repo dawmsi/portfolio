@@ -4,11 +4,12 @@ export const imageFetcher = async (url, setFunc) => {
     fetch(imageUrl, {
         method: 'GET',
         mode: 'no-cors',
-        headers: {}
+        headers: { 'Access-Control-Allow-Origin': '*' }
     }).then((res) => {
         if (res.status >= 400) {
-            return ''
+            return res.url
         }
         setFunc(imageUrl)
+        return true
     })
 }
