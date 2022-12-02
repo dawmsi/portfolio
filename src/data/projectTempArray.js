@@ -1,13 +1,5 @@
 export const projects = [
     {
-        id: 5,
-        name: 'Shop, by float',
-        description: 'Float, one of the first works of the Desktop version',
-        link: 'https://dawmsi.github.io/shop-project/',
-        details:
-            'This work was done as part of the courses, and it was done only according to the requirements'
-    },
-    {
         id: 2,
         name: 'Modest',
         description: 'Blog site, flex-box styling, google map, contact form',
@@ -30,6 +22,14 @@ export const projects = [
         link: 'https://dawmsi.github.io/weather/',
         details:
             'A small visual representation of working with the API. Search by city, practice clear js, fetch, work with API '
+    },
+    {
+        id: 5,
+        name: 'Template using float, 12 columns',
+        description: 'Float, one of the first works of the Desktop version',
+        link: 'https://dawmsi.github.io/shop-project/',
+        details:
+            'This work was done as part of the courses, and it was done only according to the requirements'
     },
     {
         id: 6,
