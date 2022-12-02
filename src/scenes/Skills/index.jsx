@@ -2,7 +2,7 @@ import React from 'react'
 import { CarouselArea } from '../../components/CarouselArea'
 import { ItemsList } from '../../components/ItemsList'
 import { SkillsItem } from '../../components/SkillsItem'
-import { skills } from './skillsTempArray'
+import { skills } from '../../data/skillsTempArray'
 
 export const Skills = ({ isLight }) => {
     return (
