@@ -9,55 +9,15 @@ $theme-colors: (
 //default
 
 .hint {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    opacity: 0;
-    animation: showing 3s linear;
-    svg {
-        rotate: -45deg;
-    }
+    display: none;
 }
-
-@keyframes showing {
-    60% {
-        opacity: 0;
-    }
-    80% {
-        opacity: 0.8;
-    }
-}
-
-@keyframes showing-img {
-    50% {
-        opacity: 0.8;
-    }
-}
-
-$width: 100px;
 
 .hint__area {
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    top: 0;
-    bottom: 66px;
-    left: 0;
-    right: 0;
-    svg {
-        rotate: -45deg;
-    }
+    display: none;
 }
+
 .hint__area__vertical {
-    justify-content: center;
-    align-items: flex-start;
-    rotate: 90deg;
-    width: 100%;
-    height: 60%;
-    svg {
-        rotate: -135deg;
-    }
+    display: none;
 }
 
 .swipe-hint {
@@ -117,6 +77,23 @@ $width: 100px;
         }
     }
 }
+
+@keyframes showing {
+    60% {
+        opacity: 0;
+    }
+    80% {
+        opacity: 0.8;
+    }
+}
+
+@keyframes showing-img {
+    50% {
+        opacity: 0.8;
+    }
+}
+
+$width: 100px;
 
 @keyframes hint-finger {
     0% {
@@ -243,6 +220,46 @@ $width: 100px;
             --bs-btn-hover-color: white;
             --bs-btn-active-color: white;
             background-color: rgba(0, 0, 0, 0.9);
+        }
+    }
+}
+
+// hint for touch mode
+@media (max-width: 912px) {
+    .hint {
+        display: block;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        opacity: 0;
+        animation: showing 3s linear;
+        svg {
+            rotate: -45deg;
+        }
+    }
+    .hint__area {
+        display: flex;
+        position: absolute;
+        justify-content: center;
+        align-items: center;
+        top: 0;
+        bottom: 66px;
+        left: 0;
+        right: 0;
+        svg {
+            rotate: -45deg;
+        }
+    }
+
+    .hint__area__vertical {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        rotate: 90deg;
+        width: 100%;
+        height: 60%;
+        svg {
+            rotate: -135deg;
         }
     }
 }
