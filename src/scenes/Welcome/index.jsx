@@ -36,8 +36,6 @@ export const Welcome = ({ isLight }) => {
         )
     }, [])
 
-    console.log(btnsObj)
-
     return (
         <Card
             style={
@@ -67,7 +65,7 @@ export const Welcome = ({ isLight }) => {
                             boxShadow: '0px 0px 8px 4px rgb(0 0 0 / 25%)'
                         }}
                         type="text"
-                        placeholder="enter skill"
+                        placeholder="Enter skill"
                         onBlur={() =>
                             setTimeout(() => {
                                 setSearchString('')
@@ -111,6 +109,7 @@ export const Welcome = ({ isLight }) => {
                             }
                         >
                             <div
+                                className="skillName"
                                 style={{
                                     width: 'max-content',
                                     fontSize: '0.9rem'
@@ -132,7 +131,8 @@ export const Welcome = ({ isLight }) => {
             <div
                 style={{
                     minHeight: '40px',
-                    border: `2px dashed ${isLight ? 'dark' : 'light'}`,
+                    border: '2px dashed',
+                    borderColor: isLight ? 'dark' : 'light',
                     borderRadius: '23px',
                     padding: '12px',
                     backgroundColor: isLight
@@ -171,9 +171,9 @@ export const Welcome = ({ isLight }) => {
                             }
                         >
                             <div
+                                className="skillName"
                                 style={{
-                                    width: 'max-content',
-                                    fontSize: '0.9rem'
+                                    fontSize: '0.8rem'
                                 }}
                             >
                                 {btnsObj[btnID].name}
