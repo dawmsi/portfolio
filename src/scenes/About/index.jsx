@@ -196,7 +196,7 @@ export const About = ({ isLight }) => {
                         backgroundImage: `url(${avatarImg})`
                     }}
                     border={isLight ? 'light' : 'dark'}
-                    className={!isActive ? 'avatar' : 'avatar hide'}
+                    className={!isActive ? 'avatar' : 'avatar hide__avatar'}
                 >
                     <div className="ava__centre">
                         <div
