@@ -195,7 +195,7 @@ $width: 100px;
 //default buttons
 .btn {
     padding: 6px;
-    --bs-btn-bg: tranperent;
+    /* --bs-btn-bg: tranperent; */
     border-radius: 23px;
     display: flex;
     justify-content: center;
@@ -204,7 +204,7 @@ $width: 100px;
     svg {
         margin: 4px;
     }
-    &.btn-dark {
+    &.btn-light {
         --bs-btn-hover-color: white;
         --bs-btn-active-color: white;
         &:hover {
@@ -213,7 +213,7 @@ $width: 100px;
             background-color: rgba(255, 255, 255, 0.9);
         }
     }
-    &.btn-light {
+    &.btn-dark {
         --bs-btn-hover-color: black;
         --bs-btn-active-color: black;
         &:hover {

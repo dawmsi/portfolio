@@ -39,7 +39,7 @@ export const ClickableButton = ({
             <>
                 <Button
                     disabled={isActive && !isClicked ? true : false}
-                    variant={isLight ? 'dark' : 'light'}
+                    variant={isLight ? 'light' : 'dark'}
                     className={isClicked ? 'clicable__btn' : 'clicable__btn'}
                     id={id}
                     onClick={clickHandker}
@@ -51,7 +51,7 @@ export const ClickableButton = ({
     else if (type === 'social')
         return (
             <Button
-                variant={isLight ? 'dark' : 'light'}
+                variant={isLight ? 'light' : 'dark'}
                 className="clicable__btn"
                 id={id}
             >
