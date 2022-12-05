@@ -15,22 +15,39 @@
             animation: myanim1 0.9s linear;
         }
         @keyframes myanim1 {
-            50% {
+            48% {
+                opacity: 1;
+            }
+            49% {
                 transform: rotateY(-90deg) scale(0.7) rotate(-45deg);
+                opacity: 0;
             }
             51% {
                 transform: rotateY(90deg) scale(0.7) rotate(45deg);
+                opacity: 0;
+            }
+            52% {
+                opacity: 1;
             }
         }
         .overturn__back {
             animation: myanim2 0.9s linear;
         }
         @keyframes myanim2 {
-            50% {
-                transform: rotateY(90deg) scale(0.7) rotate(-45deg);
+            48% {
+                opacity: 1;
             }
+            49% {
+                transform: rotateY(90deg) scale(0.7) rotate(-45deg);
+                opacity: 0;
+            }
+
             51% {
                 transform: rotateY(-90deg) scale(0.7) rotate(45deg);
+                opacity: 0;
+            }
+            52% {
+                opacity: 1;
             }
         }
         .carousel-item {
