@@ -6,10 +6,6 @@ body,
     height: 100%;
     width: 100%;
 }
-
-.app {
-    padding: 6px;
-    background-color: darkgray;
-    position: fixed;
-    overflow: hidden;
+#root {
+    position: relative;
 }
