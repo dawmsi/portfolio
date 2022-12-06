@@ -112,8 +112,8 @@ export const Welcome = ({ isLight }) => {
             <div className="welcome__row">
                 <Card.Title>Your Welcome</Card.Title>
                 <Card.Text className="text-center">
-                    Here you can check if the developer <br /> has the necessary
-                    skills for your projects
+                    Here you can check if the developer <wbr /> has the
+                    necessary skills for your projects
                 </Card.Text>
             </div>
             <div
