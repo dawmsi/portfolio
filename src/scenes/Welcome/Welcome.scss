@@ -19,7 +19,6 @@
         border: 2px dashed;
         border-radius: 23px;
         padding: 12px;
-        width: 330px;
     }
     .welcome__search__container {
         margin: 12px 0;
@@ -32,13 +31,10 @@
         }
     }
     .welcome__btns__group {
-        width: 300px;
-        overflow-x: scroll;
         margin: 12px 0;
-        gap: 8px;
-        /*         &::-webkit-scrollbar {
-        } */
+        border-radius: 22px;
         .skill__btn.btn {
+            border-radius: 0;
             .skillName {
                 padding: 0 8px;
                 width: max-content;
@@ -56,13 +52,18 @@
                 width: 300px;
             }
         }
-        .btn-group {
-            border-radius: 22px;
+        .welcome__btns__group {
+            overflow-x: scroll;
+            width: 300px;
+            gap: 8px;
             &::-webkit-scrollbar {
                 display: none;
                 -ms-overflow-style: none; /* IE and Edge */
                 scrollbar-width: none; /* Firefox */
             }
+        }
+        .drop__area {
+            width: 90%x;
         }
     }
 }
@@ -70,18 +71,34 @@
 //tablet
 @media (min-width: 576px) {
     .welcome__area {
+        width: 80%;
+        margin: 0 auto;
         .welcome__search__container {
             .welcome__search {
-                width: 80%;
+                width: 100%;
             }
         }
-        .btn-group {
-            border-radius: 22px;
+        .welcome__btns__group {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+            border-radius: 23px;
+            overflow: hidden;
             &::-webkit-scrollbar {
-                display: none;
-                -ms-overflow-style: none; /* IE and Edge */
-                scrollbar-width: none; /* Firefox */
+                height: 6px;
             }
+
+            &::-webkit-scrollbar-track {
+                background: transparent;
+            }
+
+            &::-webkit-scrollbar-thumb {
+                background-color: rgba(128, 128, 128, 0.393);
+                border-radius: 23px;
+            }
+        }
+        .drop__area {
+            width: 100%;
         }
     }
 }
