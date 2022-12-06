@@ -167,14 +167,17 @@ $width: 100px;
 }
 
 .app {
-    position: relative;
+    position: absolute;
     min-height: 382px;
     background-image: url('./backgroud.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-clip: border-box;
     background-size: cover;
-    height: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
     /* background-blend-mode: luminosity; */
     .app__backdrop {
         position: absolute;
@@ -204,7 +207,7 @@ $width: 100px;
     svg {
         margin: 4px;
     }
-/*     &.btn-light {
+    /*     &.btn-light {
         --bs-btn-hover-color: white;
         --bs-btn-active-color: white;
         &:hover {
