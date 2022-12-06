@@ -331,15 +331,15 @@ export const skills = [
             { id: 18, name: 'Media', complete: true },
             { id: 19, name: 'Events', complete: true },
             { id: 20, name: 'Canvas', complete: true },
-            { id: 21, name: ' Emojis', complete: true },
-            { id: 22, name: ' Charset', complete: true },
-            { id: 23, name: ' Geolocation', complete: false },
-            { id: 24, name: ' Drag/Drop', complete: false },
-            { id: 25, name: ' SSE', complete: false },
-            { id: 26, name: ' Quiz', complete: true },
-            { id: 27, name: ' Certificate', complete: false },
-            { id: 28, name: ' References', complete: true },
-            { id: 29, name: ' Doctypes', complete: true }
+            { id: 21, name: 'Emojis', complete: true },
+            { id: 22, name: 'Charset', complete: true },
+            { id: 23, name: 'Geolocation', complete: false },
+            { id: 24, name: 'Drag/Drop', complete: true },
+            { id: 25, name: 'SSE', complete: false },
+            { id: 26, name: 'Quiz', complete: true },
+            { id: 27, name: 'Certificate', complete: false },
+            { id: 28, name: 'References', complete: true },
+            { id: 29, name: '', complete: true }
         ]
     },
     {
@@ -364,7 +364,10 @@ export const skills = [
             { id: 16, name: 'Display', complete: true },
             { id: 17, name: 'Max-width', complete: true },
             { id: 18, name: 'Position', complete: true },
-            { id: 19, name: 'Z-index', complete: true }
+            { id: 19, name: 'Z-index', complete: true },
+            { id: 20, name: 'Float', complete: true },
+            { id: 21, name: 'Flexbox', complete: true },
+            { id: 22, name: 'Grid', complete: true }
         ]
     },
     {
@@ -400,7 +403,7 @@ export const skills = [
             { id: 27, name: 'Array Const', complete: false },
             { id: 28, name: 'Dates', complete: true },
             { id: 29, name: 'Date Formats', complete: true },
-            { id: 30, name: 'Max-width', complete: true }
+            { id: 30, name: 'Fetch', complete: true }
         ]
     },
     {
@@ -636,5 +639,56 @@ export const skills = [
             { id: 31, name: 'JSX In Depth', complete: false },
             { id: 32, name: 'Optimizing Performance', complete: true }
         ]
-    }
+    },
+    {
+        id: 10,
+        name: 'Genericons',
+        dependencies: [{ id: 1, name: 'Genericons', complete: true }]
+    },
+
+    {
+        id: 11,
+        name: 'Slick',
+        dependencies: [{ id: 1, name: 'Slick', complete: true }]
+    },
+    {
+        id: 12,
+        name: 'Google maps',
+        dependencies: [{ id: 1, name: 'Google maps', complete: true }]
+    },
+    {
+        id: 13,
+        name: 'Express',
+        dependencies: [{ id: 1, name: 'Express', complete: true }]
+    },
+    {
+        id: 13,
+        name: 'JsonWebToken',
+        dependencies: [{ id: 1, name: 'JsonWebToken', complete: true }]
+    },
+    {
+        id: 14,
+        name: 'Cross-Env',
+        dependencies: [{ id: 1, name: 'Cross-Env', complete: true }]
+    },
+    {
+        id: 15,
+        name: 'Axios',
+        dependencies: [{ id: 1, name: 'Axios', complete: true }]
+    },
+    {
+        id: 16,
+        name: 'Lodash',
+        dependencies: [{ id: 1, name: 'Lodash', complete: true }]
+    },
+    {
+        id: 17,
+        name: 'Redux-Thunk',
+        dependencies: [{ id: 1, name: 'Redux-Thunk', complete: true }]
+    },
+    {
+        id: 18,
+        name: '@emotion/styled',
+        dependencies: [{ id: 1, name: '@emotion/styled', complete: true }]
+    },
 ]

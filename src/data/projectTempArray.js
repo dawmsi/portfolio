@@ -4,48 +4,63 @@ export const projects = [
         name: 'Modest',
         description: 'Blog site, flex-box styling, google map, contact form',
         link: 'https://dawmsi.github.io/blog-project/',
-        details:
-            'Another business card with adaptability. Blog site, flex-box styling, google map, contact form'
+        details: `Another business card with adaptability. Blog site, flex-box styling, google map, contact form
+            html, css, flexbox scss, js, javascript`
     },
     {
         id: 1,
         name: 'Tatto website business card',
         description: 'Grid, one of the first works of the Desktop version',
         link: 'https://dawmsi.github.io/tatoo-project/',
-        details:
-            'This work was done as part of the courses, and it was done only according to the requirements'
+        details: `This work was done as part of the courses, and it was done only according to the requirements,
+            html, css, grid, scss, js, javascript, Genericons, Google maps`
     },
     {
         id: 3,
         name: 'Weather',
         description: 'Search by city, wtiten clear js, fetch, work with API',
         link: 'https://dawmsi.github.io/weather/',
-        details:
-            'A small visual representation of working with the API. Search by city, practice clear js, fetch, work with API '
+        details: `A small visual representation of working with the API. Search by city, practice clear js, fetch, work with API,
+            html, css, js, fetch, api`
     },
     {
         id: 5,
         name: 'Template using float, 12 columns',
         description: 'Float, one of the first works of the Desktop version',
         link: 'https://dawmsi.github.io/shop-project/',
-        details:
-            'This work was done as part of the courses, and it was done only according to the requirements'
+        details: `This work was done as part of the courses, and it was done only according to the requirements,
+        html, slick, float, scss, js, css, local font`
     },
     {
         id: 6,
         name: 'Local Task creator',
         description: 'Clear Javasctipt',
         link: 'https://dawmsi.github.io/sometodo/',
-        details:
-            'The practice of using clean JS, erasing, crearing, editing local data and DOM elements'
+        details: `The practice of using clean JS, erasing, crearing, editing local data and DOM elements,
+        html, css, grid, scss, js, javascript`
     },
     {
         id: 4,
         name: 'Short link',
         description: 'Little MERN app',
         link: 'http://35.212.241.152:5000/',
-        details:
-            'Creating a short link on the site with registration and saving your links in the database, the application is distributed on Google Cloud'
+        details: `Creating a short link on the site with registration and saving your links in the database, the application is distributed on Google Cloud
+        html, css
+            "dependencies": {
+            "bcryptjs": "^2.4.3",
+            "config": "^3.3.7",
+            "express": "^4.18.1",
+            "express-validator": "^6.14.2",
+            "jsonwebtoken": "^8.5.1",
+            "mongoose": "^6.7.5",
+            "shortid": "^2.2.16"
+          },
+          "devDependencies": {
+            "concurrently": "^7.3.0",
+            "cross-env": "^7.0.3",
+            "nodemon": "^2.0.19"
+        }
+            `
     },
     {
         id: 7,

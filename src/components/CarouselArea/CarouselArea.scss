@@ -64,11 +64,14 @@
         box-shadow: 0px 0px 8px 4px rgba(0, 0, 0, 0.25);
         border-radius: 23px;
         width: fit-content;
+        max-width: 100%;
         padding: 2px 6px;
         margin: -9px auto;
+        overflow-x: scroll;
         .active {
             height: 0.8rem;
             width: 0.8rem;
+            min-width: 13px;
             align-self: center;
             opacity: 0.9;
             border-color: white;
