@@ -107,6 +107,10 @@ export const Welcome = ({ isLight }) => {
                                     return { ...prevObj }
                                 })
                             }
+                            draggable
+                            onDragStart={(e) => {
+                                e.dataTransfer.setData('id', btnID)
+                            }}
                         >
                             <div
                                 className="skillName"
@@ -139,6 +143,18 @@ export const Welcome = ({ isLight }) => {
                         ? 'rgba(255, 255, 255, 0.2)'
                         : 'rgba(50, 50, 50, 0.2)',
                     width: '330px'
+                }}
+
+                onDragOver={(e) => {
+                    e.preventDefault(e)
+                }}
+
+                onDrop={(e) => {
+                    const id = e.dataTransfer.getData('id')
+                    setBtnsObj((prevObj) => {
+                        prevObj[id].checked = !prevObj[id].checked
+                        return { ...prevObj }
+                    })
                 }}
             >
                 <Form.Text className={isLight ? 'text-light' : 'text-dark'}>
