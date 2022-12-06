@@ -48,22 +48,19 @@ export const Welcome = ({ isLight }) => {
                 isLight ? 'welcome__area text-light' : 'welcome__area text-dark'
             }
         >
-            <div>
-                <Form.Group className="mb-3" controlId="formBasicEmail">
+            <div className="welcome__row">
+                <Form.Group
+                    className="welcome__search__container"
+                    controlId="formBasicEmail"
+                >
                     <Form.Control
                         autoFocus
                         value={searchString}
                         className={
                             isLight
-                                ? 'bg-light text-dark'
-                                : 'bg-dark text-light'
+                                ? 'welcome__search bg-light text-dark'
+                                : 'welcome__search bg-dark text-light'
                         }
-                        style={{
-                            borderRadius: '23px',
-                            border: 'none',
-                            textAlign: 'center',
-                            boxShadow: '0px 0px 8px 4px rgb(0 0 0 / 25%)'
-                        }}
                         type="text"
                         placeholder="Enter skill"
                         onBlur={() =>
@@ -75,19 +72,12 @@ export const Welcome = ({ isLight }) => {
                     />
                 </Form.Group>
                 <ToggleButtonGroup
-                    style={{
-                        width: '300px',
-                        overflowX: 'scroll',
-                        marginBottom: '12px'
-                    }}
+                    className="welcome__btns__group"
                     type="checkbox"
                 >
                     {Object.keys(btnsObj).map((btnID) => (
                         <ToggleButton
                             key={btnsObj[btnID].id}
-                            style={{
-                                borderRadius: '23px'
-                            }}
                             variant={isLight ? 'light' : 'dark'}
                             /* id={`tbg-btn-${btnsObj[btnID].id}`} */
                             /* value={btnsObj[btnID].id} */
@@ -97,8 +87,8 @@ export const Welcome = ({ isLight }) => {
                                     .toLowerCase()
                                     .includes(searchString.toLowerCase()) ===
                                     false
-                                    ? 'hide'
-                                    : ''
+                                    ? 'skill__btn hide'
+                                    : 'skill__btn'
                             }
                             onClick={() =>
                                 setBtnsObj((prevObj) => {
@@ -112,20 +102,14 @@ export const Welcome = ({ isLight }) => {
                                 e.dataTransfer.setData('id', btnID)
                             }}
                         >
-                            <div
-                                className="skillName"
-                                style={{
-                                    width: 'max-content',
-                                    fontSize: '0.9rem'
-                                }}
-                            >
+                            <div className="skillName">
                                 {btnsObj[btnID].name}
                             </div>
                         </ToggleButton>
                     ))}
                 </ToggleButtonGroup>
             </div>
-            <div>
+            <div className="welcome__row">
                 <Card.Title>Your Welcome</Card.Title>
                 <Card.Text className="text-center">
                     Here you can check if the developer <br /> has the necessary
@@ -133,22 +117,16 @@ export const Welcome = ({ isLight }) => {
                 </Card.Text>
             </div>
             <div
+                className="welcome__row drop__area"
                 style={{
-                    minHeight: '40px',
-                    border: '2px dashed',
                     borderColor: isLight ? 'dark' : 'light',
-                    borderRadius: '23px',
-                    padding: '12px',
                     backgroundColor: isLight
                         ? 'rgba(255, 255, 255, 0.2)'
-                        : 'rgba(50, 50, 50, 0.2)',
-                    width: '330px'
+                        : 'rgba(50, 50, 50, 0.2)'
                 }}
-
                 onDragOver={(e) => {
                     e.preventDefault(e)
                 }}
-
                 onDrop={(e) => {
                     const id = e.dataTransfer.getData('id')
                     setBtnsObj((prevObj) => {
@@ -161,23 +139,20 @@ export const Welcome = ({ isLight }) => {
                     Choose the skills you are looking for in templates
                 </Form.Text>
                 <ToggleButtonGroup
-                    style={{
-                        width: '300px',
-                        overflowX: 'scroll',
-                        margin: '12px 0'
-                    }}
+                    className="welcome__btns__group"
                     type="checkbox"
                 >
                     {Object.keys(btnsObj).map((btnID) => (
                         <ToggleButton
                             key={btnsObj[btnID].id}
-                            style={{
-                                borderRadius: '23px'
-                            }}
                             variant={isLight ? 'light' : 'dark'}
                             /* id={`tbg-btn-${btnsObj[btnID].id}`} */
                             /* value={btnsObj[btnID].id} */
-                            className={btnsObj[btnID].checked ? '' : 'hide'}
+                            className={
+                                btnsObj[btnID].checked
+                                    ? 'skill__btn'
+                                    : 'skill__btn hide'
+                            }
                             onClick={() =>
                                 setBtnsObj((prevObj) => {
                                     prevObj[btnID].checked =
@@ -186,12 +161,7 @@ export const Welcome = ({ isLight }) => {
                                 })
                             }
                         >
-                            <div
-                                className="skillName"
-                                style={{
-                                    fontSize: '0.8rem'
-                                }}
-                            >
+                            <div className="skillName">
                                 {btnsObj[btnID].name}
                             </div>
                         </ToggleButton>

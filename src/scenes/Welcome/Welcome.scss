@@ -10,13 +10,40 @@
     align-items: center;
     text-align: center;
     height: 100%;
-    /* text-shadow: rgba(255, 255, 255, 0.25) 0 0 13px; */
-    .btn-group {
+    width: 100%;
+    .welcome__row {
+        width: 100%;
+    }
+    .drop__area {
+        min-height: 40px;
+        border: 2px dashed;
+        border-radius: 23px;
+        padding: 12px;
+        width: 330px;
+    }
+    .welcome__search__container {
+        margin: 12px 0;
+        .welcome__search {
+            border: none;
+            border-radius: 23px;
+            box-shadow: 0px 0px 8px 4px rgba(0, 0, 0, 0.25);
+            text-align: center;
+            margin: 0 auto;
+        }
+    }
+    .welcome__btns__group {
+        width: 300px;
+        overflow-x: scroll;
+        margin: 12px 0;
         gap: 8px;
         /*         &::-webkit-scrollbar {
         } */
-        .skillName {
-            padding: 0 8px;
+        .skill__btn.btn {
+            .skillName {
+                padding: 0 8px;
+                width: max-content;
+                font-size: 0.8rem;
+            }
         }
     }
 }
@@ -24,6 +51,11 @@
 
 @media (max-width: 576px) {
     .welcome__area {
+        .welcome__search__container {
+            .welcome__search {
+                width: 300px;
+            }
+        }
         .btn-group {
             border-radius: 22px;
             &::-webkit-scrollbar {
@@ -37,4 +69,19 @@
 
 //tablet
 @media (min-width: 576px) {
+    .welcome__area {
+        .welcome__search__container {
+            .welcome__search {
+                width: 80%;
+            }
+        }
+        .btn-group {
+            border-radius: 22px;
+            &::-webkit-scrollbar {
+                display: none;
+                -ms-overflow-style: none; /* IE and Edge */
+                scrollbar-width: none; /* Firefox */
+            }
+        }
+    }
 }
