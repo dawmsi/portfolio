@@ -11,6 +11,7 @@
     text-align: center;
     height: 100%;
     width: 100%;
+    margin: 0 auto;
     .welcome__row {
         width: 100%;
     }
@@ -19,20 +20,31 @@
         border: 2px dashed;
         border-radius: 23px;
         padding: 12px;
+        width: 100%;
     }
     .welcome__search__container {
         margin: 12px 0;
+        width: 100%;
         .welcome__search {
             border: none;
             border-radius: 23px;
             box-shadow: 0px 0px 8px 4px rgba(0, 0, 0, 0.25);
             text-align: center;
             margin: 0 auto;
+            width: 100%;
         }
     }
     .welcome__btns__group {
         margin: 12px 0;
         border-radius: 22px;
+        gap: 8px;
+        width: 100%;
+        overflow-x: scroll;
+        &::-webkit-scrollbar {
+            display: none;
+            -ms-overflow-style: none; /* IE and Edge */
+            scrollbar-width: none; /* Firefox */
+        }
         .skill__btn.btn {
             border-radius: 0;
             .skillName {
@@ -47,15 +59,13 @@
 
 @media (max-width: 576px) {
     .welcome__area {
+        width: 300px;
         .welcome__search__container {
             .welcome__search {
-                width: 300px;
             }
         }
         .welcome__btns__group {
             overflow-x: scroll;
-            width: 300px;
-            gap: 8px;
             &::-webkit-scrollbar {
                 display: none;
                 -ms-overflow-style: none; /* IE and Edge */
@@ -63,24 +73,31 @@
             }
         }
         .drop__area {
-            width: 90%x;
+        }
+    }
+}
+@media (min-height: 576px) {
+    .welcome__area {
+        .welcome__btns__group {
+            &::-webkit-scrollbar {
+                display: none;
+                -ms-overflow-style: none; /* IE and Edge */
+                scrollbar-width: none; /* Firefox */
+            }
         }
     }
 }
 
 //tablet
-@media (min-width: 576px) {
+@media (min-width: 576px) and (min-height: 576px) {
     .welcome__area {
         width: 80%;
-        margin: 0 auto;
         .welcome__search__container {
             .welcome__search {
-                width: 100%;
             }
         }
         .welcome__btns__group {
             display: flex;
-            gap: 8px;
             flex-wrap: wrap;
             border-radius: 23px;
             overflow: hidden;
@@ -98,7 +115,6 @@
             }
         }
         .drop__area {
-            width: 100%;
         }
     }
 }
