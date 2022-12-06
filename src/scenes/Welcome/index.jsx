@@ -89,8 +89,8 @@ export const Welcome = ({ isLight }) => {
                                 borderRadius: '23px'
                             }}
                             variant={isLight ? 'light' : 'dark'}
-                            id={`tbg-btn-${btnsObj[btnID].id}`}
-                            value={btnsObj[btnID].id}
+                            /* id={`tbg-btn-${btnsObj[btnID].id}`} */
+                            /* value={btnsObj[btnID].id} */
                             className={
                                 btnsObj[btnID].checked ||
                                 btnsObj[btnID].name
@@ -175,8 +175,8 @@ export const Welcome = ({ isLight }) => {
                                 borderRadius: '23px'
                             }}
                             variant={isLight ? 'light' : 'dark'}
-                            id={`tbg-btn-${btnsObj[btnID].id}`}
-                            value={btnsObj[btnID].id}
+                            /* id={`tbg-btn-${btnsObj[btnID].id}`} */
+                            /* value={btnsObj[btnID].id} */
                             className={btnsObj[btnID].checked ? '' : 'hide'}
                             onClick={() =>
                                 setBtnsObj((prevObj) => {
