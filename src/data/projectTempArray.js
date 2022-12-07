@@ -38,7 +38,7 @@ export const projects = [
         name: 'Local ToDo',
         description: 'Clear Javasctipt',
         link: 'https://dawmsi.github.io/sometodo/',
-        details: `The practice of using clean JS, erasing, crearing, editing local data and DOM elements,
+        details: `The practice of using clean JS, erasing, crearing, editing local data,
         html, css, grid, scss, js, javascript`
     },
     {
@@ -47,8 +47,19 @@ export const projects = [
         description: 'Little MERN app',
         link: 'http://35.212.241.152:5000/',
         details: `Creating a short link on the site with registration and saving your links in the database, the application is distributed on Google Cloud
-        html, css, javascript, nodejs
-            "dependencies": {
+        html, css, javascript, nodejs,
+        "dependencies client": {
+            "@testing-library/jest-dom": "^5.16.5",
+            "@testing-library/react": "^13.3.0",
+            "@testing-library/user-event": "^13.5.0",
+            "materialize-css": "^1.0.0",
+            "react": "^18.2.0",
+            "react-dom": "^18.2.0",
+            "react-router-dom": "^6.3.0",
+            "react-scripts": "5.0.1",
+            "web-vitals": "^2.1.4"
+          },
+            "dependencies server": {
             "bcryptjs": "^2.4.3",
             "config": "^3.3.7",
             "express": "^4.18.1",
