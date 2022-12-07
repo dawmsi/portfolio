@@ -162,7 +162,8 @@ export const Welcome = ({ isLight }) => {
                 }}
             >
                 <Form.Text className={isLight ? 'text-light' : 'text-dark'}>
-                    Choose the skills you are looking for in templates
+                    Click or drag here the skill field here <br /> to filter
+                    projects!
                 </Form.Text>
                 <ToggleButtonGroup
                     className="welcome__btns__group"
@@ -230,6 +231,7 @@ export const Welcome = ({ isLight }) => {
                             }
                         >
                             <Link
+                                to={'/portfolio/projects'}
                                 className={
                                     isLight
                                         ? 'projectName link-dark'
