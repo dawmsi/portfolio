@@ -1,22 +1,26 @@
 export const imageFetcher = async (url, setFunc, setLoading) => {
-    const key = 'acf086d345374e32b2af7b793018b841'
-    let imageUrl = `https://screenshot.abstractapi.com/v1/?api_key=${key}&url=${url}&capture_full_page=false&width=1200&height=700`
-    fetch(imageUrl).then((res) => {
-        if (res.status >= 400) {
-        } else if (res.status === 200) {
-            setFunc(imageUrl)
-            setLoading(false)
-        } else {
-            setFunc(undefined)
+    const modUrl = url.replace(':', '%3A').replaceAll('/', '%2F')
+    let imageUrl = `https://url-to-screenshot.p.rapidapi.com/get?url=${modUrl}&height=720&allocated_time=3&width=1024&base64=0`
+
+    const options = {
+        method: 'GET',
+        headers: {
+            Accept: 'image/png',
+            'X-RapidAPI-Key':
+                'd92c875c5cmshf3700a6205431e6p13c524jsnce934345b550',
+            'X-RapidAPI-Host': 'url-to-screenshot.p.rapidapi.com'
         }
-    })
+    }
+
+    const res = await fetch(imageUrl, options)
+    if (res.status >= 400) {
+        setFunc(undefined)
+    } else if (res.status === 200) {
+        const imageBlob = await res.blob()
+        const imageObjectURL = URL.createObjectURL(imageBlob)
+        setFunc(imageObjectURL)
+        setLoading(false)
+    } else {
+        setFunc(undefined)
+    }
 }
-
-// https://shot.screenshotapi.net/screenshot?token=V3R3NAG-9ETMYR3-M069YRH-PT71PQW
-// &url=https%3A%2F%2Fdawmsi.github.io%2Fblog-project%2F
-// &width=1200&height=720&full_page=true&output=image&file_type=png&wait_for_event=load
-// _
-
-// https://shot.screenshotapi.net/screenshot?token=V3R3NAG-9ETMYR3-M069YRH-PT71PQW
-// &url=https%3A%2F%2Fdawmsi.github.io%2Ftatoo-project%2F
-// &width=1200&height=720&full_page=true&output=image&file_type=png&wait_for_event=load

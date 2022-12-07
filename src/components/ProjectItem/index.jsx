@@ -8,8 +8,8 @@ export const ProjectItem = ({ itemObj, isLight }) => {
     const [img, setImg] = useState('')
 
     useEffect(() => {
-        imageFetcher(itemObj.link, setImg, setLoading)
-    }, [itemObj.link])
+        if (img === '') imageFetcher(itemObj.link, setImg, setLoading)
+    }, [itemObj.link, img])
 
     return (
         <>
@@ -48,8 +48,14 @@ export const ProjectItem = ({ itemObj, isLight }) => {
                         </div>
                     </div>
                 ) : img === undefined ? (
-                    <Figure className="no__image">
+                    <Figure
+                        style={{
+                            position: 'relative'
+                        }}
+                        className="no__image"
+                    >
                         <a
+                            onClick={(e) => e.stopPropagation()}
                             style={{
                                 position: 'absolute',
                                 top: 0,
@@ -62,7 +68,13 @@ export const ProjectItem = ({ itemObj, isLight }) => {
                             className={isLight ? 'link-dark' : 'link-light'}
                             href={itemObj.link}
                         >
-                            <Fingerprint className="hint" size={48} />
+                            <Fingerprint
+                                style={{
+                                    rotate: '-45deg'
+                                }}
+                                className="hint"
+                                size={48}
+                            />
                         </a>
                         <p>No image</p>
                     </Figure>
