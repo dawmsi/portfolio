@@ -47,7 +47,7 @@ export const projects = [
         description: 'Little MERN app',
         link: 'http://35.212.241.152:5000/',
         details: `Creating a short link on the site with registration and saving your links in the database, the application is distributed on Google Cloud
-        html, css
+        html, css, javascript, nodejs
             "dependencies": {
             "bcryptjs": "^2.4.3",
             "config": "^3.3.7",
