@@ -35,12 +35,7 @@ export const Title = ({ isLight }) => {
                                             key={name}
                                             linkAs={Link}
                                             linkProps={
-                                                !index
-                                                    ? {
-                                                          to: routeTo,
-                                                          reloadDocument: true
-                                                      }
-                                                    : { to: routeTo }
+                                                !index ? {} : { to: routeTo }
                                             }
                                             className={
                                                 isLight

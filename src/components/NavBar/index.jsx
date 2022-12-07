@@ -1,15 +1,15 @@
 import React from 'react'
 import { Container, Navbar, Nav, Button } from 'react-bootstrap'
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 import './NavBar.scss'
-
 import {
     Moon,
     Person,
     Sun,
     Diagram2,
     Grid,
-    Bezier2
+    Bezier2,
+    Search
 } from 'react-bootstrap-icons'
 export const NavBar = ({ isLight, changeTheme }) => {
     return (
@@ -19,8 +19,19 @@ export const NavBar = ({ isLight, changeTheme }) => {
                     <Nav navbarScroll={true} variant="pills">
                         <div className="flex-fill">
                             <Nav.Link
+                                eventKey="/"
+                                as={NavLink}
+                                to={'/portfolio/'}
+                            >
+                                <Button variant={isLight ? 'light' : 'dark'}>
+                                    <Search />
+                                </Button>
+                            </Nav.Link>
+                        </div>
+                        <div className="flex-fill">
+                            <Nav.Link
                                 eventKey="about"
-                                as={Link}
+                                as={NavLink}
                                 to={`/portfolio/about`}
                             >
                                 <Button variant={isLight ? 'light' : 'dark'}>
@@ -31,7 +42,7 @@ export const NavBar = ({ isLight, changeTheme }) => {
                         <div className="flex-fill">
                             <Nav.Link
                                 eventKey="skills"
-                                as={Link}
+                                as={NavLink}
                                 to={'/portfolio/skills'}
                             >
                                 <Button variant={isLight ? 'light' : 'dark'}>
@@ -42,7 +53,7 @@ export const NavBar = ({ isLight, changeTheme }) => {
                         <div className="flex-fill">
                             <Nav.Link
                                 eventKey="projects"
-                                as={Link}
+                                as={NavLink}
                                 to={'/portfolio/projects'}
                             >
                                 <Button variant={isLight ? 'light' : 'dark'}>
@@ -53,7 +64,7 @@ export const NavBar = ({ isLight, changeTheme }) => {
                         <div className="flex-fill">
                             <Nav.Link
                                 eventKey="statistic"
-                                as={Link}
+                                as={NavLink}
                                 to={'/portfolio/statistic'}
                             >
                                 <Button variant={isLight ? 'light' : 'dark'}>
@@ -62,7 +73,6 @@ export const NavBar = ({ isLight, changeTheme }) => {
                             </Nav.Link>
                         </div>
                     </Nav>
-
                     <Button
                         className="mode__button px-8"
                         variant={isLight ? 'light' : 'dark'}
