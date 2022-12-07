@@ -2,6 +2,7 @@ import React from 'react'
 import { useEffect } from 'react'
 import { useState } from 'react'
 import { Card, Form, ToggleButton, ToggleButtonGroup } from 'react-bootstrap'
+import { Link } from 'react-router-dom'
 import { projects } from '../../data/projectTempArray'
 import { skills } from '../../data/skillsTempArray'
 import './Welcome.scss'
@@ -195,14 +196,13 @@ export const Welcome = ({ isLight }) => {
             </div>
             <div className="welcome__row">
                 <ToggleButtonGroup
-                    className="welcome__btns__group"
+                    className="welcome__btns__group project__group"
                     type="checkbox"
                 >
                     {Object.keys(navsObj).map((projectID) => (
                         <ToggleButton
                             key={navsObj[projectID].id}
                             variant={isLight ? 'light' : 'dark'}
-                            style={{ borderRadius: '23px' }}
                             className={
                                 Object.keys(btnsObj)
                                     .filter(
@@ -220,19 +220,24 @@ export const Welcome = ({ isLight }) => {
                                             .reduce((check, item) => {
                                                 return check || item
                                             }, false)
-                                        console.log(temp)
                                         return temp
                                     })
                                     .reduce((check, item) => {
                                         return check && item
                                     }, true) === true
-                                    ? 'skill__btn'
-                                    : 'skill__btn hide'
+                                    ? 'project__nav'
+                                    : 'project__nav hide'
                             }
                         >
-                            <div className="skillName">
+                            <Link
+                                className={
+                                    isLight
+                                        ? 'projectName link-dark'
+                                        : 'projectName link-light'
+                                }
+                            >
                                 {navsObj[projectID].name}
-                            </div>
+                            </Link>
                         </ToggleButton>
                     ))}
                 </ToggleButtonGroup>

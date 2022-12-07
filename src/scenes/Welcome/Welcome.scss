@@ -45,10 +45,23 @@
             -ms-overflow-style: none; /* IE and Edge */
             scrollbar-width: none; /* Firefox */
         }
+        &.project__group {
+            border-radius: 8px;
+        }
         .skill__btn.btn {
             border-radius: 0;
             .skillName {
                 padding: 0 8px;
+                width: max-content;
+                font-size: 0.8rem;
+            }
+        }
+        .project__nav.btn {
+            border-radius: 8px;
+            padding: 0;
+            .projectName {
+                text-decoration: none;
+                padding: 6px;
                 width: max-content;
                 font-size: 0.8rem;
             }
