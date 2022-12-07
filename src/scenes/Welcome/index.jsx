@@ -2,20 +2,25 @@ import React from 'react'
 import { useEffect } from 'react'
 import { useState } from 'react'
 import { Card, Form, ToggleButton, ToggleButtonGroup } from 'react-bootstrap'
+import { projects } from '../../data/projectTempArray'
 import { skills } from '../../data/skillsTempArray'
 import './Welcome.scss'
 
 export const Welcome = ({ isLight }) => {
     const [searchString, setSearchString] = useState('')
     const [btnsObj, setBtnsObj] = useState({})
+    const [navsObj, setNavsObj] = useState({})
 
     useEffect(() => {
         setBtnsObj(
             skills
-                .map((e) => {
+                .map((skill) => {
                     return {
-                        id: e.id,
-                        name: e.name,
+                        id: skill.id,
+                        name: skill.name,
+                        dependencies: skill.dependencies.map((dep) => {
+                            return dep.name
+                        }),
                         checked: false
                     }
                 })
@@ -26,6 +31,26 @@ export const Welcome = ({ isLight }) => {
                               .includes(searchString.toLowerCase())
                         : true
                 ) */
+                .reduce(
+                    (obj, item) => ({
+                        ...obj,
+                        [item.id]: item
+                    }),
+                    {}
+                )
+        )
+    }, [])
+
+    useEffect(() => {
+        setNavsObj(
+            projects
+                .map((project) => {
+                    return {
+                        id: project.id,
+                        name: project.name,
+                        details: project.details
+                    }
+                })
                 .reduce(
                     (obj, item) => ({
                         ...obj,
@@ -163,6 +188,50 @@ export const Welcome = ({ isLight }) => {
                         >
                             <div className="skillName">
                                 {btnsObj[btnID].name}
+                            </div>
+                        </ToggleButton>
+                    ))}
+                </ToggleButtonGroup>
+            </div>
+            <div className="welcome__row">
+                <ToggleButtonGroup
+                    className="welcome__btns__group"
+                    type="checkbox"
+                >
+                    {Object.keys(navsObj).map((projectID) => (
+                        <ToggleButton
+                            key={navsObj[projectID].id}
+                            variant={isLight ? 'light' : 'dark'}
+                            style={{ borderRadius: '23px' }}
+                            className={
+                                Object.keys(btnsObj)
+                                    .filter(
+                                        (skillID) => btnsObj[skillID].checked
+                                    )
+                                    .map((skillID) => {
+                                        let temp = btnsObj[skillID].dependencies
+                                            .map((dep) => {
+                                                return navsObj[
+                                                    projectID
+                                                ].details
+                                                    .toLowerCase()
+                                                    .includes(dep.toLowerCase())
+                                            })
+                                            .reduce((check, item) => {
+                                                return check || item
+                                            }, false)
+                                        console.log(temp)
+                                        return temp
+                                    })
+                                    .reduce((check, item) => {
+                                        return check && item
+                                    }, true) === true
+                                    ? 'skill__btn'
+                                    : 'skill__btn hide'
+                            }
+                        >
+                            <div className="skillName">
+                                {navsObj[projectID].name}
                             </div>
                         </ToggleButton>
                     ))}

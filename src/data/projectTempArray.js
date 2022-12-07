@@ -9,8 +9,9 @@ export const projects = [
     },
     {
         id: 1,
-        name: 'Tatto website business card',
-        description: 'Grid, one of the first works of the Desktop version',
+        name: 'Tatto Ist',
+        description:
+            'Tatto website business card, Grid, one of the first works of the Desktop version',
         link: 'https://dawmsi.github.io/tatoo-project/',
         details: `This work was done as part of the courses, and it was done only according to the requirements,
             html, css, grid, scss, js, javascript, Genericons, Google maps`
@@ -25,15 +26,16 @@ export const projects = [
     },
     {
         id: 5,
-        name: 'Template using float, 12 columns',
-        description: 'Float, one of the first works of the Desktop version',
+        name: 'Shop float',
+        description:
+            'Float 12 columns, one of the first works of the Desktop version',
         link: 'https://dawmsi.github.io/shop-project/',
         details: `This work was done as part of the courses, and it was done only according to the requirements,
         html, slick, float, scss, js, css, local font`
     },
     {
         id: 6,
-        name: 'Local Task creator',
+        name: 'Local ToDo',
         description: 'Clear Javasctipt',
         link: 'https://dawmsi.github.io/sometodo/',
         details: `The practice of using clean JS, erasing, crearing, editing local data and DOM elements,
@@ -64,11 +66,12 @@ export const projects = [
     },
     {
         id: 7,
-        name: 'Fake shop',
+        name: 'React shop',
         description: 'Product list and card page with header show',
         link: 'https://637e43c7319a390ba02f2e5a--loquacious-nasturtium-e7e0f1.netlify.app',
         details: `One of the projects in the courses where different packages were used such as: 
-            "@emotion/react": "^11.10.4",
+        html, css, js, javascript  
+        "@emotion/react": "^11.10.4",
             "@emotion/styled": "^11.10.4",
             "@mui/icons-material": "^5.10.6",
             "@mui/material": "^5.10.6",
