@@ -2,7 +2,7 @@ import React from 'react'
 import { useEffect } from 'react'
 import { useState } from 'react'
 import { Card, Form, ToggleButton, ToggleButtonGroup } from 'react-bootstrap'
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 import { projects } from '../../data/projectTempArray'
 import { skills } from '../../data/skillsTempArray'
 import './Welcome.scss'
@@ -230,7 +230,7 @@ export const Welcome = ({ isLight }) => {
                                     : 'project__nav hide'
                             }
                         >
-                            <Link
+                            <NavLink
                                 to={'/portfolio/projects'}
                                 className={
                                     isLight
@@ -239,7 +239,7 @@ export const Welcome = ({ isLight }) => {
                                 }
                             >
                                 {navsObj[projectID].name}
-                            </Link>
+                            </NavLink>
                         </ToggleButton>
                     ))}
                 </ToggleButtonGroup>
