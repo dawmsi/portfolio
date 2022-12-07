@@ -47,20 +47,8 @@ export const ProjectItem = ({ itemObj, isLight }) => {
                             </Button>
                         </div>
                     </div>
-                ) : (
-                    /* <Figure className="no__image">
-                        <p>No image</p>
-                    </Figure> */
-                    <Figure
-                        style={{
-                            position: 'relative',
-                            width: '100%',
-                            height: '100%',
-                            display: 'flex',
-                            justifyContent: 'center',
-                            alignItems: 'center'
-                        }}
-                    >
+                ) : img === undefined ? (
+                    <Figure className="no__image">
                         <a
                             style={{
                                 position: 'absolute',
@@ -76,6 +64,19 @@ export const ProjectItem = ({ itemObj, isLight }) => {
                         >
                             <Fingerprint className="hint" size={48} />
                         </a>
+                        <p>No image</p>
+                    </Figure>
+                ) : (
+                    <Figure
+                        style={{
+                            position: 'relative',
+                            width: '100%',
+                            height: '100%',
+                            display: 'flex',
+                            justifyContent: 'center',
+                            alignItems: 'center'
+                        }}
+                    >
                         <Spinner
                             style={{ margin: '0 auto' }}
                             animation="border"
