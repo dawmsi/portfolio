@@ -25,7 +25,7 @@ export const CarouselItem = ({
         }
         setTimeout(() => {
             setLocalOverturn(!localOverturn)
-        }, 440)
+        }, 400)
         card.classList.toggle('overturn')
     }
 
