@@ -39,20 +39,17 @@ export const CarouselItem = ({
                 }
                 onClick={localOverturnHandler}
             >
-                {!localOverturn ? (
-                    <CurrentItem
-                        {...(getImage ? { getImage: getImage } : {})}
-                        index={index}
-                        isLight={isLight}
-                        itemObj={cuIte}
-                        overturn={overturn}
-                    />
+                <CurrentItem
+                    {...(getImage ? { getImage: getImage } : {})}
+                    index={index}
+                    isLight={isLight}
+                    itemObj={cuIte}
+                    overturn={localOverturn}
+                />
+                {localOverturn ? (
+                    <Backside index={index} itemObj={cuIte} isLight={isLight} />
                 ) : (
-                    <Backside
-                        index={index}
-                        itemObj={cuIte}
-                        isLight={isLight}
-                    />
+                    ''
                 )}
             </div>
         </>

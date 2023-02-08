@@ -1,5 +1,5 @@
 import React from 'react'
-import { CarouselArea } from '../../components/CarouselArea'
+import { CarouselArea } from '../../modules/CarouselArea'
 import { ItemsList } from '../../components/ItemsList'
 import { SkillsItem } from '../../components/SkillsItem'
 import { skills } from '../../data/skillsTempArray'

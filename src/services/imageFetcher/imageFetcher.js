@@ -21,6 +21,6 @@ export const imageFetcher = async (url, setFunc, setLoading) => {
         setFunc(imageObjectURL)
         setLoading(false)
     } else {
-        setFunc(undefined)
+        setFunc(res.status)
     }
 }

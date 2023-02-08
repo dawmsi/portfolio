@@ -1,20 +1,20 @@
 export const projects = [
     {
+        id: 1,
+        name: 'Tatto Ist',
+        description:
+            'Tatto website business carte, Grid, one of the first works of the Desktop version',
+        link: 'https://dawmsi.github.io/tatoo-project/',
+        details: `This work was done as part of the courses, and it was done only according to the requirements,
+            html, css, grid, scss, js, javascript, Genericons, Google maps`
+    },
+    {
         id: 2,
         name: 'Modest',
         description: 'Blog site, flex-box styling, google map, contact form',
         link: 'https://dawmsi.github.io/blog-project/',
-        details: `Another business card with adaptability. Blog site, flex-box styling, google map, contact form
+        details: `Another business carte with adaptability. Blog site, flex-box styling, google map,
             html, css, flexbox scss, js, javascript`
-    },
-    {
-        id: 1,
-        name: 'Tatto Ist',
-        description:
-            'Tatto website business card, Grid, one of the first works of the Desktop version',
-        link: 'https://dawmsi.github.io/tatoo-project/',
-        details: `This work was done as part of the courses, and it was done only according to the requirements,
-            html, css, grid, scss, js, javascript, Genericons, Google maps`
     },
     {
         id: 3,

@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import './App.scss'
-import { NavBar } from './components/NavBar'
-import { MainRoutes } from './routes/MainRoutes'
+import { NavBar } from '../../modules/NavBar'
+import { MainRoutes } from '../../routes/MainRoutes'
 
 function App() {
     const [isLight, setIsLight] = useState(true)

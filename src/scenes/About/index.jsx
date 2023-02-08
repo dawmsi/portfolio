@@ -2,8 +2,8 @@ import React, { useState } from 'react'
 import { Card } from 'react-bootstrap'
 import avatarImg from './ava.jpeg'
 import './About.scss'
-import { ClickableButton } from '../../components/ClickableButton/ClickableButton'
-import { UnclickableButton } from '../../components/UnclickableButton/UnclickableButton'
+import { ClickableButton } from '../../components/buttons/ClickableButton/ClickableButton'
+import { UnclickableButton } from '../../components/buttons/UnclickableButton/UnclickableButton'
 import { Discord, Github, Linkedin, Telegram } from 'react-bootstrap-icons'
 
 export const About = ({ isLight }) => {

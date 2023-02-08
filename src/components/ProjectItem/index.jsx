@@ -3,7 +3,7 @@ import { Button, Card, Figure, Spinner } from 'react-bootstrap'
 import { Fingerprint } from 'react-bootstrap-icons'
 import { imageFetcher } from '../../services/imageFetcher/imageFetcher'
 import './ProjectItem.scss'
-export const ProjectItem = ({ itemObj, isLight }) => {
+export const ProjectItem = ({ itemObj, isLight, overturn }) => {
     const [loading, setLoading] = useState(true)
     const [img, setImg] = useState('')
 
@@ -13,7 +13,7 @@ export const ProjectItem = ({ itemObj, isLight }) => {
 
     return (
         <>
-            <Card className="project__card">
+            <Card className={`project__card ${overturn ? 'hide' : ''}`}>
                 {loading === false ? (
                     <div className="project__img__container">
                         <div

@@ -8,11 +8,9 @@ $theme-colors: (
 
 //default
 
-.hint {
-    display: none;
-}
-
-.hint__area {
+.hint,
+.hint__area,
+.hide {
     display: none;
 }
 
@@ -176,7 +174,7 @@ $width: 100px;
     bottom: 0;
     left: 0;
     right: 0;
-    background-image: url('./backgroud.jpg');
+    background-image: url('./App.backgroud.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-clip: border-box;

@@ -1,6 +1,6 @@
 import React from 'react'
 import { Card } from 'react-bootstrap'
-import { Title } from '../../components/Title'
+import { Title } from '../../modules/Title'
 import { Outlet } from 'react-router-dom'
 
 import './Main.scss'

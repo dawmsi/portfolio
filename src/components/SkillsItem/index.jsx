@@ -13,7 +13,7 @@ export const SkillsItem = ({ index, isLight, itemObj, overturn }) => {
     let percentage = ((complete * 100) / all).toFixed(1)
     return (
         <>
-            <div className="skills__card">
+            <div className={`skills__card ${overturn ? 'hide' : ''}`}>
                 {index <= 1 && (
                     <div className="hint">
                         <Fingerprint size={48} />
