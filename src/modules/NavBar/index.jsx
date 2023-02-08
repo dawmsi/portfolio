@@ -7,7 +7,7 @@ import {
     Sun,
     Diagram2,
     Grid,
-    Bezier2,
+/*     Bezier2, */
     Search
 } from 'react-bootstrap-icons'
 import { NavButton } from '../../components/NavButton'
@@ -21,33 +21,29 @@ export const NavBar = ({ isLight, changeTheme }) => {
                         <NavButton
                             isLight={isLight}
                             to={'/portfolio/'}
-                            eventKey="/"
                         >
                             <Search />
                         </NavButton>
                         <NavButton
                             isLight={isLight}
                             to={`/portfolio/about`}
-                            eventKey="about"
                         >
                             <Person />
                         </NavButton>
                         <NavButton
                             isLight={isLight}
                             to={'/portfolio/projects'}
-                            eventKey="projects"
                         >
                             <Grid />
                         </NavButton>
                         <NavButton
                             isLight={isLight}
-                            eventKey="skills"
                             to={'/portfolio/skills'}
                         >
                             <Diagram2 />
                         </NavButton>
 
-                        {/*                         <div className="flex-fill">
+                        {/*<div className="flex-fill">
                             <Nav.Link
                                 eventKey="statistic"
                                 as={NavLink}
