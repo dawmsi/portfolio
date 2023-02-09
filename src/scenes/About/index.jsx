@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Card } from 'react-bootstrap'
-import avatarImg from './ava.jpeg'
+import ava2 from './ava2-min.png'
 import './About.scss'
 import { ClickableButton } from '../../components/buttons/ClickableButton/ClickableButton'
 import { UnclickableButton } from '../../components/buttons/UnclickableButton/UnclickableButton'
@@ -193,7 +193,8 @@ export const About = ({ isLight }) => {
                 <Card
                     style={{
                         position: 'relative',
-                        backgroundImage: `url(${avatarImg})`
+                        backgroundImage: `url(${ava2})`,
+                        backgroundSize: 'cover'
                     }}
                     border={isLight ? 'light' : 'dark'}
                     className={!isActive ? 'avatar' : 'avatar hide__avatar'}
