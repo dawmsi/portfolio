@@ -1,7 +1,7 @@
 import React from 'react'
 import { useState } from 'react'
 import { Carousel } from 'react-bootstrap'
-import { CarouselItem } from '../../components/CarouselItem'
+import { CarouselItem } from '../../components/carouselElements/CarouselItem'
 import './CarouselArea.scss'
 export const CarouselArea = ({
     getImage,

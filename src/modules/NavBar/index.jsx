@@ -10,7 +10,7 @@ import {
 /*     Bezier2, */
     Search
 } from 'react-bootstrap-icons'
-import { NavButton } from '../../components/NavButton'
+import { NavButton } from '../../components/buttons/NavButton'
 
 export const NavBar = ({ isLight, changeTheme }) => {
     return (
